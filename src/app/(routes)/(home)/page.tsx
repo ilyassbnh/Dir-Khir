@@ -1,122 +1,47 @@
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { NeedsFeed } from "@/components/needs-feed";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SignOutButton from "../(auth)/components/button-signout";
-import { getServerSession } from "@/lib/auth/get-session";
+import { Suspense } from "react";
 
-export default async function Home() {
-  const me = await getServerSession();
-
+export default function HomePage() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] sm:h-12 sm:px-5 sm:text-base"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] sm:h-12 sm:min-w-44 sm:px-5 sm:text-base"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-        {me ? (
-          <div className="flex w-full flex-col gap-5">
-            <h2>Hi, {me.user.name}</h2>
-            <p>{me.user.email}</p>
-            <SignOutButton />
+    <main className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative py-20 px-6 md:px-12 zellige-pattern border-b border-border/50">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-6 drop-shadow-sm">
+            L&apos;entraide de quartier, <br /> de Tanger à Lagouira
+          </h1>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+            Connectez-vous avec vos voisins, proposez votre aide ou demandez un coup de main.
+            Moul el Café, c&apos;est la solidarité marocaine en un clic.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg h-12 px-8 shadow-lg shadow-primary/20" asChild>
+              <Link href="/proposer-un-besoin">Demander de l&apos;aide</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg h-12 px-8 border-primary/20 hover:bg-primary/5" asChild>
+              <Link href="#feed">Voir les besoins</Link>
+            </Button>
           </div>
-        ) : (
-          <Link
-            href={"/signin"}
-            className={cn(buttonVariants({ variant: "default" }))}
-          >
-            Sign In
-          </Link>
-        )}
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+          <div className="mt-12 flex items-center justify-center gap-2 text-sm font-medium text-orange-700 bg-orange-50 inline-block px-4 py-2 rounded-full border border-orange-100">
+            <span>🔥 5 citoyens aident déjà aujourd&apos;hui</span>
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background pointer-events-none"></div>
+      </section>
+
+      {/* Needs Feed Section */}
+      <section id="feed" className="py-12 px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-3xl font-bold text-foreground">Les Derniers Besoins</h2>
+          {/* Filters could go here */}
+        </div>
+        <Suspense fallback={<div className="text-center py-20">Chargement des besoins...</div>}>
+          <NeedsFeed />
+        </Suspense>
+      </section>
+    </main>
   );
 }
