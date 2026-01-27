@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40a60b64f17fb636d79fdb73c84f9343a70271e2b8": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "joinNeed",
+          "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "joinNeed",
+      "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts"
+    }
+  },
+  "edge": {}
+}

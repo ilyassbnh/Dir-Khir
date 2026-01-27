@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60a088ac8b27c11eb190d0563a04ed8305d68ac591": {
+      "workers": {
+        "app/proposer-un-besoin/page": {
+          "moduleId": "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/.next-internal/server/app/proposer-un-besoin/page/actions.js { ACTIONS_MODULE0 => \"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createNeed",
+          "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts"
+        }
+      },
+      "layer": {
+        "app/proposer-un-besoin/page": "action-browser"
+      },
+      "exportedName": "createNeed",
+      "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts"
+    }
+  },
+  "edge": {}
+}

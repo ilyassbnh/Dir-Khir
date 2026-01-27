@@ -56,15 +56,16 @@ __turbopack_context__.s([
 ]);
 const publicRoutes = [
     "/",
-    "/about"
+    "/about",
+    "/api/auth"
 ];
 const authRoutes = [
-    "/signin",
-    "/signup",
+    "/login",
+    "/register",
     "/forgot-password"
 ];
 const apiAuthPrefix = "/api/auth";
-const DEFAULT_LOGIN_REDIRECT = "/";
+const DEFAULT_LOGIN_REDIRECT = "/mon-espace";
 }),
 "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/proxy.ts [middleware] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -77,13 +78,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/server.js [middleware] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$cookies$2f$index$2e$mjs__$5b$middleware$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/cookies/index.mjs [middleware] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$D9_vQR83$2e$mjs__$5b$middleware$5d$__$28$ecmascript$29$__$3c$export__b__as__getSessionCookie$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/shared/better-auth.D9_vQR83.mjs [middleware] (ecmascript) <export b as getSessionCookie>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$src$2f$routes$2e$ts__$5b$middleware$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/routes.ts [middleware] (ecmascript)");
 ;
 ;
 ;
 async function proxy(request) {
-    const session = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$D9_vQR83$2e$mjs__$5b$middleware$5d$__$28$ecmascript$29$__$3c$export__b__as__getSessionCookie$3e$__["getSessionCookie"])(request);
+    const session = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$cookies$2f$index$2e$mjs__$5b$middleware$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getSessionCookie"])(request);
     const isApiAuth = request.nextUrl.pathname.startsWith(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$src$2f$routes$2e$ts__$5b$middleware$5d$__$28$ecmascript$29$__["apiAuthPrefix"]);
     const isPublicRoute = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$src$2f$routes$2e$ts__$5b$middleware$5d$__$28$ecmascript$29$__["publicRoutes"].includes(request.nextUrl.pathname);
     const isAuthRoute = ()=>{

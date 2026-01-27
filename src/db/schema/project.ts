@@ -14,7 +14,7 @@ export const needs = pgTable("needs", {
     category: categoryEnum("category").notNull(),
     whatsapp_number: text("whatsapp_number"),
     status: statusEnum("status").default("Open").notNull(),
-    userId: text("userId")
+    userId: text("created_by")
         .notNull()
         .references(() => user.id, { onDelete: "cascade" }),
     createdAt: timestamp("created_at").defaultNow().notNull(),

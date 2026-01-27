@@ -1,14 +1,2 @@
-[00:00:02.184] Server  LOG      ✓ Ready in 1625ms
-[00:00:06.896] Server  LOG      ○ Compiling / ...
-[00:00:07.943] Server  ERROR    ⨯ Error: Failed query: select "id", "title", "description", "city", "category", "userId", "status", "whatsapp", "createdAt", "updatedAt" from "needs" "needs" order by "needs"."createdAt" desc limit $1
-params: 50
-[00:00:08.590] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:09.193] Browser ERROR   uncaughtError: Error: Failed query: select "id", "title", "description", "city", "category", "userId", "status", "whatsapp", "createdAt", "updatedAt" from "needs" "needs" order by "needs"."createdAt" desc limit $1
-params: 50
-[00:01:04.786] Server  ERROR    ⨯ Error: Failed query: select "id", "title", "description", "city", "category", "userId", "status", "whatsapp", "createdAt", "updatedAt" from "needs" "needs" order by "needs"."createdAt" desc limit $1
-params: 50
-[00:35:58.234] Server  ERROR    ⨯ Error: Failed query: select "id", "title", "description", "city", "category", "userId", "status", "whatsapp", "createdAt", "updatedAt" from "needs" "needs" order by "needs"."createdAt" desc limit $1
-params: 50
-[00:35:58.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:59.160] Browser ERROR   uncaughtError: Error: Failed query: select "id", "title", "description", "city", "category", "userId", "status", "whatsapp", "createdAt", "updatedAt" from "needs" "needs" order by "needs"."createdAt" desc limit $1
-params: 50
+[00:00:02.016] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:02.242] Server  LOG      ✓ Ready in 1751ms
