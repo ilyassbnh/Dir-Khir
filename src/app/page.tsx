@@ -1,9 +1,8 @@
 import { db } from "@/db";
 import { needs, participants, type user } from "@/db/schema";
-import { desc, eq } from "drizzle-orm";
+import { desc, eq, count, getTableColumns } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
-import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
 import { StatsBar } from "@/components/stats-bar";
 import { NeedsGrid } from "@/components/needs-grid";
@@ -20,7 +19,24 @@ export default async function HomePage() {
     // Let's stick to Drizzle's query builder for a "dashboard-like" view.
 
     // Fetch all needs
-    const allNeeds = await db.select().from(needs).orderBy(desc(needs.createdAt));
+    // Fetch all needs with participant counts
+    const needsWithCounts = await db
+        .select({
+            ...getTableColumns(needs),
+            participantsCount: count(participants.id),
+        })
+        .from(needs)
+        .leftJoin(participants, eq(needs.id, participants.needId))
+        .groupBy(needs.id)
+        .orderBy(desc(needs.createdAt));
+
+    const allNeeds = needsWithCounts.map(({ participantsCount, ...need }) => need);
+
+    // Map counts from the aggregated result
+    const participationCounts: Record<string, number> = {};
+    needsWithCounts.forEach(nc => {
+        participationCounts[nc.id] = nc.participantsCount;
+    });
 
     // Fetch all participants (not scalable for millions, but fine for prototype)
     // Or better: fetch aggregated counts.
@@ -35,20 +51,11 @@ export default async function HomePage() {
 
     const userParticipationSet = new Set(userParticipations.map(p => p.needId));
 
-    // For counts, let's just fetch all participants for now (easiest for small app)
-    // Optimization: groupBy query
-    const allParticipants = await db.select().from(participants);
 
-    // Map counts
-    const participationCounts: Record<string, number> = {};
-    allParticipants.forEach(p => {
-        participationCounts[p.needId] = (participationCounts[p.needId] || 0) + 1;
-    });
 
 
     return (
         <div className="min-h-screen flex flex-col font-sans">
-            <Navbar />
             <main className="flex-1">
                 <HeroSection />
 

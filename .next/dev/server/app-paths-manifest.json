@@ -1,3 +1,8 @@
 {
-  "/page": "app/page.js"
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/login/page": "app/login/page.js",
+  "/mon-espace/page": "app/mon-espace/page.js",
+  "/page": "app/page.js",
+  "/proposer-un-besoin/page": "app/proposer-un-besoin/page.js",
+  "/register/page": "app/register/page.js"
 }

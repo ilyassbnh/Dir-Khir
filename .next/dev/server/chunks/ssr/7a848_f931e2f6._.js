@@ -1,0 +1,6127 @@
+module.exports = [
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next-themes/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ThemeProvider",
+    ()=>J,
+    "useTheme",
+    ()=>z
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+;
+var M = (e, i, s, u, m, a, l, h)=>{
+    let d = document.documentElement, w = [
+        "light",
+        "dark"
+    ];
+    function p(n) {
+        (Array.isArray(e) ? e : [
+            e
+        ]).forEach((y)=>{
+            let k = y === "class", S = k && a ? m.map((f)=>a[f] || f) : m;
+            k ? (d.classList.remove(...S), d.classList.add(a && a[n] ? a[n] : n)) : d.setAttribute(y, n);
+        }), R(n);
+    }
+    function R(n) {
+        h && w.includes(n) && (d.style.colorScheme = n);
+    }
+    function c() {
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    if (u) p(u);
+    else try {
+        let n = localStorage.getItem(i) || s, y = l && n === "system" ? c() : n;
+        p(y);
+    } catch (n) {}
+};
+var b = [
+    "light",
+    "dark"
+], I = "(prefers-color-scheme: dark)", O = ("TURBOPACK compile-time value", "undefined") == "undefined", x = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](void 0), U = {
+    setTheme: (e)=>{},
+    themes: []
+}, z = ()=>{
+    var e;
+    return (e = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](x)) != null ? e : U;
+}, J = (e)=>__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](x) ? __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], null, e.children) : __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](V, {
+        ...e
+    }), N = [
+    "light",
+    "dark"
+], V = ({ forcedTheme: e, disableTransitionOnChange: i = !1, enableSystem: s = !0, enableColorScheme: u = !0, storageKey: m = "theme", themes: a = N, defaultTheme: l = s ? "system" : "light", attribute: h = "data-theme", value: d, children: w, nonce: p, scriptProps: R })=>{
+    let [c, n] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](()=>H(m, l)), [T, y] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](()=>c === "system" ? E() : c), k = d ? Object.values(d) : a, S = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = o;
+        if (!r) return;
+        o === "system" && s && (r = E());
+        let v = d ? d[r] : r, C = i ? W(p) : null, P = document.documentElement, L = (g)=>{
+            g === "class" ? (P.classList.remove(...k), v && P.classList.add(v)) : g.startsWith("data-") && (v ? P.setAttribute(g, v) : P.removeAttribute(g));
+        };
+        if (Array.isArray(h) ? h.forEach(L) : L(h), u) {
+            let g = b.includes(l) ? l : null, D = b.includes(r) ? r : g;
+            P.style.colorScheme = D;
+        }
+        C == null || C();
+    }, [
+        p
+    ]), f = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = typeof o == "function" ? o(c) : o;
+        n(r);
+        try {
+            localStorage.setItem(m, r);
+        } catch (v) {}
+    }, [
+        c
+    ]), A = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = E(o);
+        y(r), c === "system" && s && !e && S("system");
+    }, [
+        c,
+        e
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        let o = window.matchMedia(I);
+        return o.addListener(A), A(o), ()=>o.removeListener(A);
+    }, [
+        A
+    ]), __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        let o = (r)=>{
+            r.key === m && (r.newValue ? n(r.newValue) : f(l));
+        };
+        return window.addEventListener("storage", o), ()=>window.removeEventListener("storage", o);
+    }, [
+        f
+    ]), __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        S(e != null ? e : c);
+    }, [
+        e,
+        c
+    ]);
+    let Q = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>({
+            theme: c,
+            setTheme: f,
+            forcedTheme: e,
+            resolvedTheme: c === "system" ? T : c,
+            themes: s ? [
+                ...a,
+                "system"
+            ] : a,
+            systemTheme: s ? T : void 0
+        }), [
+        c,
+        f,
+        e,
+        T,
+        s,
+        a
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](x.Provider, {
+        value: Q
+    }, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](_, {
+        forcedTheme: e,
+        storageKey: m,
+        attribute: h,
+        enableSystem: s,
+        enableColorScheme: u,
+        defaultTheme: l,
+        value: d,
+        themes: a,
+        nonce: p,
+        scriptProps: R
+    }), w);
+}, _ = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"](({ forcedTheme: e, storageKey: i, attribute: s, enableSystem: u, enableColorScheme: m, defaultTheme: a, value: l, themes: h, nonce: d, scriptProps: w })=>{
+    let p = JSON.stringify([
+        s,
+        i,
+        a,
+        e,
+        h,
+        l,
+        u,
+        m
+    ]).slice(1, -1);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"]("script", {
+        ...w,
+        suppressHydrationWarning: !0,
+        nonce: ("TURBOPACK compile-time truthy", 1) ? d : "TURBOPACK unreachable",
+        dangerouslySetInnerHTML: {
+            __html: `(${M.toString()})(${p})`
+        }
+    });
+}), H = (e, i)=>{
+    if ("TURBOPACK compile-time truthy", 1) return;
+    //TURBOPACK unreachable
+    ;
+    let s;
+}, W = (e)=>{
+    let i = document.createElement("style");
+    return e && i.setAttribute("nonce", e), i.appendChild(document.createTextNode("*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}")), document.head.appendChild(i), ()=>{
+        window.getComputedStyle(document.body), setTimeout(()=>{
+            document.head.removeChild(i);
+        }, 1);
+    };
+}, E = (e)=>(e || (e = window.matchMedia(I)), e.matches ? "dark" : "light");
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/sonner/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Toaster",
+    ()=>Toaster,
+    "toast",
+    ()=>toast,
+    "useSonner",
+    ()=>useSonner
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)");
+'use client';
+function __insertCSS(code) {
+    if (!code || typeof document == 'undefined') return;
+    let head = document.head || document.getElementsByTagName('head')[0];
+    let style = document.createElement('style');
+    style.type = 'text/css';
+    head.appendChild(style);
+    style.styleSheet ? style.styleSheet.cssText = code : style.appendChild(document.createTextNode(code));
+}
+;
+;
+const getAsset = (type)=>{
+    switch(type){
+        case 'success':
+            return SuccessIcon;
+        case 'info':
+            return InfoIcon;
+        case 'warning':
+            return WarningIcon;
+        case 'error':
+            return ErrorIcon;
+        default:
+            return null;
+    }
+};
+const bars = Array(12).fill(0);
+const Loader = ({ visible, className })=>{
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        className: [
+            'sonner-loading-wrapper',
+            className
+        ].filter(Boolean).join(' '),
+        "data-visible": visible
+    }, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        className: "sonner-spinner"
+    }, bars.map((_, i)=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+            className: "sonner-loading-bar",
+            key: `spinner-bar-${i}`
+        }))));
+};
+const SuccessIcon = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    height: "20",
+    width: "20"
+}, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("path", {
+    fillRule: "evenodd",
+    d: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
+    clipRule: "evenodd"
+}));
+const WarningIcon = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    height: "20",
+    width: "20"
+}, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("path", {
+    fillRule: "evenodd",
+    d: "M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z",
+    clipRule: "evenodd"
+}));
+const InfoIcon = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    height: "20",
+    width: "20"
+}, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("path", {
+    fillRule: "evenodd",
+    d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z",
+    clipRule: "evenodd"
+}));
+const ErrorIcon = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    height: "20",
+    width: "20"
+}, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("path", {
+    fillRule: "evenodd",
+    d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z",
+    clipRule: "evenodd"
+}));
+const CloseIcon = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "12",
+    height: "12",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+}, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("line", {
+    x1: "18",
+    y1: "6",
+    x2: "6",
+    y2: "18"
+}), /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("line", {
+    x1: "6",
+    y1: "6",
+    x2: "18",
+    y2: "18"
+}));
+const useIsDocumentHidden = ()=>{
+    const [isDocumentHidden, setIsDocumentHidden] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(document.hidden);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        const callback = ()=>{
+            setIsDocumentHidden(document.hidden);
+        };
+        document.addEventListener('visibilitychange', callback);
+        return ()=>window.removeEventListener('visibilitychange', callback);
+    }, []);
+    return isDocumentHidden;
+};
+let toastsCounter = 1;
+class Observer {
+    constructor(){
+        // We use arrow functions to maintain the correct `this` reference
+        this.subscribe = (subscriber)=>{
+            this.subscribers.push(subscriber);
+            return ()=>{
+                const index = this.subscribers.indexOf(subscriber);
+                this.subscribers.splice(index, 1);
+            };
+        };
+        this.publish = (data)=>{
+            this.subscribers.forEach((subscriber)=>subscriber(data));
+        };
+        this.addToast = (data)=>{
+            this.publish(data);
+            this.toasts = [
+                ...this.toasts,
+                data
+            ];
+        };
+        this.create = (data)=>{
+            var _data_id;
+            const { message, ...rest } = data;
+            const id = typeof (data == null ? void 0 : data.id) === 'number' || ((_data_id = data.id) == null ? void 0 : _data_id.length) > 0 ? data.id : toastsCounter++;
+            const alreadyExists = this.toasts.find((toast)=>{
+                return toast.id === id;
+            });
+            const dismissible = data.dismissible === undefined ? true : data.dismissible;
+            if (this.dismissedToasts.has(id)) {
+                this.dismissedToasts.delete(id);
+            }
+            if (alreadyExists) {
+                this.toasts = this.toasts.map((toast)=>{
+                    if (toast.id === id) {
+                        this.publish({
+                            ...toast,
+                            ...data,
+                            id,
+                            title: message
+                        });
+                        return {
+                            ...toast,
+                            ...data,
+                            id,
+                            dismissible,
+                            title: message
+                        };
+                    }
+                    return toast;
+                });
+            } else {
+                this.addToast({
+                    title: message,
+                    ...rest,
+                    dismissible,
+                    id
+                });
+            }
+            return id;
+        };
+        this.dismiss = (id)=>{
+            if (id) {
+                this.dismissedToasts.add(id);
+                requestAnimationFrame(()=>this.subscribers.forEach((subscriber)=>subscriber({
+                            id,
+                            dismiss: true
+                        })));
+            } else {
+                this.toasts.forEach((toast)=>{
+                    this.subscribers.forEach((subscriber)=>subscriber({
+                            id: toast.id,
+                            dismiss: true
+                        }));
+                });
+            }
+            return id;
+        };
+        this.message = (message, data)=>{
+            return this.create({
+                ...data,
+                message
+            });
+        };
+        this.error = (message, data)=>{
+            return this.create({
+                ...data,
+                message,
+                type: 'error'
+            });
+        };
+        this.success = (message, data)=>{
+            return this.create({
+                ...data,
+                type: 'success',
+                message
+            });
+        };
+        this.info = (message, data)=>{
+            return this.create({
+                ...data,
+                type: 'info',
+                message
+            });
+        };
+        this.warning = (message, data)=>{
+            return this.create({
+                ...data,
+                type: 'warning',
+                message
+            });
+        };
+        this.loading = (message, data)=>{
+            return this.create({
+                ...data,
+                type: 'loading',
+                message
+            });
+        };
+        this.promise = (promise, data)=>{
+            if (!data) {
+                // Nothing to show
+                return;
+            }
+            let id = undefined;
+            if (data.loading !== undefined) {
+                id = this.create({
+                    ...data,
+                    promise,
+                    type: 'loading',
+                    message: data.loading,
+                    description: typeof data.description !== 'function' ? data.description : undefined
+                });
+            }
+            const p = Promise.resolve(promise instanceof Function ? promise() : promise);
+            let shouldDismiss = id !== undefined;
+            let result;
+            const originalPromise = p.then(async (response)=>{
+                result = [
+                    'resolve',
+                    response
+                ];
+                const isReactElementResponse = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(response);
+                if (isReactElementResponse) {
+                    shouldDismiss = false;
+                    this.create({
+                        id,
+                        type: 'default',
+                        message: response
+                    });
+                } else if (isHttpResponse(response) && !response.ok) {
+                    shouldDismiss = false;
+                    const promiseData = typeof data.error === 'function' ? await data.error(`HTTP error! status: ${response.status}`) : data.error;
+                    const description = typeof data.description === 'function' ? await data.description(`HTTP error! status: ${response.status}`) : data.description;
+                    const isExtendedResult = typeof promiseData === 'object' && !__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(promiseData);
+                    const toastSettings = isExtendedResult ? promiseData : {
+                        message: promiseData
+                    };
+                    this.create({
+                        id,
+                        type: 'error',
+                        description,
+                        ...toastSettings
+                    });
+                } else if (response instanceof Error) {
+                    shouldDismiss = false;
+                    const promiseData = typeof data.error === 'function' ? await data.error(response) : data.error;
+                    const description = typeof data.description === 'function' ? await data.description(response) : data.description;
+                    const isExtendedResult = typeof promiseData === 'object' && !__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(promiseData);
+                    const toastSettings = isExtendedResult ? promiseData : {
+                        message: promiseData
+                    };
+                    this.create({
+                        id,
+                        type: 'error',
+                        description,
+                        ...toastSettings
+                    });
+                } else if (data.success !== undefined) {
+                    shouldDismiss = false;
+                    const promiseData = typeof data.success === 'function' ? await data.success(response) : data.success;
+                    const description = typeof data.description === 'function' ? await data.description(response) : data.description;
+                    const isExtendedResult = typeof promiseData === 'object' && !__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(promiseData);
+                    const toastSettings = isExtendedResult ? promiseData : {
+                        message: promiseData
+                    };
+                    this.create({
+                        id,
+                        type: 'success',
+                        description,
+                        ...toastSettings
+                    });
+                }
+            }).catch(async (error)=>{
+                result = [
+                    'reject',
+                    error
+                ];
+                if (data.error !== undefined) {
+                    shouldDismiss = false;
+                    const promiseData = typeof data.error === 'function' ? await data.error(error) : data.error;
+                    const description = typeof data.description === 'function' ? await data.description(error) : data.description;
+                    const isExtendedResult = typeof promiseData === 'object' && !__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(promiseData);
+                    const toastSettings = isExtendedResult ? promiseData : {
+                        message: promiseData
+                    };
+                    this.create({
+                        id,
+                        type: 'error',
+                        description,
+                        ...toastSettings
+                    });
+                }
+            }).finally(()=>{
+                if (shouldDismiss) {
+                    // Toast is still in load state (and will be indefinitely — dismiss it)
+                    this.dismiss(id);
+                    id = undefined;
+                }
+                data.finally == null ? void 0 : data.finally.call(data);
+            });
+            const unwrap = ()=>new Promise((resolve, reject)=>originalPromise.then(()=>result[0] === 'reject' ? reject(result[1]) : resolve(result[1])).catch(reject));
+            if (typeof id !== 'string' && typeof id !== 'number') {
+                // cannot Object.assign on undefined
+                return {
+                    unwrap
+                };
+            } else {
+                return Object.assign(id, {
+                    unwrap
+                });
+            }
+        };
+        this.custom = (jsx, data)=>{
+            const id = (data == null ? void 0 : data.id) || toastsCounter++;
+            this.create({
+                jsx: jsx(id),
+                id,
+                ...data
+            });
+            return id;
+        };
+        this.getActiveToasts = ()=>{
+            return this.toasts.filter((toast)=>!this.dismissedToasts.has(toast.id));
+        };
+        this.subscribers = [];
+        this.toasts = [];
+        this.dismissedToasts = new Set();
+    }
+}
+const ToastState = new Observer();
+// bind this to the toast function
+const toastFunction = (message, data)=>{
+    const id = (data == null ? void 0 : data.id) || toastsCounter++;
+    ToastState.addToast({
+        title: message,
+        ...data,
+        id
+    });
+    return id;
+};
+const isHttpResponse = (data)=>{
+    return data && typeof data === 'object' && 'ok' in data && typeof data.ok === 'boolean' && 'status' in data && typeof data.status === 'number';
+};
+const basicToast = toastFunction;
+const getHistory = ()=>ToastState.toasts;
+const getToasts = ()=>ToastState.getActiveToasts();
+// We use `Object.assign` to maintain the correct types as we would lose them otherwise
+const toast = Object.assign(basicToast, {
+    success: ToastState.success,
+    info: ToastState.info,
+    warning: ToastState.warning,
+    error: ToastState.error,
+    custom: ToastState.custom,
+    message: ToastState.message,
+    promise: ToastState.promise,
+    dismiss: ToastState.dismiss,
+    loading: ToastState.loading
+}, {
+    getHistory,
+    getToasts
+});
+__insertCSS("[data-sonner-toaster][dir=ltr],html[dir=ltr]{--toast-icon-margin-start:-3px;--toast-icon-margin-end:4px;--toast-svg-margin-start:-1px;--toast-svg-margin-end:0px;--toast-button-margin-start:auto;--toast-button-margin-end:0;--toast-close-button-start:0;--toast-close-button-end:unset;--toast-close-button-transform:translate(-35%, -35%)}[data-sonner-toaster][dir=rtl],html[dir=rtl]{--toast-icon-margin-start:4px;--toast-icon-margin-end:-3px;--toast-svg-margin-start:0px;--toast-svg-margin-end:-1px;--toast-button-margin-start:0;--toast-button-margin-end:auto;--toast-close-button-start:unset;--toast-close-button-end:0;--toast-close-button-transform:translate(35%, -35%)}[data-sonner-toaster]{position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1:hsl(0, 0%, 99%);--gray2:hsl(0, 0%, 97.3%);--gray3:hsl(0, 0%, 95.1%);--gray4:hsl(0, 0%, 93%);--gray5:hsl(0, 0%, 90.9%);--gray6:hsl(0, 0%, 88.7%);--gray7:hsl(0, 0%, 85.8%);--gray8:hsl(0, 0%, 78%);--gray9:hsl(0, 0%, 56.1%);--gray10:hsl(0, 0%, 52.3%);--gray11:hsl(0, 0%, 43.5%);--gray12:hsl(0, 0%, 9%);--border-radius:8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:0;z-index:999999999;transition:transform .4s ease}@media (hover:none) and (pointer:coarse){[data-sonner-toaster][data-lifted=true]{transform:none}}[data-sonner-toaster][data-x-position=right]{right:var(--offset-right)}[data-sonner-toaster][data-x-position=left]{left:var(--offset-left)}[data-sonner-toaster][data-x-position=center]{left:50%;transform:translateX(-50%)}[data-sonner-toaster][data-y-position=top]{top:var(--offset-top)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--offset-bottom)}[data-sonner-toast]{--y:translateY(100%);--lift-amount:calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:0;overflow-wrap:anywhere}[data-sonner-toast][data-styled=true]{padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px rgba(0,0,0,.1);width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}[data-sonner-toast]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-y-position=top]{top:0;--y:translateY(-100%);--lift:1;--lift-amount:calc(1 * var(--gap))}[data-sonner-toast][data-y-position=bottom]{bottom:0;--y:translateY(100%);--lift:-1;--lift-amount:calc(var(--lift) * var(--gap))}[data-sonner-toast][data-styled=true] [data-description]{font-weight:400;line-height:1.4;color:#3f3f3f}[data-rich-colors=true][data-sonner-toast][data-styled=true] [data-description]{color:inherit}[data-sonner-toaster][data-sonner-theme=dark] [data-description]{color:#e8e8e8}[data-sonner-toast][data-styled=true] [data-title]{font-weight:500;line-height:1.5;color:inherit}[data-sonner-toast][data-styled=true] [data-icon]{display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}[data-sonner-toast][data-promise=true] [data-icon]>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}[data-sonner-toast][data-styled=true] [data-icon]>*{flex-shrink:0}[data-sonner-toast][data-styled=true] [data-icon] svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}[data-sonner-toast][data-styled=true] [data-content]{display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;font-weight:500;cursor:pointer;outline:0;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}[data-sonner-toast][data-styled=true] [data-button]:focus-visible{box-shadow:0 0 0 2px rgba(0,0,0,.4)}[data-sonner-toast][data-styled=true] [data-button]:first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}[data-sonner-toast][data-styled=true] [data-cancel]{color:var(--normal-text);background:rgba(0,0,0,.08)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-styled=true] [data-cancel]{background:rgba(255,255,255,.3)}[data-sonner-toast][data-styled=true] [data-close-button]{position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);background:var(--normal-bg);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast][data-styled=true] [data-close-button]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-styled=true] [data-disabled=true]{cursor:not-allowed}[data-sonner-toast][data-styled=true]:hover [data-close-button]:hover{background:var(--gray2);border-color:var(--gray5)}[data-sonner-toast][data-swiping=true]::before{content:'';position:absolute;left:-100%;right:-100%;height:100%;z-index:-1}[data-sonner-toast][data-y-position=top][data-swiping=true]::before{bottom:50%;transform:scaleY(3) translateY(50%)}[data-sonner-toast][data-y-position=bottom][data-swiping=true]::before{top:50%;transform:scaleY(3) translateY(-50%)}[data-sonner-toast][data-swiping=false][data-removed=true]::before{content:'';position:absolute;inset:0;transform:scaleY(2)}[data-sonner-toast][data-expanded=true]::after{content:'';position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}[data-sonner-toast][data-mounted=true]{--y:translateY(0);opacity:1}[data-sonner-toast][data-expanded=false][data-front=false]{--scale:var(--toasts-before) * 0.05 + 1;--y:translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}[data-sonner-toast]>*{transition:opacity .4s}[data-sonner-toast][data-x-position=right]{right:0}[data-sonner-toast][data-x-position=left]{left:0}[data-sonner-toast][data-expanded=false][data-front=false][data-styled=true]>*{opacity:0}[data-sonner-toast][data-visible=false]{opacity:0;pointer-events:none}[data-sonner-toast][data-mounted=true][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}[data-sonner-toast][data-removed=true][data-front=true][data-swipe-out=false]{--y:translateY(calc(var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=false]{--y:translateY(40%);opacity:0;transition:transform .5s,opacity .2s}[data-sonner-toast][data-removed=true][data-front=false]::before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y,0)) translateX(var(--swipe-amount-x,0));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width:600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-sonner-theme=light]{--normal-bg:#fff;--normal-border:var(--gray4);--normal-text:var(--gray12);--success-bg:hsl(143, 85%, 96%);--success-border:hsl(145, 92%, 87%);--success-text:hsl(140, 100%, 27%);--info-bg:hsl(208, 100%, 97%);--info-border:hsl(221, 91%, 93%);--info-text:hsl(210, 92%, 45%);--warning-bg:hsl(49, 100%, 97%);--warning-border:hsl(49, 91%, 84%);--warning-text:hsl(31, 92%, 45%);--error-bg:hsl(359, 100%, 97%);--error-border:hsl(359, 100%, 94%);--error-text:hsl(360, 100%, 45%)}[data-sonner-toaster][data-sonner-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg:#000;--normal-border:hsl(0, 0%, 20%);--normal-text:var(--gray1)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg:#fff;--normal-border:var(--gray3);--normal-text:var(--gray12)}[data-sonner-toaster][data-sonner-theme=dark]{--normal-bg:#000;--normal-bg-hover:hsl(0, 0%, 12%);--normal-border:hsl(0, 0%, 20%);--normal-border-hover:hsl(0, 0%, 25%);--normal-text:var(--gray1);--success-bg:hsl(150, 100%, 6%);--success-border:hsl(147, 100%, 12%);--success-text:hsl(150, 86%, 65%);--info-bg:hsl(215, 100%, 6%);--info-border:hsl(223, 43%, 17%);--info-text:hsl(216, 87%, 65%);--warning-bg:hsl(64, 100%, 6%);--warning-border:hsl(60, 100%, 9%);--warning-text:hsl(46, 87%, 65%);--error-bg:hsl(358, 76%, 10%);--error-border:hsl(357, 89%, 16%);--error-text:hsl(358, 100%, 81%)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size:16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:first-child{animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}100%{opacity:.15}}@media (prefers-reduced-motion){.sonner-loading-bar,[data-sonner-toast],[data-sonner-toast]>*{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}");
+function isAction(action) {
+    return action.label !== undefined;
+}
+// Visible toasts amount
+const VISIBLE_TOASTS_AMOUNT = 3;
+// Viewport padding
+const VIEWPORT_OFFSET = '24px';
+// Mobile viewport padding
+const MOBILE_VIEWPORT_OFFSET = '16px';
+// Default lifetime of a toasts (in ms)
+const TOAST_LIFETIME = 4000;
+// Default toast width
+const TOAST_WIDTH = 356;
+// Default gap between toasts
+const GAP = 14;
+// Threshold to dismiss a toast
+const SWIPE_THRESHOLD = 45;
+// Equal to exit animation duration
+const TIME_BEFORE_UNMOUNT = 200;
+function cn(...classes) {
+    return classes.filter(Boolean).join(' ');
+}
+function getDefaultSwipeDirections(position) {
+    const [y, x] = position.split('-');
+    const directions = [];
+    if (y) {
+        directions.push(y);
+    }
+    if (x) {
+        directions.push(x);
+    }
+    return directions;
+}
+const Toast = (props)=>{
+    var _toast_classNames, _toast_classNames1, _toast_classNames2, _toast_classNames3, _toast_classNames4, _toast_classNames5, _toast_classNames6, _toast_classNames7, _toast_classNames8;
+    const { invert: ToasterInvert, toast, unstyled, interacting, setHeights, visibleToasts, heights, index, toasts, expanded, removeToast, defaultRichColors, closeButton: closeButtonFromToaster, style, cancelButtonStyle, actionButtonStyle, className = '', descriptionClassName = '', duration: durationFromToaster, position, gap, expandByDefault, classNames, icons, closeButtonAriaLabel = 'Close toast' } = props;
+    const [swipeDirection, setSwipeDirection] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(null);
+    const [swipeOutDirection, setSwipeOutDirection] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(null);
+    const [mounted, setMounted] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [removed, setRemoved] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [swiping, setSwiping] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [swipeOut, setSwipeOut] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [isSwiped, setIsSwiped] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [offsetBeforeRemove, setOffsetBeforeRemove] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(0);
+    const [initialHeight, setInitialHeight] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(0);
+    const remainingTime = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(toast.duration || durationFromToaster || TOAST_LIFETIME);
+    const dragStartTime = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const toastRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const isFront = index === 0;
+    const isVisible = index + 1 <= visibleToasts;
+    const toastType = toast.type;
+    const dismissible = toast.dismissible !== false;
+    const toastClassname = toast.className || '';
+    const toastDescriptionClassname = toast.descriptionClassName || '';
+    // Height index is used to calculate the offset as it gets updated before the toast array, which means we can calculate the new layout faster.
+    const heightIndex = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>heights.findIndex((height)=>height.toastId === toast.id) || 0, [
+        heights,
+        toast.id
+    ]);
+    const closeButton = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        var _toast_closeButton;
+        return (_toast_closeButton = toast.closeButton) != null ? _toast_closeButton : closeButtonFromToaster;
+    }, [
+        toast.closeButton,
+        closeButtonFromToaster
+    ]);
+    const duration = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>toast.duration || durationFromToaster || TOAST_LIFETIME, [
+        toast.duration,
+        durationFromToaster
+    ]);
+    const closeTimerStartTimeRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const offset = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const lastCloseTimerStartTimeRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const pointerStartRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const [y, x] = position.split('-');
+    const toastsHeightBefore = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        return heights.reduce((prev, curr, reducerIndex)=>{
+            // Calculate offset up until current toast
+            if (reducerIndex >= heightIndex) {
+                return prev;
+            }
+            return prev + curr.height;
+        }, 0);
+    }, [
+        heights,
+        heightIndex
+    ]);
+    const isDocumentHidden = useIsDocumentHidden();
+    const invert = toast.invert || ToasterInvert;
+    const disabled = toastType === 'loading';
+    offset.current = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>heightIndex * gap + toastsHeightBefore, [
+        heightIndex,
+        toastsHeightBefore
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        remainingTime.current = duration;
+    }, [
+        duration
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        // Trigger enter animation without using CSS animation
+        setMounted(true);
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        const toastNode = toastRef.current;
+        if (toastNode) {
+            const height = toastNode.getBoundingClientRect().height;
+            // Add toast height to heights array after the toast is mounted
+            setInitialHeight(height);
+            setHeights((h)=>[
+                    {
+                        toastId: toast.id,
+                        height,
+                        position: toast.position
+                    },
+                    ...h
+                ]);
+            return ()=>setHeights((h)=>h.filter((height)=>height.toastId !== toast.id));
+        }
+    }, [
+        setHeights,
+        toast.id
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useLayoutEffect(()=>{
+        // Keep height up to date with the content in case it updates
+        if (!mounted) return;
+        const toastNode = toastRef.current;
+        const originalHeight = toastNode.style.height;
+        toastNode.style.height = 'auto';
+        const newHeight = toastNode.getBoundingClientRect().height;
+        toastNode.style.height = originalHeight;
+        setInitialHeight(newHeight);
+        setHeights((heights)=>{
+            const alreadyExists = heights.find((height)=>height.toastId === toast.id);
+            if (!alreadyExists) {
+                return [
+                    {
+                        toastId: toast.id,
+                        height: newHeight,
+                        position: toast.position
+                    },
+                    ...heights
+                ];
+            } else {
+                return heights.map((height)=>height.toastId === toast.id ? {
+                        ...height,
+                        height: newHeight
+                    } : height);
+            }
+        });
+    }, [
+        mounted,
+        toast.title,
+        toast.description,
+        setHeights,
+        toast.id,
+        toast.jsx,
+        toast.action,
+        toast.cancel
+    ]);
+    const deleteToast = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback(()=>{
+        // Save the offset for the exit swipe animation
+        setRemoved(true);
+        setOffsetBeforeRemove(offset.current);
+        setHeights((h)=>h.filter((height)=>height.toastId !== toast.id));
+        setTimeout(()=>{
+            removeToast(toast);
+        }, TIME_BEFORE_UNMOUNT);
+    }, [
+        toast,
+        removeToast,
+        setHeights,
+        offset
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (toast.promise && toastType === 'loading' || toast.duration === Infinity || toast.type === 'loading') return;
+        let timeoutId;
+        // Pause the timer on each hover
+        const pauseTimer = ()=>{
+            if (lastCloseTimerStartTimeRef.current < closeTimerStartTimeRef.current) {
+                // Get the elapsed time since the timer started
+                const elapsedTime = new Date().getTime() - closeTimerStartTimeRef.current;
+                remainingTime.current = remainingTime.current - elapsedTime;
+            }
+            lastCloseTimerStartTimeRef.current = new Date().getTime();
+        };
+        const startTimer = ()=>{
+            // setTimeout(, Infinity) behaves as if the delay is 0.
+            // As a result, the toast would be closed immediately, giving the appearance that it was never rendered.
+            // See: https://github.com/denysdovhan/wtfjs?tab=readme-ov-file#an-infinite-timeout
+            if (remainingTime.current === Infinity) return;
+            closeTimerStartTimeRef.current = new Date().getTime();
+            // Let the toast know it has started
+            timeoutId = setTimeout(()=>{
+                toast.onAutoClose == null ? void 0 : toast.onAutoClose.call(toast, toast);
+                deleteToast();
+            }, remainingTime.current);
+        };
+        if (expanded || interacting || isDocumentHidden) {
+            pauseTimer();
+        } else {
+            startTimer();
+        }
+        return ()=>clearTimeout(timeoutId);
+    }, [
+        expanded,
+        interacting,
+        toast,
+        toastType,
+        isDocumentHidden,
+        deleteToast
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (toast.delete) {
+            deleteToast();
+            toast.onDismiss == null ? void 0 : toast.onDismiss.call(toast, toast);
+        }
+    }, [
+        deleteToast,
+        toast.delete
+    ]);
+    function getLoadingIcon() {
+        var _toast_classNames;
+        if (icons == null ? void 0 : icons.loading) {
+            var _toast_classNames1;
+            return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+                className: cn(classNames == null ? void 0 : classNames.loader, toast == null ? void 0 : (_toast_classNames1 = toast.classNames) == null ? void 0 : _toast_classNames1.loader, 'sonner-loader'),
+                "data-visible": toastType === 'loading'
+            }, icons.loading);
+        }
+        return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(Loader, {
+            className: cn(classNames == null ? void 0 : classNames.loader, toast == null ? void 0 : (_toast_classNames = toast.classNames) == null ? void 0 : _toast_classNames.loader),
+            visible: toastType === 'loading'
+        });
+    }
+    const icon = toast.icon || (icons == null ? void 0 : icons[toastType]) || getAsset(toastType);
+    var _toast_richColors, _icons_close;
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("li", {
+        tabIndex: 0,
+        ref: toastRef,
+        className: cn(className, toastClassname, classNames == null ? void 0 : classNames.toast, toast == null ? void 0 : (_toast_classNames = toast.classNames) == null ? void 0 : _toast_classNames.toast, classNames == null ? void 0 : classNames.default, classNames == null ? void 0 : classNames[toastType], toast == null ? void 0 : (_toast_classNames1 = toast.classNames) == null ? void 0 : _toast_classNames1[toastType]),
+        "data-sonner-toast": "",
+        "data-rich-colors": (_toast_richColors = toast.richColors) != null ? _toast_richColors : defaultRichColors,
+        "data-styled": !Boolean(toast.jsx || toast.unstyled || unstyled),
+        "data-mounted": mounted,
+        "data-promise": Boolean(toast.promise),
+        "data-swiped": isSwiped,
+        "data-removed": removed,
+        "data-visible": isVisible,
+        "data-y-position": y,
+        "data-x-position": x,
+        "data-index": index,
+        "data-front": isFront,
+        "data-swiping": swiping,
+        "data-dismissible": dismissible,
+        "data-type": toastType,
+        "data-invert": invert,
+        "data-swipe-out": swipeOut,
+        "data-swipe-direction": swipeOutDirection,
+        "data-expanded": Boolean(expanded || expandByDefault && mounted),
+        "data-testid": toast.testId,
+        style: {
+            '--index': index,
+            '--toasts-before': index,
+            '--z-index': toasts.length - index,
+            '--offset': `${removed ? offsetBeforeRemove : offset.current}px`,
+            '--initial-height': expandByDefault ? 'auto' : `${initialHeight}px`,
+            ...style,
+            ...toast.style
+        },
+        onDragEnd: ()=>{
+            setSwiping(false);
+            setSwipeDirection(null);
+            pointerStartRef.current = null;
+        },
+        onPointerDown: (event)=>{
+            if (event.button === 2) return; // Return early on right click
+            if (disabled || !dismissible) return;
+            dragStartTime.current = new Date();
+            setOffsetBeforeRemove(offset.current);
+            // Ensure we maintain correct pointer capture even when going outside of the toast (e.g. when swiping)
+            event.target.setPointerCapture(event.pointerId);
+            if (event.target.tagName === 'BUTTON') return;
+            setSwiping(true);
+            pointerStartRef.current = {
+                x: event.clientX,
+                y: event.clientY
+            };
+        },
+        onPointerUp: ()=>{
+            var _toastRef_current, _toastRef_current1, _dragStartTime_current;
+            if (swipeOut || !dismissible) return;
+            pointerStartRef.current = null;
+            const swipeAmountX = Number(((_toastRef_current = toastRef.current) == null ? void 0 : _toastRef_current.style.getPropertyValue('--swipe-amount-x').replace('px', '')) || 0);
+            const swipeAmountY = Number(((_toastRef_current1 = toastRef.current) == null ? void 0 : _toastRef_current1.style.getPropertyValue('--swipe-amount-y').replace('px', '')) || 0);
+            const timeTaken = new Date().getTime() - ((_dragStartTime_current = dragStartTime.current) == null ? void 0 : _dragStartTime_current.getTime());
+            const swipeAmount = swipeDirection === 'x' ? swipeAmountX : swipeAmountY;
+            const velocity = Math.abs(swipeAmount) / timeTaken;
+            if (Math.abs(swipeAmount) >= SWIPE_THRESHOLD || velocity > 0.11) {
+                setOffsetBeforeRemove(offset.current);
+                toast.onDismiss == null ? void 0 : toast.onDismiss.call(toast, toast);
+                if (swipeDirection === 'x') {
+                    setSwipeOutDirection(swipeAmountX > 0 ? 'right' : 'left');
+                } else {
+                    setSwipeOutDirection(swipeAmountY > 0 ? 'down' : 'up');
+                }
+                deleteToast();
+                setSwipeOut(true);
+                return;
+            } else {
+                var _toastRef_current2, _toastRef_current3;
+                (_toastRef_current2 = toastRef.current) == null ? void 0 : _toastRef_current2.style.setProperty('--swipe-amount-x', `0px`);
+                (_toastRef_current3 = toastRef.current) == null ? void 0 : _toastRef_current3.style.setProperty('--swipe-amount-y', `0px`);
+            }
+            setIsSwiped(false);
+            setSwiping(false);
+            setSwipeDirection(null);
+        },
+        onPointerMove: (event)=>{
+            var _window_getSelection, _toastRef_current, _toastRef_current1;
+            if (!pointerStartRef.current || !dismissible) return;
+            const isHighlighted = ((_window_getSelection = window.getSelection()) == null ? void 0 : _window_getSelection.toString().length) > 0;
+            if (isHighlighted) return;
+            const yDelta = event.clientY - pointerStartRef.current.y;
+            const xDelta = event.clientX - pointerStartRef.current.x;
+            var _props_swipeDirections;
+            const swipeDirections = (_props_swipeDirections = props.swipeDirections) != null ? _props_swipeDirections : getDefaultSwipeDirections(position);
+            // Determine swipe direction if not already locked
+            if (!swipeDirection && (Math.abs(xDelta) > 1 || Math.abs(yDelta) > 1)) {
+                setSwipeDirection(Math.abs(xDelta) > Math.abs(yDelta) ? 'x' : 'y');
+            }
+            let swipeAmount = {
+                x: 0,
+                y: 0
+            };
+            const getDampening = (delta)=>{
+                const factor = Math.abs(delta) / 20;
+                return 1 / (1.5 + factor);
+            };
+            // Only apply swipe in the locked direction
+            if (swipeDirection === 'y') {
+                // Handle vertical swipes
+                if (swipeDirections.includes('top') || swipeDirections.includes('bottom')) {
+                    if (swipeDirections.includes('top') && yDelta < 0 || swipeDirections.includes('bottom') && yDelta > 0) {
+                        swipeAmount.y = yDelta;
+                    } else {
+                        // Smoothly transition to dampened movement
+                        const dampenedDelta = yDelta * getDampening(yDelta);
+                        // Ensure we don't jump when transitioning to dampened movement
+                        swipeAmount.y = Math.abs(dampenedDelta) < Math.abs(yDelta) ? dampenedDelta : yDelta;
+                    }
+                }
+            } else if (swipeDirection === 'x') {
+                // Handle horizontal swipes
+                if (swipeDirections.includes('left') || swipeDirections.includes('right')) {
+                    if (swipeDirections.includes('left') && xDelta < 0 || swipeDirections.includes('right') && xDelta > 0) {
+                        swipeAmount.x = xDelta;
+                    } else {
+                        // Smoothly transition to dampened movement
+                        const dampenedDelta = xDelta * getDampening(xDelta);
+                        // Ensure we don't jump when transitioning to dampened movement
+                        swipeAmount.x = Math.abs(dampenedDelta) < Math.abs(xDelta) ? dampenedDelta : xDelta;
+                    }
+                }
+            }
+            if (Math.abs(swipeAmount.x) > 0 || Math.abs(swipeAmount.y) > 0) {
+                setIsSwiped(true);
+            }
+            (_toastRef_current = toastRef.current) == null ? void 0 : _toastRef_current.style.setProperty('--swipe-amount-x', `${swipeAmount.x}px`);
+            (_toastRef_current1 = toastRef.current) == null ? void 0 : _toastRef_current1.style.setProperty('--swipe-amount-y', `${swipeAmount.y}px`);
+        }
+    }, closeButton && !toast.jsx && toastType !== 'loading' ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("button", {
+        "aria-label": closeButtonAriaLabel,
+        "data-disabled": disabled,
+        "data-close-button": true,
+        onClick: disabled || !dismissible ? ()=>{} : ()=>{
+            deleteToast();
+            toast.onDismiss == null ? void 0 : toast.onDismiss.call(toast, toast);
+        },
+        className: cn(classNames == null ? void 0 : classNames.closeButton, toast == null ? void 0 : (_toast_classNames2 = toast.classNames) == null ? void 0 : _toast_classNames2.closeButton)
+    }, (_icons_close = icons == null ? void 0 : icons.close) != null ? _icons_close : CloseIcon) : null, (toastType || toast.icon || toast.promise) && toast.icon !== null && ((icons == null ? void 0 : icons[toastType]) !== null || toast.icon) ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        "data-icon": "",
+        className: cn(classNames == null ? void 0 : classNames.icon, toast == null ? void 0 : (_toast_classNames3 = toast.classNames) == null ? void 0 : _toast_classNames3.icon)
+    }, toast.promise || toast.type === 'loading' && !toast.icon ? toast.icon || getLoadingIcon() : null, toast.type !== 'loading' ? icon : null) : null, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        "data-content": "",
+        className: cn(classNames == null ? void 0 : classNames.content, toast == null ? void 0 : (_toast_classNames4 = toast.classNames) == null ? void 0 : _toast_classNames4.content)
+    }, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        "data-title": "",
+        className: cn(classNames == null ? void 0 : classNames.title, toast == null ? void 0 : (_toast_classNames5 = toast.classNames) == null ? void 0 : _toast_classNames5.title)
+    }, toast.jsx ? toast.jsx : typeof toast.title === 'function' ? toast.title() : toast.title), toast.description ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        "data-description": "",
+        className: cn(descriptionClassName, toastDescriptionClassname, classNames == null ? void 0 : classNames.description, toast == null ? void 0 : (_toast_classNames6 = toast.classNames) == null ? void 0 : _toast_classNames6.description)
+    }, typeof toast.description === 'function' ? toast.description() : toast.description) : null), /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(toast.cancel) ? toast.cancel : toast.cancel && isAction(toast.cancel) ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("button", {
+        "data-button": true,
+        "data-cancel": true,
+        style: toast.cancelButtonStyle || cancelButtonStyle,
+        onClick: (event)=>{
+            // We need to check twice because typescript
+            if (!isAction(toast.cancel)) return;
+            if (!dismissible) return;
+            toast.cancel.onClick == null ? void 0 : toast.cancel.onClick.call(toast.cancel, event);
+            deleteToast();
+        },
+        className: cn(classNames == null ? void 0 : classNames.cancelButton, toast == null ? void 0 : (_toast_classNames7 = toast.classNames) == null ? void 0 : _toast_classNames7.cancelButton)
+    }, toast.cancel.label) : null, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(toast.action) ? toast.action : toast.action && isAction(toast.action) ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("button", {
+        "data-button": true,
+        "data-action": true,
+        style: toast.actionButtonStyle || actionButtonStyle,
+        onClick: (event)=>{
+            // We need to check twice because typescript
+            if (!isAction(toast.action)) return;
+            toast.action.onClick == null ? void 0 : toast.action.onClick.call(toast.action, event);
+            if (event.defaultPrevented) return;
+            deleteToast();
+        },
+        className: cn(classNames == null ? void 0 : classNames.actionButton, toast == null ? void 0 : (_toast_classNames8 = toast.classNames) == null ? void 0 : _toast_classNames8.actionButton)
+    }, toast.action.label) : null);
+};
+function getDocumentDirection() {
+    if ("TURBOPACK compile-time truthy", 1) return 'ltr';
+    //TURBOPACK unreachable
+    ;
+    const dirAttribute = undefined;
+}
+function assignOffset(defaultOffset, mobileOffset) {
+    const styles = {};
+    [
+        defaultOffset,
+        mobileOffset
+    ].forEach((offset, index)=>{
+        const isMobile = index === 1;
+        const prefix = isMobile ? '--mobile-offset' : '--offset';
+        const defaultValue = isMobile ? MOBILE_VIEWPORT_OFFSET : VIEWPORT_OFFSET;
+        function assignAll(offset) {
+            [
+                'top',
+                'right',
+                'bottom',
+                'left'
+            ].forEach((key)=>{
+                styles[`${prefix}-${key}`] = typeof offset === 'number' ? `${offset}px` : offset;
+            });
+        }
+        if (typeof offset === 'number' || typeof offset === 'string') {
+            assignAll(offset);
+        } else if (typeof offset === 'object') {
+            [
+                'top',
+                'right',
+                'bottom',
+                'left'
+            ].forEach((key)=>{
+                if (offset[key] === undefined) {
+                    styles[`${prefix}-${key}`] = defaultValue;
+                } else {
+                    styles[`${prefix}-${key}`] = typeof offset[key] === 'number' ? `${offset[key]}px` : offset[key];
+                }
+            });
+        } else {
+            assignAll(defaultValue);
+        }
+    });
+    return styles;
+}
+function useSonner() {
+    const [activeToasts, setActiveToasts] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState([]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        return ToastState.subscribe((toast)=>{
+            if (toast.dismiss) {
+                setTimeout(()=>{
+                    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].flushSync(()=>{
+                        setActiveToasts((toasts)=>toasts.filter((t)=>t.id !== toast.id));
+                    });
+                });
+                return;
+            }
+            // Prevent batching, temp solution.
+            setTimeout(()=>{
+                __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].flushSync(()=>{
+                    setActiveToasts((toasts)=>{
+                        const indexOfExistingToast = toasts.findIndex((t)=>t.id === toast.id);
+                        // Update the toast if it already exists
+                        if (indexOfExistingToast !== -1) {
+                            return [
+                                ...toasts.slice(0, indexOfExistingToast),
+                                {
+                                    ...toasts[indexOfExistingToast],
+                                    ...toast
+                                },
+                                ...toasts.slice(indexOfExistingToast + 1)
+                            ];
+                        }
+                        return [
+                            toast,
+                            ...toasts
+                        ];
+                    });
+                });
+            });
+        });
+    }, []);
+    return {
+        toasts: activeToasts
+    };
+}
+const Toaster = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(function Toaster(props, ref) {
+    const { id, invert, position = 'bottom-right', hotkey = [
+        'altKey',
+        'KeyT'
+    ], expand, closeButton, className, offset, mobileOffset, theme = 'light', richColors, duration, style, visibleToasts = VISIBLE_TOASTS_AMOUNT, toastOptions, dir = getDocumentDirection(), gap = GAP, icons, containerAriaLabel = 'Notifications' } = props;
+    const [toasts, setToasts] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState([]);
+    const filteredToasts = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        if (id) {
+            return toasts.filter((toast)=>toast.toasterId === id);
+        }
+        return toasts.filter((toast)=>!toast.toasterId);
+    }, [
+        toasts,
+        id
+    ]);
+    const possiblePositions = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        return Array.from(new Set([
+            position
+        ].concat(filteredToasts.filter((toast)=>toast.position).map((toast)=>toast.position))));
+    }, [
+        filteredToasts,
+        position
+    ]);
+    const [heights, setHeights] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState([]);
+    const [expanded, setExpanded] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [interacting, setInteracting] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [actualTheme, setActualTheme] = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(theme !== 'system' ? theme : ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'light');
+    const listRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const hotkeyLabel = hotkey.join('+').replace(/Key/g, '').replace(/Digit/g, '');
+    const lastFocusedElementRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const isFocusWithinRef = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    const removeToast = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback((toastToRemove)=>{
+        setToasts((toasts)=>{
+            var _toasts_find;
+            if (!((_toasts_find = toasts.find((toast)=>toast.id === toastToRemove.id)) == null ? void 0 : _toasts_find.delete)) {
+                ToastState.dismiss(toastToRemove.id);
+            }
+            return toasts.filter(({ id })=>id !== toastToRemove.id);
+        });
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        return ToastState.subscribe((toast)=>{
+            if (toast.dismiss) {
+                // Prevent batching of other state updates
+                requestAnimationFrame(()=>{
+                    setToasts((toasts)=>toasts.map((t)=>t.id === toast.id ? {
+                                ...t,
+                                delete: true
+                            } : t));
+                });
+                return;
+            }
+            // Prevent batching, temp solution.
+            setTimeout(()=>{
+                __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].flushSync(()=>{
+                    setToasts((toasts)=>{
+                        const indexOfExistingToast = toasts.findIndex((t)=>t.id === toast.id);
+                        // Update the toast if it already exists
+                        if (indexOfExistingToast !== -1) {
+                            return [
+                                ...toasts.slice(0, indexOfExistingToast),
+                                {
+                                    ...toasts[indexOfExistingToast],
+                                    ...toast
+                                },
+                                ...toasts.slice(indexOfExistingToast + 1)
+                            ];
+                        }
+                        return [
+                            toast,
+                            ...toasts
+                        ];
+                    });
+                });
+            });
+        });
+    }, [
+        toasts
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (theme !== 'system') {
+            setActualTheme(theme);
+            return;
+        }
+        if (theme === 'system') {
+            // check if current preference is dark
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // it's currently dark
+                setActualTheme('dark');
+            } else {
+                // it's not dark
+                setActualTheme('light');
+            }
+        }
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const darkMediaQuery = undefined;
+    }, [
+        theme
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        // Ensure expanded is always false when no toasts are present / only one left
+        if (toasts.length <= 1) {
+            setExpanded(false);
+        }
+    }, [
+        toasts
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        const handleKeyDown = (event)=>{
+            var _listRef_current;
+            const isHotkeyPressed = hotkey.every((key)=>event[key] || event.code === key);
+            if (isHotkeyPressed) {
+                var _listRef_current1;
+                setExpanded(true);
+                (_listRef_current1 = listRef.current) == null ? void 0 : _listRef_current1.focus();
+            }
+            if (event.code === 'Escape' && (document.activeElement === listRef.current || ((_listRef_current = listRef.current) == null ? void 0 : _listRef_current.contains(document.activeElement)))) {
+                setExpanded(false);
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+        return ()=>document.removeEventListener('keydown', handleKeyDown);
+    }, [
+        hotkey
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (listRef.current) {
+            return ()=>{
+                if (lastFocusedElementRef.current) {
+                    lastFocusedElementRef.current.focus({
+                        preventScroll: true
+                    });
+                    lastFocusedElementRef.current = null;
+                    isFocusWithinRef.current = false;
+                }
+            };
+        }
+    }, [
+        listRef.current
+    ]);
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("section", {
+        ref: ref,
+        "aria-label": `${containerAriaLabel} ${hotkeyLabel}`,
+        tabIndex: -1,
+        "aria-live": "polite",
+        "aria-relevant": "additions text",
+        "aria-atomic": "false",
+        suppressHydrationWarning: true
+    }, possiblePositions.map((position, index)=>{
+        var _heights_;
+        const [y, x] = position.split('-');
+        if (!filteredToasts.length) return null;
+        return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("ol", {
+            key: position,
+            dir: dir === 'auto' ? getDocumentDirection() : dir,
+            tabIndex: -1,
+            ref: listRef,
+            className: className,
+            "data-sonner-toaster": true,
+            "data-sonner-theme": actualTheme,
+            "data-y-position": y,
+            "data-x-position": x,
+            style: {
+                '--front-toast-height': `${((_heights_ = heights[0]) == null ? void 0 : _heights_.height) || 0}px`,
+                '--width': `${TOAST_WIDTH}px`,
+                '--gap': `${gap}px`,
+                ...style,
+                ...assignOffset(offset, mobileOffset)
+            },
+            onBlur: (event)=>{
+                if (isFocusWithinRef.current && !event.currentTarget.contains(event.relatedTarget)) {
+                    isFocusWithinRef.current = false;
+                    if (lastFocusedElementRef.current) {
+                        lastFocusedElementRef.current.focus({
+                            preventScroll: true
+                        });
+                        lastFocusedElementRef.current = null;
+                    }
+                }
+            },
+            onFocus: (event)=>{
+                const isNotDismissible = event.target instanceof HTMLElement && event.target.dataset.dismissible === 'false';
+                if (isNotDismissible) return;
+                if (!isFocusWithinRef.current) {
+                    isFocusWithinRef.current = true;
+                    lastFocusedElementRef.current = event.relatedTarget;
+                }
+            },
+            onMouseEnter: ()=>setExpanded(true),
+            onMouseMove: ()=>setExpanded(true),
+            onMouseLeave: ()=>{
+                // Avoid setting expanded to false when interacting with a toast, e.g. swiping
+                if (!interacting) {
+                    setExpanded(false);
+                }
+            },
+            onDragEnd: ()=>setExpanded(false),
+            onPointerDown: (event)=>{
+                const isNotDismissible = event.target instanceof HTMLElement && event.target.dataset.dismissible === 'false';
+                if (isNotDismissible) return;
+                setInteracting(true);
+            },
+            onPointerUp: ()=>setInteracting(false)
+        }, filteredToasts.filter((toast)=>!toast.position && index === 0 || toast.position === position).map((toast, index)=>{
+            var _toastOptions_duration, _toastOptions_closeButton;
+            return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(Toast, {
+                key: toast.id,
+                icons: icons,
+                index: index,
+                toast: toast,
+                defaultRichColors: richColors,
+                duration: (_toastOptions_duration = toastOptions == null ? void 0 : toastOptions.duration) != null ? _toastOptions_duration : duration,
+                className: toastOptions == null ? void 0 : toastOptions.className,
+                descriptionClassName: toastOptions == null ? void 0 : toastOptions.descriptionClassName,
+                invert: invert,
+                visibleToasts: visibleToasts,
+                closeButton: (_toastOptions_closeButton = toastOptions == null ? void 0 : toastOptions.closeButton) != null ? _toastOptions_closeButton : closeButton,
+                interacting: interacting,
+                position: position,
+                style: toastOptions == null ? void 0 : toastOptions.style,
+                unstyled: toastOptions == null ? void 0 : toastOptions.unstyled,
+                classNames: toastOptions == null ? void 0 : toastOptions.classNames,
+                cancelButtonStyle: toastOptions == null ? void 0 : toastOptions.cancelButtonStyle,
+                actionButtonStyle: toastOptions == null ? void 0 : toastOptions.actionButtonStyle,
+                closeButtonAriaLabel: toastOptions == null ? void 0 : toastOptions.closeButtonAriaLabel,
+                removeToast: removeToast,
+                toasts: filteredToasts.filter((t)=>t.position == toast.position),
+                heights: heights.filter((h)=>h.position == toast.position),
+                setHeights: setHeights,
+                expandByDefault: expand,
+                gap: gap,
+                expanded: expanded,
+                swipeDirections: props.swipeDirections
+            });
+        }));
+    }));
+});
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/react-is/cjs/react-is.development.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ if ("TURBOPACK compile-time truthy", 1) {
+    (function() {
+        'use strict';
+        // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+        // nor polyfill, then a plain number is used for performance.
+        var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+        var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+        var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+        var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+        var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+        var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+        var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+        var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+        // (unstable) APIs that have been removed. Can we remove the symbols?
+        var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+        var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+        var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+        var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+        var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+        var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+        var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+        var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+        var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+        var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+        var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+        function isValidElementType(type) {
+            return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+            type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+        }
+        function typeOf(object) {
+            if (typeof object === 'object' && object !== null) {
+                var $$typeof = object.$$typeof;
+                switch($$typeof){
+                    case REACT_ELEMENT_TYPE:
+                        var type = object.type;
+                        switch(type){
+                            case REACT_ASYNC_MODE_TYPE:
+                            case REACT_CONCURRENT_MODE_TYPE:
+                            case REACT_FRAGMENT_TYPE:
+                            case REACT_PROFILER_TYPE:
+                            case REACT_STRICT_MODE_TYPE:
+                            case REACT_SUSPENSE_TYPE:
+                                return type;
+                            default:
+                                var $$typeofType = type && type.$$typeof;
+                                switch($$typeofType){
+                                    case REACT_CONTEXT_TYPE:
+                                    case REACT_FORWARD_REF_TYPE:
+                                    case REACT_LAZY_TYPE:
+                                    case REACT_MEMO_TYPE:
+                                    case REACT_PROVIDER_TYPE:
+                                        return $$typeofType;
+                                    default:
+                                        return $$typeof;
+                                }
+                        }
+                    case REACT_PORTAL_TYPE:
+                        return $$typeof;
+                }
+            }
+            return undefined;
+        } // AsyncMode is deprecated along with isAsyncMode
+        var AsyncMode = REACT_ASYNC_MODE_TYPE;
+        var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+        var ContextConsumer = REACT_CONTEXT_TYPE;
+        var ContextProvider = REACT_PROVIDER_TYPE;
+        var Element = REACT_ELEMENT_TYPE;
+        var ForwardRef = REACT_FORWARD_REF_TYPE;
+        var Fragment = REACT_FRAGMENT_TYPE;
+        var Lazy = REACT_LAZY_TYPE;
+        var Memo = REACT_MEMO_TYPE;
+        var Portal = REACT_PORTAL_TYPE;
+        var Profiler = REACT_PROFILER_TYPE;
+        var StrictMode = REACT_STRICT_MODE_TYPE;
+        var Suspense = REACT_SUSPENSE_TYPE;
+        var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+        function isAsyncMode(object) {
+            {
+                if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+                    hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+                    console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+                }
+            }
+            return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+        }
+        function isConcurrentMode(object) {
+            return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+        }
+        function isContextConsumer(object) {
+            return typeOf(object) === REACT_CONTEXT_TYPE;
+        }
+        function isContextProvider(object) {
+            return typeOf(object) === REACT_PROVIDER_TYPE;
+        }
+        function isElement(object) {
+            return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+        }
+        function isForwardRef(object) {
+            return typeOf(object) === REACT_FORWARD_REF_TYPE;
+        }
+        function isFragment(object) {
+            return typeOf(object) === REACT_FRAGMENT_TYPE;
+        }
+        function isLazy(object) {
+            return typeOf(object) === REACT_LAZY_TYPE;
+        }
+        function isMemo(object) {
+            return typeOf(object) === REACT_MEMO_TYPE;
+        }
+        function isPortal(object) {
+            return typeOf(object) === REACT_PORTAL_TYPE;
+        }
+        function isProfiler(object) {
+            return typeOf(object) === REACT_PROFILER_TYPE;
+        }
+        function isStrictMode(object) {
+            return typeOf(object) === REACT_STRICT_MODE_TYPE;
+        }
+        function isSuspense(object) {
+            return typeOf(object) === REACT_SUSPENSE_TYPE;
+        }
+        exports.AsyncMode = AsyncMode;
+        exports.ConcurrentMode = ConcurrentMode;
+        exports.ContextConsumer = ContextConsumer;
+        exports.ContextProvider = ContextProvider;
+        exports.Element = Element;
+        exports.ForwardRef = ForwardRef;
+        exports.Fragment = Fragment;
+        exports.Lazy = Lazy;
+        exports.Memo = Memo;
+        exports.Portal = Portal;
+        exports.Profiler = Profiler;
+        exports.StrictMode = StrictMode;
+        exports.Suspense = Suspense;
+        exports.isAsyncMode = isAsyncMode;
+        exports.isConcurrentMode = isConcurrentMode;
+        exports.isContextConsumer = isContextConsumer;
+        exports.isContextProvider = isContextProvider;
+        exports.isElement = isElement;
+        exports.isForwardRef = isForwardRef;
+        exports.isFragment = isFragment;
+        exports.isLazy = isLazy;
+        exports.isMemo = isMemo;
+        exports.isPortal = isPortal;
+        exports.isProfiler = isProfiler;
+        exports.isStrictMode = isStrictMode;
+        exports.isSuspense = isSuspense;
+        exports.isValidElementType = isValidElementType;
+        exports.typeOf = typeOf;
+    })();
+}
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/react-is/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+else {
+    module.exports = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/react-is/cjs/react-is.development.js [app-ssr] (ecmascript)");
+}
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/object-assign/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ /* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) {
+        throw new TypeError('Object.assign cannot be called with null or undefined');
+    }
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
+        test1[5] = 'de';
+        if (Object.getOwnPropertyNames(test1)[0] === '5') {
+            return false;
+        }
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++){
+            test2['_' + String.fromCharCode(i)] = i;
+        }
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join('') !== '0123456789') {
+            return false;
+        }
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        'abcdefghijklmnopqrst'.split('').forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
+            return false;
+        }
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from){
+            if (hasOwnProperty.call(from, key)) {
+                to[key] = from[key];
+            }
+        }
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++){
+                if (propIsEnumerable.call(from, symbols[i])) {
+                    to[symbols[i]] = from[symbols[i]];
+                }
+            }
+        }
+    }
+    return to;
+};
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/ReactPropTypesSecret.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+module.exports = ReactPropTypesSecret;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/has.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/checkPropTypes.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var printWarning = function() {};
+if ("TURBOPACK compile-time truthy", 1) {
+    var ReactPropTypesSecret = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/ReactPropTypesSecret.js [app-ssr] (ecmascript)");
+    var loggedTypeFailures = {};
+    var has = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/has.js [app-ssr] (ecmascript)");
+    printWarning = function(text) {
+        var message = 'Warning: ' + text;
+        if (typeof console !== 'undefined') {
+            console.error(message);
+        }
+        try {
+            // --- Welcome to debugging React ---
+            // This error was thrown as a convenience so that you can use this stack
+            // to find the callsite that caused this warning to fire.
+            throw new Error(message);
+        } catch (x) {}
+    };
+}
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    if ("TURBOPACK compile-time truthy", 1) {
+        for(var typeSpecName in typeSpecs){
+            if (has(typeSpecs, typeSpecName)) {
+                var error;
+                // Prop type validation may throw. In case they do, we don't want to
+                // fail the render phase where it didn't fail before. So we log it.
+                // After these have been cleaned up, we'll let them throw.
+                try {
+                    // This is intentionally an invariant that gets caught. It's the same
+                    // behavior as without this statement except with a better message.
+                    if (typeof typeSpecs[typeSpecName] !== 'function') {
+                        var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
+                        err.name = 'Invariant Violation';
+                        throw err;
+                    }
+                    error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+                } catch (ex) {
+                    error = ex;
+                }
+                if (error && !(error instanceof Error)) {
+                    printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + typeof error + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+                }
+                if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+                    // Only monitor this failure once because there tends to be a lot of the
+                    // same error.
+                    loggedTypeFailures[error.message] = true;
+                    var stack = getStack ? getStack() : '';
+                    printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+                }
+            }
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    if (("TURBOPACK compile-time value", "development") !== 'production') {
+        loggedTypeFailures = {};
+    }
+};
+module.exports = checkPropTypes;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/factoryWithTypeCheckers.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactIs = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/react-is/index.js [app-ssr] (ecmascript)");
+var assign = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/object-assign/index.js [app-ssr] (ecmascript)");
+var ReactPropTypesSecret = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/ReactPropTypesSecret.js [app-ssr] (ecmascript)");
+var has = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/lib/has.js [app-ssr] (ecmascript)");
+var checkPropTypes = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/checkPropTypes.js [app-ssr] (ecmascript)");
+var printWarning = function() {};
+if ("TURBOPACK compile-time truthy", 1) {
+    printWarning = function(text) {
+        var message = 'Warning: ' + text;
+        if (typeof console !== 'undefined') {
+            console.error(message);
+        }
+        try {
+            // --- Welcome to debugging React ---
+            // This error was thrown as a convenience so that you can use this stack
+            // to find the callsite that caused this warning to fire.
+            throw new Error(message);
+        } catch (x) {}
+    };
+}
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === 'function') {
+            return iteratorFn;
+        }
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = '<<anonymous>>';
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker('array'),
+        bigint: createPrimitiveTypeChecker('bigint'),
+        bool: createPrimitiveTypeChecker('boolean'),
+        func: createPrimitiveTypeChecker('function'),
+        number: createPrimitiveTypeChecker('number'),
+        object: createPrimitiveTypeChecker('object'),
+        string: createPrimitiveTypeChecker('string'),
+        symbol: createPrimitiveTypeChecker('symbol'),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) {
+            // Steps 1-5, 7-10
+            // Steps 6.b-6.e: +0 != -0
+            return x !== 0 || 1 / x === 1 / y;
+        } else {
+            // Step 6.a: NaN == NaN
+            return x !== x && y !== y;
+        }
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === 'object' ? data : {};
+        this.stack = '';
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        if (("TURBOPACK compile-time value", "development") !== 'production') {
+            var manualPropTypeCallCache = {};
+            var manualPropTypeWarningCount = 0;
+        }
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+                    err.name = 'Invariant Violation';
+                    throw err;
+                } else if (("TURBOPACK compile-time value", "development") !== 'production' && typeof console !== 'undefined') {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ':' + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) {
+                        return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+                    }
+                    return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+                }
+                return null;
+            } else {
+                return validate(props, propName, componentName, location, propFullName);
+            }
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== 'function') {
+                return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+            }
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+                if (error instanceof Error) {
+                    return error;
+                }
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            if ("TURBOPACK compile-time truthy", 1) {
+                if (arguments.length > 1) {
+                    printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+                } else {
+                    printWarning('Invalid argument supplied to oneOf, expected an array.');
+                }
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) {
+                    return null;
+                }
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === 'symbol') {
+                    return String(value);
+                }
+                return value;
+            });
+            return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== 'function') {
+                return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+            }
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') {
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+            }
+            for(var key in propValue){
+                if (has(propValue, key)) {
+                    var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                    if (error instanceof Error) {
+                        return error;
+                    }
+                }
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            ("TURBOPACK compile-time truthy", 1) ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : "TURBOPACK unreachable";
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== 'function') {
+                printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) {
+                    return null;
+                }
+                if (checkerResult.data && has(checkerResult.data, 'expectedType')) {
+                    expectedTypes.push(checkerResult.data.expectedType);
+                }
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ', expected one of type [' + expectedTypes.join(', ') + ']' : '';
+            return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`' + expectedTypesMessage + '.'));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) {
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || 'React class') + ': ' + location + ' type `' + propFullName + '.' + key + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + type + '`.');
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') {
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+            }
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== 'function') {
+                    return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                }
+                var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                if (error) {
+                    return error;
+                }
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== 'object') {
+                return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+            }
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== 'function') {
+                    return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                }
+                if (!checker) {
+                    return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+                }
+                var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+                if (error) {
+                    return error;
+                }
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case 'number':
+            case 'string':
+            case 'undefined':
+                return true;
+            case 'boolean':
+                return !propValue;
+            case 'object':
+                if (Array.isArray(propValue)) {
+                    return propValue.every(isNode);
+                }
+                if (propValue === null || isValidElement(propValue)) {
+                    return true;
+                }
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) {
+                        while(!(step = iterator.next()).done){
+                            if (!isNode(step.value)) {
+                                return false;
+                            }
+                        }
+                    } else {
+                        // Iterator will provide entry [k,v] tuples rather than values.
+                        while(!(step = iterator.next()).done){
+                            var entry = step.value;
+                            if (entry) {
+                                if (!isNode(entry[1])) {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    return false;
+                }
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === 'symbol') {
+            return true;
+        }
+        // falsy value can't be a Symbol
+        if (!propValue) {
+            return false;
+        }
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue['@@toStringTag'] === 'Symbol') {
+            return true;
+        }
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+            return true;
+        }
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) {
+            return 'array';
+        }
+        if (propValue instanceof RegExp) {
+            // Old webkits (at least until Android 4.0) return 'function' rather than
+            // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+            // passes PropTypes.object.
+            return 'object';
+        }
+        if (isSymbol(propType, propValue)) {
+            return 'symbol';
+        }
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === 'undefined' || propValue === null) {
+            return '' + propValue;
+        }
+        var propType = getPropType(propValue);
+        if (propType === 'object') {
+            if (propValue instanceof Date) {
+                return 'date';
+            } else if (propValue instanceof RegExp) {
+                return 'regexp';
+            }
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case 'array':
+            case 'object':
+                return 'an ' + type;
+            case 'boolean':
+            case 'date':
+            case 'regexp':
+                return 'a ' + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) {
+            return ANONYMOUS;
+        }
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ if ("TURBOPACK compile-time truthy", 1) {
+    var ReactIs = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/react-is/index.js [app-ssr] (ecmascript)");
+    // By explicitly using `prop-types` you are opting into new development behavior.
+    // http://fb.me/prop-types-in-prod
+    var throwOnDirectAccess = true;
+    module.exports = __turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/factoryWithTypeCheckers.js [app-ssr] (ecmascript)")(ReactIs.isElement, throwOnDirectAccess);
+} else //TURBOPACK unreachable
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nprogress/nprogress.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */ ;
+(function(root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        ((r)=>r !== undefined && __turbopack_context__.v(r))(factory(__turbopack_context__.r, exports, module));
+    } else if ("TURBOPACK compile-time truthy", 1) {
+        module.exports = factory();
+    } else //TURBOPACK unreachable
+    ;
+})(/*TURBOPACK member replacement*/ __turbopack_context__.e, function() {
+    var NProgress = {};
+    NProgress.version = '0.2.0';
+    var Settings = NProgress.settings = {
+        minimum: 0.08,
+        easing: 'ease',
+        positionUsing: '',
+        speed: 200,
+        trickle: true,
+        trickleRate: 0.02,
+        trickleSpeed: 800,
+        showSpinner: true,
+        barSelector: '[role="bar"]',
+        spinnerSelector: '[role="spinner"]',
+        parent: 'body',
+        template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+    };
+    /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */ NProgress.configure = function(options) {
+        var key, value;
+        for(key in options){
+            value = options[key];
+            if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+        }
+        return this;
+    };
+    /**
+   * Last number.
+   */ NProgress.status = null;
+    /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */ NProgress.set = function(n) {
+        var started = NProgress.isStarted();
+        n = clamp(n, Settings.minimum, 1);
+        NProgress.status = n === 1 ? null : n;
+        var progress = NProgress.render(!started), bar = progress.querySelector(Settings.barSelector), speed = Settings.speed, ease = Settings.easing;
+        progress.offsetWidth; /* Repaint */ 
+        queue(function(next) {
+            // Set positionUsing if it hasn't already been set
+            if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+            // Add transition
+            css(bar, barPositionCSS(n, speed, ease));
+            if (n === 1) {
+                // Fade out
+                css(progress, {
+                    transition: 'none',
+                    opacity: 1
+                });
+                progress.offsetWidth; /* Repaint */ 
+                setTimeout(function() {
+                    css(progress, {
+                        transition: 'all ' + speed + 'ms linear',
+                        opacity: 0
+                    });
+                    setTimeout(function() {
+                        NProgress.remove();
+                        next();
+                    }, speed);
+                }, speed);
+            } else {
+                setTimeout(next, speed);
+            }
+        });
+        return this;
+    };
+    NProgress.isStarted = function() {
+        return typeof NProgress.status === 'number';
+    };
+    /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */ NProgress.start = function() {
+        if (!NProgress.status) NProgress.set(0);
+        var work = function() {
+            setTimeout(function() {
+                if (!NProgress.status) return;
+                NProgress.trickle();
+                work();
+            }, Settings.trickleSpeed);
+        };
+        if (Settings.trickle) work();
+        return this;
+    };
+    /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */ NProgress.done = function(force) {
+        if (!force && !NProgress.status) return this;
+        return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+    };
+    /**
+   * Increments by a random amount.
+   */ NProgress.inc = function(amount) {
+        var n = NProgress.status;
+        if (!n) {
+            return NProgress.start();
+        } else {
+            if (typeof amount !== 'number') {
+                amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+            }
+            n = clamp(n + amount, 0, 0.994);
+            return NProgress.set(n);
+        }
+    };
+    NProgress.trickle = function() {
+        return NProgress.inc(Math.random() * Settings.trickleRate);
+    };
+    /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */ (function() {
+        var initial = 0, current = 0;
+        NProgress.promise = function($promise) {
+            if (!$promise || $promise.state() === "resolved") {
+                return this;
+            }
+            if (current === 0) {
+                NProgress.start();
+            }
+            initial++;
+            current++;
+            $promise.always(function() {
+                current--;
+                if (current === 0) {
+                    initial = 0;
+                    NProgress.done();
+                } else {
+                    NProgress.set((initial - current) / initial);
+                }
+            });
+            return this;
+        };
+    })();
+    /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */ NProgress.render = function(fromStart) {
+        if (NProgress.isRendered()) return document.getElementById('nprogress');
+        addClass(document.documentElement, 'nprogress-busy');
+        var progress = document.createElement('div');
+        progress.id = 'nprogress';
+        progress.innerHTML = Settings.template;
+        var bar = progress.querySelector(Settings.barSelector), perc = fromStart ? '-100' : toBarPerc(NProgress.status || 0), parent = document.querySelector(Settings.parent), spinner;
+        css(bar, {
+            transition: 'all 0 linear',
+            transform: 'translate3d(' + perc + '%,0,0)'
+        });
+        if (!Settings.showSpinner) {
+            spinner = progress.querySelector(Settings.spinnerSelector);
+            spinner && removeElement(spinner);
+        }
+        if (parent != document.body) {
+            addClass(parent, 'nprogress-custom-parent');
+        }
+        parent.appendChild(progress);
+        return progress;
+    };
+    /**
+   * Removes the element. Opposite of render().
+   */ NProgress.remove = function() {
+        removeClass(document.documentElement, 'nprogress-busy');
+        removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+        var progress = document.getElementById('nprogress');
+        progress && removeElement(progress);
+    };
+    /**
+   * Checks if the progress bar is rendered.
+   */ NProgress.isRendered = function() {
+        return !!document.getElementById('nprogress');
+    };
+    /**
+   * Determine which positioning CSS rule to use.
+   */ NProgress.getPositioningCSS = function() {
+        // Sniff on document.body.style
+        var bodyStyle = document.body.style;
+        // Sniff prefixes
+        var vendorPrefix = 'WebkitTransform' in bodyStyle ? 'Webkit' : 'MozTransform' in bodyStyle ? 'Moz' : 'msTransform' in bodyStyle ? 'ms' : 'OTransform' in bodyStyle ? 'O' : '';
+        if (vendorPrefix + 'Perspective' in bodyStyle) {
+            // Modern browsers with 3D support, e.g. Webkit, IE10
+            return 'translate3d';
+        } else if (vendorPrefix + 'Transform' in bodyStyle) {
+            // Browsers without 3D support, e.g. IE9
+            return 'translate';
+        } else {
+            // Browsers without translate() support, e.g. IE7-8
+            return 'margin';
+        }
+    };
+    /**
+   * Helpers
+   */ function clamp(n, min, max) {
+        if (n < min) return min;
+        if (n > max) return max;
+        return n;
+    }
+    /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */ function toBarPerc(n) {
+        return (-1 + n) * 100;
+    }
+    /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */ function barPositionCSS(n, speed, ease) {
+        var barCSS;
+        if (Settings.positionUsing === 'translate3d') {
+            barCSS = {
+                transform: 'translate3d(' + toBarPerc(n) + '%,0,0)'
+            };
+        } else if (Settings.positionUsing === 'translate') {
+            barCSS = {
+                transform: 'translate(' + toBarPerc(n) + '%,0)'
+            };
+        } else {
+            barCSS = {
+                'margin-left': toBarPerc(n) + '%'
+            };
+        }
+        barCSS.transition = 'all ' + speed + 'ms ' + ease;
+        return barCSS;
+    }
+    /**
+   * (Internal) Queues a function to be executed.
+   */ var queue = function() {
+        var pending = [];
+        function next() {
+            var fn = pending.shift();
+            if (fn) {
+                fn(next);
+            }
+        }
+        return function(fn) {
+            pending.push(fn);
+            if (pending.length == 1) next();
+        };
+    }();
+    /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */ var css = function() {
+        var cssPrefixes = [
+            'Webkit',
+            'O',
+            'Moz',
+            'ms'
+        ], cssProps = {};
+        function camelCase(string) {
+            return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+                return letter.toUpperCase();
+            });
+        }
+        function getVendorProp(name) {
+            var style = document.body.style;
+            if (name in style) return name;
+            var i = cssPrefixes.length, capName = name.charAt(0).toUpperCase() + name.slice(1), vendorName;
+            while(i--){
+                vendorName = cssPrefixes[i] + capName;
+                if (vendorName in style) return vendorName;
+            }
+            return name;
+        }
+        function getStyleProp(name) {
+            name = camelCase(name);
+            return cssProps[name] || (cssProps[name] = getVendorProp(name));
+        }
+        function applyCss(element, prop, value) {
+            prop = getStyleProp(prop);
+            element.style[prop] = value;
+        }
+        return function(element, properties) {
+            var args = arguments, prop, value;
+            if (args.length == 2) {
+                for(prop in properties){
+                    value = properties[prop];
+                    if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+                }
+            } else {
+                applyCss(element, args[1], args[2]);
+            }
+        };
+    }();
+    /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */ function hasClass(element, name) {
+        var list = typeof element == 'string' ? element : classList(element);
+        return list.indexOf(' ' + name + ' ') >= 0;
+    }
+    /**
+   * (Internal) Adds a class to an element.
+   */ function addClass(element, name) {
+        var oldList = classList(element), newList = oldList + name;
+        if (hasClass(oldList, name)) return;
+        // Trim the opening space.
+        element.className = newList.substring(1);
+    }
+    /**
+   * (Internal) Removes a class from an element.
+   */ function removeClass(element, name) {
+        var oldList = classList(element), newList;
+        if (!hasClass(element, name)) return;
+        // Replace the class name.
+        newList = oldList.replace(' ' + name + ' ', ' ');
+        // Trim the opening and closing spaces.
+        element.className = newList.substring(1, newList.length - 1);
+    }
+    /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */ function classList(element) {
+        return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+    }
+    /**
+   * (Internal) Removes an element from the DOM.
+   */ function removeElement(element) {
+        element && element.parentNode && element.parentNode.removeChild(element);
+    }
+    return NProgress;
+});
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nextjs-toploader/dist/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+var G = Object.create;
+var y = Object.defineProperty;
+var Q = Object.getOwnPropertyDescriptor;
+var V = Object.getOwnPropertyNames;
+var Y = Object.getPrototypeOf, Z = Object.prototype.hasOwnProperty;
+var i = (o, e)=>y(o, "name", {
+        value: e,
+        configurable: !0
+    });
+var _ = (o, e)=>{
+    for(var c in e)y(o, c, {
+        get: e[c],
+        enumerable: !0
+    });
+}, C = (o, e, c, h)=>{
+    if (e && typeof e == "object" || typeof e == "function") for (let l of V(e))!Z.call(o, l) && l !== c && y(o, l, {
+        get: ()=>e[l],
+        enumerable: !(h = Q(e, l)) || h.enumerable
+    });
+    return o;
+};
+var T = (o, e, c)=>(c = o != null ? G(Y(o)) : {}, C(e || !o || !o.__esModule ? y(c, "default", {
+        value: o,
+        enumerable: !0
+    }) : c, o)), ee = (o)=>C(y({}, "__esModule", {
+        value: !0
+    }), o);
+var oe = {};
+_(oe, {
+    default: ()=>re,
+    useTopLoader: ()=>O
+});
+module.exports = ee(oe);
+var t = T(__turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/prop-types/index.js [app-ssr] (ecmascript)")), L = T(__turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)")), a = T(__turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nprogress/nprogress.js [app-ssr] (ecmascript)"));
+var s = T(__turbopack_context__.r("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nprogress/nprogress.js [app-ssr] (ecmascript)"));
+var O = i(()=>({
+        start: ()=>s.start(),
+        done: (e)=>s.done(e),
+        remove: ()=>s.remove(),
+        setProgress: (e)=>s.set(e),
+        inc: (e)=>s.inc(e),
+        trickle: ()=>s.trickle(),
+        isStarted: ()=>s.isStarted(),
+        isRendered: ()=>s.isRendered(),
+        getPositioningCSS: ()=>s.getPositioningCSS()
+    }), "useTopLoader");
+var z = i(({ color: o, height: e, showSpinner: c, crawl: h, crawlSpeed: l, initialPosition: v, easing: S, speed: k, shadow: N, template: E, zIndex: A = 1600, showAtBottom: H = !1, showForHashAnchor: K = !0, nonce: W })=>{
+    let j = "#29d", u = o != null ? o : j, B = e != null ? e : 3, F = !N && N !== void 0 ? "" : N ? `box-shadow:${N}` : `box-shadow:0 0 10px ${u},0 0 5px ${u}`, q = L.createElement("style", {
+        nonce: W
+    }, `#nprogress{pointer-events:none}#nprogress .bar{background:${u};position:fixed;z-index:${A};${H ? "bottom: 0;" : "top: 0;"}left:0;width:100%;height:${B}px}#nprogress .peg{display:block;position:absolute;right:0;width:100px;height:100%;${F};opacity:1;-webkit-transform:rotate(3deg) translate(0px,-4px);-ms-transform:rotate(3deg) translate(0px,-4px);transform:rotate(3deg) translate(0px,-4px)}#nprogress .spinner{display:block;position:fixed;z-index:${A};${H ? "bottom: 15px;" : "top: 15px;"}right:15px}#nprogress .spinner-icon{width:18px;height:18px;box-sizing:border-box;border:2px solid transparent;border-top-color:${u};border-left-color:${u};border-radius:50%;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}`), f = i((m)=>new URL(m, window.location.href).href, "toAbsoluteURL"), I = i((m, b)=>{
+        let d = new URL(f(m)), P = new URL(f(b));
+        return d.href.split("#")[0] === P.href.split("#")[0];
+    }, "isHashAnchor"), J = i((m, b)=>{
+        let d = new URL(f(m)), P = new URL(f(b));
+        return d.hostname.replace(/^www\./, "") === P.hostname.replace(/^www\./, "");
+    }, "isSameHostName");
+    return L.useEffect(()=>{
+        a.configure({
+            showSpinner: c != null ? c : !0,
+            trickle: h != null ? h : !0,
+            trickleSpeed: l != null ? l : 200,
+            minimum: v != null ? v : .08,
+            easing: S != null ? S : "ease",
+            speed: k != null ? k : 200,
+            template: E != null ? E : '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+        });
+        function m(r, g) {
+            let n = new URL(r), p = new URL(g);
+            if (n.hostname === p.hostname && n.pathname === p.pathname && n.search === p.search) {
+                let w = n.hash, x = p.hash;
+                return w !== x && n.href.replace(w, "") === p.href.replace(x, "");
+            }
+            return !1;
+        }
+        i(m, "isAnchorOfCurrentUrl");
+        var b = document.querySelectorAll("html");
+        let d = i(()=>b.forEach((r)=>r.classList.remove("nprogress-busy")), "removeNProgressClass");
+        function P(r) {
+            for(; r && r.tagName.toLowerCase() !== "a";)r = r.parentElement;
+            return r;
+        }
+        i(P, "findClosestAnchor");
+        function R(r) {
+            try {
+                let g = r.target, n = P(g), p = n == null ? void 0 : n.href;
+                if (p) {
+                    let w = window.location.href, x = n.target !== "", X = [
+                        "tel:",
+                        "mailto:",
+                        "sms:",
+                        "blob:",
+                        "download:"
+                    ].some((D)=>p.startsWith(D));
+                    if (!J(window.location.href, n.href)) return;
+                    let M = m(w, p) || I(window.location.href, n.href);
+                    if (!K && M) return;
+                    p === w || x || X || M || r.ctrlKey || r.metaKey || r.shiftKey || r.altKey || !f(n.href).startsWith("http") ? (a.start(), a.done(), d()) : a.start();
+                }
+            } catch (g) {
+                a.start(), a.done();
+            }
+        }
+        i(R, "handleClick"), ((r)=>{
+            let g = r.pushState;
+            r.pushState = (...n)=>(a.done(), d(), g.apply(r, n));
+        })(window.history), ((r)=>{
+            let g = r.replaceState;
+            r.replaceState = (...n)=>(a.done(), d(), g.apply(r, n));
+        })(window.history);
+        function U() {
+            a.done(), d();
+        }
+        i(U, "handlePageHide");
+        function $() {
+            a.done();
+        }
+        return i($, "handleBackAndForth"), window.addEventListener("popstate", $), document.addEventListener("click", R), window.addEventListener("pagehide", U), ()=>{
+            document.removeEventListener("click", R), window.removeEventListener("pagehide", U), window.removeEventListener("popstate", $);
+        };
+    }, []), q;
+}, "NextTopLoader"), re = z;
+z.propTypes = {
+    color: t.string,
+    height: t.number,
+    showSpinner: t.bool,
+    crawl: t.bool,
+    crawlSpeed: t.number,
+    initialPosition: t.number,
+    easing: t.string,
+    speed: t.number,
+    template: t.string,
+    shadow: t.oneOfType([
+        t.string,
+        t.bool
+    ]),
+    zIndex: t.number,
+    showAtBottom: t.bool
+};
+0 && (module.exports = {
+    useTopLoader
+}); /**
+ *
+ * NextTopLoader
+ * @license MIT
+ * @param {NextTopLoaderProps} props The properties to configure NextTopLoader
+ * @returns {React.JSX.Element}
+ *
+ */  //# sourceMappingURL=index.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interop_require_wildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+        __proto__: null
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj){
+        if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+            var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+            if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+            else newObj[key] = obj[key];
+        }
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+exports._ = _interop_require_wildcard;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "hasA11yProp",
+    ()=>hasA11yProp,
+    "mergeClasses",
+    ()=>mergeClasses,
+    "toCamelCase",
+    ()=>toCamelCase,
+    "toKebabCase",
+    ()=>toKebabCase,
+    "toPascalCase",
+    ()=>toPascalCase
+]);
+const toKebabCase = (string)=>string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+const toCamelCase = (string)=>string.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2)=>p2 ? p2.toUpperCase() : p1.toLowerCase());
+const toPascalCase = (string)=>{
+    const camelCase = toCamelCase(string);
+    return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+};
+const mergeClasses = (...classes)=>classes.filter((className, index, array)=>{
+        return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+    }).join(" ").trim();
+const hasA11yProp = (props)=>{
+    for(const prop in props){
+        if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+            return true;
+        }
+    }
+};
+;
+ //# sourceMappingURL=utils.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>defaultAttributes
+]);
+var defaultAttributes = {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+};
+;
+ //# sourceMappingURL=defaultAttributes.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/Icon.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Icon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)");
+;
+;
+;
+const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children, iconNode, ...rest }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])("svg", {
+        ref,
+        ...__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"],
+        width: size,
+        height: size,
+        stroke: color,
+        strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeClasses"])("lucide", className),
+        ...!children && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hasA11yProp"])(rest) && {
+            "aria-hidden": "true"
+        },
+        ...rest
+    }, [
+        ...iconNode.map(([tag, attrs])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(tag, attrs)),
+        ...Array.isArray(children) ? children : [
+            children
+        ]
+    ]));
+;
+ //# sourceMappingURL=Icon.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>createLucideIcon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/Icon.js [app-ssr] (ecmascript)");
+;
+;
+;
+const createLucideIcon = (iconName, iconNode)=>{
+    const Component = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+            ref,
+            iconNode,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeClasses"])(`lucide-${(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toKebabCase"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toPascalCase"])(iconName))}`, `lucide-${iconName}`, className),
+            ...props
+        }));
+    Component.displayName = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toPascalCase"])(iconName);
+    return Component;
+};
+;
+ //# sourceMappingURL=createLucideIcon.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/coffee.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Coffee
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M10 2v2",
+            key: "7u0qdc"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M14 2v2",
+            key: "6buw04"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1",
+            key: "pwadti"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M6 2v2",
+            key: "colzsn"
+        }
+    ]
+];
+const Coffee = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("coffee", __iconNode);
+;
+ //# sourceMappingURL=coffee.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/coffee.js [app-ssr] (ecmascript) <export default as Coffee>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Coffee",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$coffee$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$coffee$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/coffee.js [app-ssr] (ecmascript)");
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Menu
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M4 5h16",
+            key: "1tepv9"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 12h16",
+            key: "1lakjw"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 19h16",
+            key: "1djgab"
+        }
+    ]
+];
+const Menu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("menu", __iconNode);
+;
+ //# sourceMappingURL=menu.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Menu",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript)");
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.548.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>X
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M18 6 6 18",
+            key: "1bl5f8"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m6 6 12 12",
+            key: "d8bk6v"
+        }
+    ]
+];
+const X = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("x", __iconNode);
+;
+ //# sourceMappingURL=x.js.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "X",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript)");
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/compose-refs/src/compose-refs.tsx
+__turbopack_context__.s([
+    "composeRefs",
+    ()=>composeRefs,
+    "useComposedRefs",
+    ()=>useComposedRefs
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+function setRef(ref, value) {
+    if (typeof ref === "function") {
+        return ref(value);
+    } else if (ref !== null && ref !== void 0) {
+        ref.current = value;
+    }
+}
+function composeRefs(...refs) {
+    return (node)=>{
+        let hasCleanup = false;
+        const cleanups = refs.map((ref)=>{
+            const cleanup = setRef(ref, node);
+            if (!hasCleanup && typeof cleanup == "function") {
+                hasCleanup = true;
+            }
+            return cleanup;
+        });
+        if (hasCleanup) {
+            return ()=>{
+                for(let i = 0; i < cleanups.length; i++){
+                    const cleanup = cleanups[i];
+                    if (typeof cleanup == "function") {
+                        cleanup();
+                    } else {
+                        setRef(refs[i], null);
+                    }
+                }
+            };
+        }
+    };
+}
+function useComposedRefs(...refs) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](composeRefs(...refs), refs);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@radix-ui/react-slot/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/slot.tsx
+__turbopack_context__.s([
+    "Root",
+    ()=>Slot,
+    "Slot",
+    ()=>Slot,
+    "Slottable",
+    ()=>Slottable,
+    "createSlot",
+    ()=>createSlot,
+    "createSlottable",
+    ()=>createSlottable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+;
+;
+;
+var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+var use = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__[" use ".trim().toString()];
+function isPromiseLike(value) {
+    return typeof value === "object" && value !== null && "then" in value;
+}
+function isLazyComponent(element) {
+    return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
+}
+// @__NO_SIDE_EFFECTS__
+function createSlot(ownerName) {
+    const SlotClone = /* @__PURE__ */ createSlotClone(ownerName);
+    const Slot2 = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.forwardRef((props, forwardedRef)=>{
+        let { children, ...slotProps } = props;
+        if (isLazyComponent(children) && typeof use === "function") {
+            children = use(children._payload);
+        }
+        const childrenArray = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Children.toArray(children);
+        const slottable = childrenArray.find(isSlottable);
+        if (slottable) {
+            const newElement = slottable.props.children;
+            const newChildren = childrenArray.map((child)=>{
+                if (child === slottable) {
+                    if (__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Children.count(newElement) > 1) return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Children.only(null);
+                    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.isValidElement(newElement) ? newElement.props.children : null;
+                } else {
+                    return child;
+                }
+            });
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(SlotClone, {
+                ...slotProps,
+                ref: forwardedRef,
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.isValidElement(newElement) ? __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.cloneElement(newElement, void 0, newChildren) : null
+            });
+        }
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(SlotClone, {
+            ...slotProps,
+            ref: forwardedRef,
+            children
+        });
+    });
+    Slot2.displayName = `${ownerName}.Slot`;
+    return Slot2;
+}
+var Slot = /* @__PURE__ */ createSlot("Slot");
+// @__NO_SIDE_EFFECTS__
+function createSlotClone(ownerName) {
+    const SlotClone = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.forwardRef((props, forwardedRef)=>{
+        let { children, ...slotProps } = props;
+        if (isLazyComponent(children) && typeof use === "function") {
+            children = use(children._payload);
+        }
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.isValidElement(children)) {
+            const childrenRef = getElementRef(children);
+            const props2 = mergeProps(slotProps, children.props);
+            if (children.type !== __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Fragment) {
+                props2.ref = forwardedRef ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeRefs"])(forwardedRef, childrenRef) : childrenRef;
+            }
+            return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.cloneElement(children, props2);
+        }
+        return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Children.count(children) > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.Children.only(null) : null;
+    });
+    SlotClone.displayName = `${ownerName}.SlotClone`;
+    return SlotClone;
+}
+var SLOTTABLE_IDENTIFIER = Symbol("radix.slottable");
+// @__NO_SIDE_EFFECTS__
+function createSlottable(ownerName) {
+    const Slottable2 = ({ children })=>{
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+            children
+        });
+    };
+    Slottable2.displayName = `${ownerName}.Slottable`;
+    Slottable2.__radixId = SLOTTABLE_IDENTIFIER;
+    return Slottable2;
+}
+var Slottable = /* @__PURE__ */ createSlottable("Slottable");
+function isSlottable(child) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
+}
+function mergeProps(slotProps, childProps) {
+    const overrideProps = {
+        ...childProps
+    };
+    for(const propName in childProps){
+        const slotPropValue = slotProps[propName];
+        const childPropValue = childProps[propName];
+        const isHandler = /^on[A-Z]/.test(propName);
+        if (isHandler) {
+            if (slotPropValue && childPropValue) {
+                overrideProps[propName] = (...args)=>{
+                    const result = childPropValue(...args);
+                    slotPropValue(...args);
+                    return result;
+                };
+            } else if (slotPropValue) {
+                overrideProps[propName] = slotPropValue;
+            }
+        } else if (propName === "style") {
+            overrideProps[propName] = {
+                ...slotPropValue,
+                ...childPropValue
+            };
+        } else if (propName === "className") {
+            overrideProps[propName] = [
+                slotPropValue,
+                childPropValue
+            ].filter(Boolean).join(" ");
+        }
+    }
+    return {
+        ...slotProps,
+        ...overrideProps
+    };
+}
+function getElementRef(element) {
+    let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
+    let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.ref;
+    }
+    getter = Object.getOwnPropertyDescriptor(element, "ref")?.get;
+    mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.props.ref;
+    }
+    return element.props.ref || element.ref;
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clsx",
+    ()=>clsx,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+function r(e) {
+    var t, f, n = "";
+    if ("string" == typeof e || "number" == typeof e) n += e;
+    else if ("object" == typeof e) if (Array.isArray(e)) {
+        var o = e.length;
+        for(t = 0; t < o; t++)e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+    } else for(f in e)e[f] && (n && (n += " "), n += f);
+    return n;
+}
+function clsx() {
+    for(var e, t, f = 0, n = "", o = arguments.length; f < o; f++)(e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+    return n;
+}
+const __TURBOPACK__default__export__ = clsx;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/class-variance-authority/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Copyright 2022 Joe Bell. All rights reserved.
+ *
+ * This file is licensed to you under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR REPRESENTATIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */ __turbopack_context__.s([
+    "cva",
+    ()=>cva,
+    "cx",
+    ()=>cx
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
+;
+const falsyToString = (value)=>typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+const cx = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"];
+const cva = (base, config)=>(props)=>{
+        var _config_compoundVariants;
+        if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+        const { variants, defaultVariants } = config;
+        const getVariantClassNames = Object.keys(variants).map((variant)=>{
+            const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+            const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+            if (variantProp === null) return null;
+            const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+            return variants[variant][variantKey];
+        });
+        const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param)=>{
+            let [key, value] = param;
+            if (value === undefined) {
+                return acc;
+            }
+            acc[key] = value;
+            return acc;
+        }, {});
+        const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param)=>{
+            let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+            return Object.entries(compoundVariantOptions).every((param)=>{
+                let [key, value] = param;
+                return Array.isArray(value) ? value.includes({
+                    ...defaultVariants,
+                    ...propsWithoutUndefined
+                }[key]) : ({
+                    ...defaultVariants,
+                    ...propsWithoutUndefined
+                })[key] === value;
+            }) ? [
+                ...acc,
+                cvClass,
+                cvClassName
+            ] : acc;
+        }, []);
+        return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+    };
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/env-impl.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/env/env-impl.ts
+__turbopack_context__.s([
+    "ENV",
+    ()=>ENV,
+    "env",
+    ()=>env,
+    "getBooleanEnvVar",
+    ()=>getBooleanEnvVar,
+    "getEnvVar",
+    ()=>getEnvVar,
+    "isDevelopment",
+    ()=>isDevelopment,
+    "isProduction",
+    ()=>isProduction,
+    "isTest",
+    ()=>isTest,
+    "nodeENV",
+    ()=>nodeENV
+]);
+const _envShim = Object.create(null);
+const _getEnv = (useShim)=>globalThis.process?.env || globalThis.Deno?.env.toObject() || globalThis.__env__ || (useShim ? _envShim : globalThis);
+const env = new Proxy(_envShim, {
+    get (_, prop) {
+        return _getEnv()[prop] ?? _envShim[prop];
+    },
+    has (_, prop) {
+        return prop in _getEnv() || prop in _envShim;
+    },
+    set (_, prop, value) {
+        const env$1 = _getEnv(true);
+        env$1[prop] = value;
+        return true;
+    },
+    deleteProperty (_, prop) {
+        if (!prop) return false;
+        const env$1 = _getEnv(true);
+        delete env$1[prop];
+        return true;
+    },
+    ownKeys () {
+        const env$1 = _getEnv(true);
+        return Object.keys(env$1);
+    }
+});
+function toBoolean(val) {
+    return val ? val !== "false" : false;
+}
+const nodeENV = typeof process !== "undefined" && process.env && ("TURBOPACK compile-time value", "development") || "";
+/** Detect if `NODE_ENV` environment variable is `production` */ const isProduction = nodeENV === "production";
+/** Detect if `NODE_ENV` environment variable is `dev` or `development` */ const isDevelopment = ()=>nodeENV === "dev" || nodeENV === "development";
+/** Detect if `NODE_ENV` environment variable is `test` */ const isTest = ()=>nodeENV === "test" || toBoolean(env.TEST);
+/**
+* Get environment variable with fallback
+*/ function getEnvVar(key, fallback) {
+    if (typeof process !== "undefined" && process.env) return process.env[key] ?? fallback;
+    if (typeof Deno !== "undefined") return Deno.env.get(key) ?? fallback;
+    if (typeof Bun !== "undefined") return Bun.env[key] ?? fallback;
+    return fallback;
+}
+/**
+* Get boolean environment variable
+*/ function getBooleanEnvVar(key, fallback = true) {
+    const value = getEnvVar(key);
+    if (!value) return fallback;
+    return value !== "0" && value.toLowerCase() !== "false" && value !== "";
+}
+/**
+* Common environment variables used in Better Auth
+*/ const ENV = Object.freeze({
+    get BETTER_AUTH_SECRET () {
+        return getEnvVar("BETTER_AUTH_SECRET");
+    },
+    get AUTH_SECRET () {
+        return getEnvVar("AUTH_SECRET");
+    },
+    get BETTER_AUTH_TELEMETRY () {
+        return getEnvVar("BETTER_AUTH_TELEMETRY");
+    },
+    get BETTER_AUTH_TELEMETRY_ID () {
+        return getEnvVar("BETTER_AUTH_TELEMETRY_ID");
+    },
+    get NODE_ENV () {
+        return getEnvVar("NODE_ENV", "development");
+    },
+    get PACKAGE_VERSION () {
+        return getEnvVar("PACKAGE_VERSION", "0.0.0");
+    },
+    get BETTER_AUTH_TELEMETRY_ENDPOINT () {
+        return getEnvVar("BETTER_AUTH_TELEMETRY_ENDPOINT", "https://telemetry.better-auth.com/v1/track");
+    }
+});
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/color-depth.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getColorDepth",
+    ()=>getColorDepth
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/env-impl.mjs [app-ssr] (ecmascript)");
+;
+//#region src/env/color-depth.ts
+const COLORS_2 = 1;
+const COLORS_16 = 4;
+const COLORS_256 = 8;
+const COLORS_16m = 24;
+const TERM_ENVS = {
+    eterm: COLORS_16,
+    cons25: COLORS_16,
+    console: COLORS_16,
+    cygwin: COLORS_16,
+    dtterm: COLORS_16,
+    gnome: COLORS_16,
+    hurd: COLORS_16,
+    jfbterm: COLORS_16,
+    konsole: COLORS_16,
+    kterm: COLORS_16,
+    mlterm: COLORS_16,
+    mosh: COLORS_16m,
+    putty: COLORS_16,
+    st: COLORS_16,
+    "rxvt-unicode-24bit": COLORS_16m,
+    terminator: COLORS_16m,
+    "xterm-kitty": COLORS_16m
+};
+const CI_ENVS_MAP = new Map(Object.entries({
+    APPVEYOR: COLORS_256,
+    BUILDKITE: COLORS_256,
+    CIRCLECI: COLORS_16m,
+    DRONE: COLORS_256,
+    GITEA_ACTIONS: COLORS_16m,
+    GITHUB_ACTIONS: COLORS_16m,
+    GITLAB_CI: COLORS_256,
+    TRAVIS: COLORS_256
+}));
+const TERM_ENVS_REG_EXP = [
+    /ansi/,
+    /color/,
+    /linux/,
+    /direct/,
+    /^con[0-9]*x[0-9]/,
+    /^rxvt/,
+    /^screen/,
+    /^xterm/,
+    /^vt100/,
+    /^vt220/
+];
+function getColorDepth() {
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("FORCE_COLOR") !== void 0) switch((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("FORCE_COLOR")){
+        case "":
+        case "1":
+        case "true":
+            return COLORS_16;
+        case "2":
+            return COLORS_256;
+        case "3":
+            return COLORS_16m;
+        default:
+            return COLORS_2;
+    }
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("NODE_DISABLE_COLORS") !== void 0 && (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("NODE_DISABLE_COLORS") !== "" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("NO_COLOR") !== void 0 && (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("NO_COLOR") !== "" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM") === "dumb") return COLORS_2;
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TMUX")) return COLORS_16m;
+    if ("TF_BUILD" in __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"] && "AGENT_NAME" in __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"]) return COLORS_16;
+    if ("CI" in __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"]) {
+        for (const { 0: envName, 1: colors } of CI_ENVS_MAP)if (envName in __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"]) return colors;
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("CI_NAME") === "codeship") return COLORS_256;
+        return COLORS_2;
+    }
+    if ("TEAMCITY_VERSION" in __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"]) return /^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.exec((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TEAMCITY_VERSION")) !== null ? COLORS_16 : COLORS_2;
+    switch((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM_PROGRAM")){
+        case "iTerm.app":
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM_PROGRAM_VERSION") || /^[0-2]\./.exec((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM_PROGRAM_VERSION")) !== null) return COLORS_256;
+            return COLORS_16m;
+        case "HyperTerm":
+        case "MacTerm":
+            return COLORS_16m;
+        case "Apple_Terminal":
+            return COLORS_256;
+    }
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("COLORTERM") === "truecolor" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("COLORTERM") === "24bit") return COLORS_16m;
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM")) {
+        if (/truecolor/.exec((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM")) !== null) return COLORS_16m;
+        if (/^xterm-256/.exec((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM")) !== null) return COLORS_256;
+        const termEnv = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("TERM").toLowerCase();
+        if (TERM_ENVS[termEnv]) return TERM_ENVS[termEnv];
+        if (TERM_ENVS_REG_EXP.some((term)=>term.exec(termEnv) !== null)) return COLORS_16;
+    }
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getEnvVar"])("COLORTERM")) return COLORS_16;
+    return COLORS_2;
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/logger.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "TTY_COLORS",
+    ()=>TTY_COLORS,
+    "createLogger",
+    ()=>createLogger,
+    "levels",
+    ()=>levels,
+    "logger",
+    ()=>logger,
+    "shouldPublishLog",
+    ()=>shouldPublishLog
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$color$2d$depth$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/color-depth.mjs [app-ssr] (ecmascript)");
+;
+//#region src/env/logger.ts
+const TTY_COLORS = {
+    reset: "\x1B[0m",
+    bright: "\x1B[1m",
+    dim: "\x1B[2m",
+    undim: "\x1B[22m",
+    underscore: "\x1B[4m",
+    blink: "\x1B[5m",
+    reverse: "\x1B[7m",
+    hidden: "\x1B[8m",
+    fg: {
+        black: "\x1B[30m",
+        red: "\x1B[31m",
+        green: "\x1B[32m",
+        yellow: "\x1B[33m",
+        blue: "\x1B[34m",
+        magenta: "\x1B[35m",
+        cyan: "\x1B[36m",
+        white: "\x1B[37m"
+    },
+    bg: {
+        black: "\x1B[40m",
+        red: "\x1B[41m",
+        green: "\x1B[42m",
+        yellow: "\x1B[43m",
+        blue: "\x1B[44m",
+        magenta: "\x1B[45m",
+        cyan: "\x1B[46m",
+        white: "\x1B[47m"
+    }
+};
+const levels = [
+    "debug",
+    "info",
+    "success",
+    "warn",
+    "error"
+];
+function shouldPublishLog(currentLogLevel, logLevel) {
+    return levels.indexOf(logLevel) >= levels.indexOf(currentLogLevel);
+}
+const levelColors = {
+    info: TTY_COLORS.fg.blue,
+    success: TTY_COLORS.fg.green,
+    warn: TTY_COLORS.fg.yellow,
+    error: TTY_COLORS.fg.red,
+    debug: TTY_COLORS.fg.magenta
+};
+const formatMessage = (level, message, colorsEnabled)=>{
+    const timestamp = /* @__PURE__ */ new Date().toISOString();
+    if (colorsEnabled) return `${TTY_COLORS.dim}${timestamp}${TTY_COLORS.reset} ${levelColors[level]}${level.toUpperCase()}${TTY_COLORS.reset} ${TTY_COLORS.bright}[Better Auth]:${TTY_COLORS.reset} ${message}`;
+    return `${timestamp} ${level.toUpperCase()} [Better Auth]: ${message}`;
+};
+const createLogger = (options)=>{
+    const enabled = options?.disabled !== true;
+    const logLevel = options?.level ?? "error";
+    const colorsEnabled = options?.disableColors !== void 0 ? !options.disableColors : (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$color$2d$depth$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getColorDepth"])() !== 1;
+    const LogFunc = (level, message, args = [])=>{
+        if (!enabled || !shouldPublishLog(logLevel, level)) return;
+        const formattedMessage = formatMessage(level, message, colorsEnabled);
+        if (!options || typeof options.log !== "function") {
+            if (level === "error") console.error(formattedMessage, ...args);
+            else if (level === "warn") console.warn(formattedMessage, ...args);
+            else console.log(formattedMessage, ...args);
+            return;
+        }
+        options.log(level === "success" ? "info" : level, message, ...args);
+    };
+    return {
+        ...Object.fromEntries(levels.map((level)=>[
+                level,
+                (...[message, ...args])=>LogFunc(level, message, args)
+            ])),
+        get level () {
+            return logLevel;
+        }
+    };
+};
+const logger = createLogger();
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/env-impl.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$color$2d$depth$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/color-depth.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$logger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/logger.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/error-codes.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/utils/error-codes.ts
+__turbopack_context__.s([
+    "defineErrorCodes",
+    ()=>defineErrorCodes
+]);
+function defineErrorCodes(codes) {
+    return codes;
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/deprecate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/utils/deprecate.ts
+/**
+* Wraps a function to log a deprecation warning at once.
+*/ __turbopack_context__.s([
+    "deprecate",
+    ()=>deprecate
+]);
+function deprecate(fn, message, logger) {
+    let warned = false;
+    return function(...args) {
+        if (!warned) {
+            (logger?.warn ?? console.warn)(`[Deprecation] ${message}`);
+            warned = true;
+        }
+        return fn.apply(this, args);
+    };
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/id.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "generateId",
+    ()=>generateId
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$utils$2f$dist$2f$random$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/utils/dist/random.mjs [app-ssr] (ecmascript)");
+;
+//#region src/utils/id.ts
+const generateId = (size)=>{
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$utils$2f$dist$2f$random$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRandomStringGenerator"])("a-z", "A-Z", "0-9")(size || 32);
+};
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/ip.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createRateLimitKey",
+    ()=>createRateLimitKey,
+    "isValidIP",
+    ()=>isValidIP,
+    "normalizeIP",
+    ()=>normalizeIP
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/zod/v4/classic/schemas.js [app-ssr] (ecmascript)");
+;
+//#region src/utils/ip.ts
+/**
+* Checks if an IP is valid IPv4 or IPv6
+*/ function isValidIP(ip) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv4"]().safeParse(ip).success || __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv6"]().safeParse(ip).success;
+}
+/**
+* Checks if an IP is IPv6
+*/ function isIPv6(ip) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv6"]().safeParse(ip).success;
+}
+/**
+* Converts IPv4-mapped IPv6 address to IPv4
+* e.g., "::ffff:192.0.2.1" -> "192.0.2.1"
+*/ function extractIPv4FromMapped(ipv6) {
+    const lower = ipv6.toLowerCase();
+    if (lower.startsWith("::ffff:")) {
+        const ipv4Part = lower.substring(7);
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv4"]().safeParse(ipv4Part).success) return ipv4Part;
+    }
+    const parts = ipv6.split(":");
+    if (parts.length === 7 && parts[5]?.toLowerCase() === "ffff") {
+        const ipv4Part = parts[6];
+        if (ipv4Part && __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv4"]().safeParse(ipv4Part).success) return ipv4Part;
+    }
+    if (lower.includes("::ffff:") || lower.includes(":ffff:")) {
+        const groups = expandIPv6(ipv6);
+        if (groups.length === 8 && groups[0] === "0000" && groups[1] === "0000" && groups[2] === "0000" && groups[3] === "0000" && groups[4] === "0000" && groups[5] === "ffff" && groups[6] && groups[7]) return `${Number.parseInt(groups[6].substring(0, 2), 16)}.${Number.parseInt(groups[6].substring(2, 4), 16)}.${Number.parseInt(groups[7].substring(0, 2), 16)}.${Number.parseInt(groups[7].substring(2, 4), 16)}`;
+    }
+    return null;
+}
+/**
+* Expands a compressed IPv6 address to full form
+* e.g., "2001:db8::1" -> ["2001", "0db8", "0000", "0000", "0000", "0000", "0000", "0001"]
+*/ function expandIPv6(ipv6) {
+    if (ipv6.includes("::")) {
+        const sides = ipv6.split("::");
+        const left = sides[0] ? sides[0].split(":") : [];
+        const right = sides[1] ? sides[1].split(":") : [];
+        const missingGroups = 8 - left.length - right.length;
+        const zeros = Array(missingGroups).fill("0000");
+        const paddedLeft = left.map((g)=>g.padStart(4, "0"));
+        const paddedRight = right.map((g)=>g.padStart(4, "0"));
+        return [
+            ...paddedLeft,
+            ...zeros,
+            ...paddedRight
+        ];
+    }
+    return ipv6.split(":").map((g)=>g.padStart(4, "0"));
+}
+/**
+* Normalizes an IPv6 address to canonical form
+* e.g., "2001:DB8::1" -> "2001:0db8:0000:0000:0000:0000:0000:0001"
+*/ function normalizeIPv6(ipv6, subnetPrefix) {
+    const groups = expandIPv6(ipv6);
+    if (subnetPrefix && subnetPrefix < 128) {
+        let bitsRemaining = subnetPrefix;
+        return groups.map((group)=>{
+            if (bitsRemaining <= 0) return "0000";
+            if (bitsRemaining >= 16) {
+                bitsRemaining -= 16;
+                return group;
+            }
+            const masked = Number.parseInt(group, 16) & (65535 << 16 - bitsRemaining & 65535);
+            bitsRemaining = 0;
+            return masked.toString(16).padStart(4, "0");
+        }).join(":").toLowerCase();
+    }
+    return groups.join(":").toLowerCase();
+}
+/**
+* Normalizes an IP address (IPv4 or IPv6) for consistent rate limiting.
+*
+* @param ip - The IP address to normalize
+* @param options - Normalization options
+* @returns Normalized IP address
+*
+* @example
+* normalizeIP("2001:DB8::1")
+* // -> "2001:0db8:0000:0000:0000:0000:0000:0000"
+*
+* @example
+* normalizeIP("::ffff:192.0.2.1")
+* // -> "192.0.2.1" (converted to IPv4)
+*
+* @example
+* normalizeIP("2001:db8::1", { ipv6Subnet: 64 })
+* // -> "2001:0db8:0000:0000:0000:0000:0000:0000" (subnet /64)
+*/ function normalizeIP(ip, options = {}) {
+    if (__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ipv4"]().safeParse(ip).success) return ip.toLowerCase();
+    if (!isIPv6(ip)) return ip.toLowerCase();
+    const ipv4 = extractIPv4FromMapped(ip);
+    if (ipv4) return ipv4.toLowerCase();
+    return normalizeIPv6(ip, options.ipv6Subnet || 64);
+}
+/**
+* Creates a rate limit key from IP and path
+* Uses a separator to prevent collision attacks
+*
+* @param ip - The IP address (should be normalized)
+* @param path - The request path
+* @returns Rate limit key
+*/ function createRateLimitKey(ip, path) {
+    return `${ip}|${path}`;
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/json.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "safeJSONParse",
+    ()=>safeJSONParse
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$logger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/logger.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/index.mjs [app-ssr] (ecmascript) <locals>");
+;
+;
+//#region src/utils/json.ts
+function safeJSONParse(data) {
+    function reviver(_, value) {
+        if (typeof value === "string") {
+            if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/.test(value)) {
+                const date = new Date(value);
+                if (!isNaN(date.getTime())) return date;
+            }
+        }
+        return value;
+    }
+    try {
+        if (typeof data !== "string") return data;
+        return JSON.parse(data, reviver);
+    } catch (e) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$logger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["logger"].error("Error parsing JSON", {
+            error: e
+        });
+        return null;
+    }
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/string.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/utils/string.ts
+__turbopack_context__.s([
+    "capitalizeFirstLetter",
+    ()=>capitalizeFirstLetter
+]);
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/url.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/utils/url.ts
+/**
+* Normalizes a request pathname by removing the basePath prefix and trailing slashes.
+* This is useful for matching paths against configured path lists.
+*
+* @param requestUrl - The full request URL
+* @param basePath - The base path of the auth API (e.g., "/api/auth")
+* @returns The normalized path without basePath prefix or trailing slashes,
+*          or "/" if URL parsing fails
+*
+* @example
+* normalizePathname("http://localhost:3000/api/auth/sso/saml2/callback/provider1", "/api/auth")
+* // Returns: "/sso/saml2/callback/provider1"
+*
+* normalizePathname("http://localhost:3000/sso/saml2/callback/provider1/", "/")
+* // Returns: "/sso/saml2/callback/provider1"
+*/ __turbopack_context__.s([
+    "normalizePathname",
+    ()=>normalizePathname
+]);
+function normalizePathname(requestUrl, basePath) {
+    let pathname;
+    try {
+        pathname = new URL(requestUrl).pathname.replace(/\/+$/, "") || "/";
+    } catch  {
+        return "/";
+    }
+    if (basePath === "/" || basePath === "") return pathname;
+    if (pathname === basePath) return "/";
+    if (pathname.startsWith(basePath + "/")) return pathname.slice(basePath.length).replace(/\/+$/, "") || "/";
+    return pathname;
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$deprecate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/deprecate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$error$2d$codes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/error-codes.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$id$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/id.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$ip$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/ip.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$json$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/json.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/string.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$url$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/url.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/error/codes.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "BASE_ERROR_CODES",
+    ()=>BASE_ERROR_CODES
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$error$2d$codes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/error-codes.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/index.mjs [app-ssr] (ecmascript) <locals>");
+;
+;
+//#region src/error/codes.ts
+const BASE_ERROR_CODES = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$error$2d$codes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["defineErrorCodes"])({
+    USER_NOT_FOUND: "User not found",
+    FAILED_TO_CREATE_USER: "Failed to create user",
+    FAILED_TO_CREATE_SESSION: "Failed to create session",
+    FAILED_TO_UPDATE_USER: "Failed to update user",
+    FAILED_TO_GET_SESSION: "Failed to get session",
+    INVALID_PASSWORD: "Invalid password",
+    INVALID_EMAIL: "Invalid email",
+    INVALID_EMAIL_OR_PASSWORD: "Invalid email or password",
+    SOCIAL_ACCOUNT_ALREADY_LINKED: "Social account already linked",
+    PROVIDER_NOT_FOUND: "Provider not found",
+    INVALID_TOKEN: "Invalid token",
+    ID_TOKEN_NOT_SUPPORTED: "id_token not supported",
+    FAILED_TO_GET_USER_INFO: "Failed to get user info",
+    USER_EMAIL_NOT_FOUND: "User email not found",
+    EMAIL_NOT_VERIFIED: "Email not verified",
+    PASSWORD_TOO_SHORT: "Password too short",
+    PASSWORD_TOO_LONG: "Password too long",
+    USER_ALREADY_EXISTS: "User already exists.",
+    USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "User already exists. Use another email.",
+    EMAIL_CAN_NOT_BE_UPDATED: "Email can not be updated",
+    CREDENTIAL_ACCOUNT_NOT_FOUND: "Credential account not found",
+    SESSION_EXPIRED: "Session expired. Re-authenticate to perform this action.",
+    FAILED_TO_UNLINK_LAST_ACCOUNT: "You can't unlink your last account",
+    ACCOUNT_NOT_FOUND: "Account not found",
+    USER_ALREADY_HAS_PASSWORD: "User already has a password. Provide that to delete the account.",
+    CROSS_SITE_NAVIGATION_LOGIN_BLOCKED: "Cross-site navigation login blocked. This request appears to be a CSRF attack.",
+    VERIFICATION_EMAIL_NOT_ENABLED: "Verification email isn't enabled",
+    EMAIL_ALREADY_VERIFIED: "Email is already verified",
+    EMAIL_MISMATCH: "Email mismatch",
+    SESSION_NOT_FRESH: "Session is not fresh",
+    LINKED_ACCOUNT_ALREADY_EXISTS: "Linked account already exists",
+    INVALID_ORIGIN: "Invalid origin",
+    INVALID_CALLBACK_URL: "Invalid callbackURL",
+    INVALID_REDIRECT_URL: "Invalid redirectURL",
+    INVALID_ERROR_CALLBACK_URL: "Invalid errorCallbackURL",
+    INVALID_NEW_USER_CALLBACK_URL: "Invalid newUserCallbackURL",
+    MISSING_OR_NULL_ORIGIN: "Missing or null Origin",
+    CALLBACK_URL_REQUIRED: "callbackURL is required",
+    FAILED_TO_CREATE_VERIFICATION: "Unable to create verification",
+    FIELD_NOT_ALLOWED: "Field not allowed to be set",
+    ASYNC_VALIDATION_NOT_SUPPORTED: "Async validation is not supported",
+    VALIDATION_ERROR: "Validation Error",
+    MISSING_FIELD: "Field is required"
+});
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/error/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "BetterAuthError",
+    ()=>BetterAuthError
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$codes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/error/codes.mjs [app-ssr] (ecmascript)");
+;
+//#region src/error/index.ts
+var BetterAuthError = class extends Error {
+    constructor(message, options){
+        super(message, options);
+        this.name = "BetterAuthError";
+        this.message = message;
+        this.stack = "";
+    }
+};
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/utils/dist/random.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createRandomStringGenerator",
+    ()=>createRandomStringGenerator
+]);
+function expandAlphabet(alphabet) {
+    switch(alphabet){
+        case "a-z":
+            return "abcdefghijklmnopqrstuvwxyz";
+        case "A-Z":
+            return "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        case "0-9":
+            return "0123456789";
+        case "-_":
+            return "-_";
+        default:
+            throw new Error(`Unsupported alphabet: ${alphabet}`);
+    }
+}
+function createRandomStringGenerator(...baseAlphabets) {
+    const baseCharSet = baseAlphabets.map(expandAlphabet).join("");
+    if (baseCharSet.length === 0) {
+        throw new Error("No valid characters provided for random string generation.");
+    }
+    const baseCharSetLength = baseCharSet.length;
+    return (length, ...alphabets)=>{
+        if (length <= 0) {
+            throw new Error("Length must be a positive integer.");
+        }
+        let charSet = baseCharSet;
+        let charSetLength = baseCharSetLength;
+        if (alphabets.length > 0) {
+            charSet = alphabets.map(expandAlphabet).join("");
+            charSetLength = charSet.length;
+        }
+        const maxValid = Math.floor(256 / charSetLength) * charSetLength;
+        const buf = new Uint8Array(length * 2);
+        const bufLength = buf.length;
+        let result = "";
+        let bufIndex = bufLength;
+        let rand;
+        while(result.length < length){
+            if (bufIndex >= bufLength) {
+                crypto.getRandomValues(buf);
+                bufIndex = 0;
+            }
+            rand = buf[bufIndex++];
+            if (rand < maxValid) {
+                result += charSet[rand % charSetLength];
+            }
+        }
+        return result;
+    };
+}
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/utils/url.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getBaseURL",
+    ()=>getBaseURL,
+    "getHost",
+    ()=>getHost,
+    "getOrigin",
+    ()=>getOrigin,
+    "getProtocol",
+    ()=>getProtocol
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/env/env-impl.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/error/index.mjs [app-ssr] (ecmascript) <locals>");
+;
+;
+//#region src/utils/url.ts
+function checkHasPath(url) {
+    try {
+        return (new URL(url).pathname.replace(/\/+$/, "") || "/") !== "/";
+    } catch  {
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BetterAuthError"](`Invalid base URL: ${url}. Please provide a valid base URL.`);
+    }
+}
+function assertHasProtocol(url) {
+    try {
+        const parsedUrl = new URL(url);
+        if (parsedUrl.protocol !== "http:" && parsedUrl.protocol !== "https:") throw new __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BetterAuthError"](`Invalid base URL: ${url}. URL must include 'http://' or 'https://'`);
+    } catch (error) {
+        if (error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BetterAuthError"]) throw error;
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BetterAuthError"](`Invalid base URL: ${url}. Please provide a valid base URL.`, {
+            cause: error
+        });
+    }
+}
+function withPath(url, path = "/api/auth") {
+    assertHasProtocol(url);
+    if (checkHasPath(url)) return url;
+    const trimmedUrl = url.replace(/\/+$/, "");
+    if (!path || path === "/") return trimmedUrl;
+    path = path.startsWith("/") ? path : `/${path}`;
+    return `${trimmedUrl}${path}`;
+}
+function validateProxyHeader(header, type) {
+    if (!header || header.trim() === "") return false;
+    if (type === "proto") return header === "http" || header === "https";
+    if (type === "host") {
+        if ([
+            /\.\./,
+            /\0/,
+            /[\s]/,
+            /^[.]/,
+            /[<>'"]/,
+            /javascript:/i,
+            /file:/i,
+            /data:/i
+        ].some((pattern)=>pattern.test(header))) return false;
+        return /^[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*(:[0-9]{1,5})?$/.test(header) || /^(\d{1,3}\.){3}\d{1,3}(:[0-9]{1,5})?$/.test(header) || /^\[[0-9a-fA-F:]+\](:[0-9]{1,5})?$/.test(header) || /^localhost(:[0-9]{1,5})?$/i.test(header);
+    }
+    return false;
+}
+function getBaseURL(url, path, request, loadEnv, trustedProxyHeaders) {
+    if (url) return withPath(url, path);
+    if (loadEnv !== false) {
+        const fromEnv = __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].BETTER_AUTH_URL || __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].NEXT_PUBLIC_BETTER_AUTH_URL || __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].PUBLIC_BETTER_AUTH_URL || __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].NUXT_PUBLIC_BETTER_AUTH_URL || __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].NUXT_PUBLIC_AUTH_URL || (__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].BASE_URL !== "/" ? __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$env$2f$env$2d$impl$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["env"].BASE_URL : void 0);
+        if (fromEnv) return withPath(fromEnv, path);
+    }
+    const fromRequest = request?.headers.get("x-forwarded-host");
+    const fromRequestProto = request?.headers.get("x-forwarded-proto");
+    if (fromRequest && fromRequestProto && trustedProxyHeaders) {
+        if (validateProxyHeader(fromRequestProto, "proto") && validateProxyHeader(fromRequest, "host")) try {
+            return withPath(`${fromRequestProto}://${fromRequest}`, path);
+        } catch (_error) {}
+    }
+    if (request) {
+        const url$1 = getOrigin(request.url);
+        if (!url$1) throw new __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$error$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BetterAuthError"]("Could not get origin from request. Please provide a valid base URL.");
+        return withPath(url$1, path);
+    }
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+}
+function getOrigin(url) {
+    try {
+        const parsedUrl = new URL(url);
+        return parsedUrl.origin === "null" ? null : parsedUrl.origin;
+    } catch  {
+        return null;
+    }
+}
+function getProtocol(url) {
+    try {
+        return new URL(url).protocol;
+    } catch  {
+        return null;
+    }
+}
+function getHost(url) {
+    try {
+        return new URL(url).host;
+    } catch  {
+        return null;
+    }
+}
+;
+ //# sourceMappingURL=url.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/fetch-plugins.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/client/fetch-plugins.ts
+__turbopack_context__.s([
+    "redirectPlugin",
+    ()=>redirectPlugin
+]);
+const redirectPlugin = {
+    id: "redirect",
+    name: "Redirect",
+    hooks: {
+        onSuccess (context) {
+            if (context.data?.url && context.data?.redirect) {
+                if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+                ;
+            }
+        }
+    }
+};
+;
+ //# sourceMappingURL=fetch-plugins.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/parser.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/client/parser.ts
+__turbopack_context__.s([
+    "parseJSON",
+    ()=>parseJSON
+]);
+const PROTO_POLLUTION_PATTERNS = {
+    proto: /"(?:_|\\u0{2}5[Ff]){2}(?:p|\\u0{2}70)(?:r|\\u0{2}72)(?:o|\\u0{2}6[Ff])(?:t|\\u0{2}74)(?:o|\\u0{2}6[Ff])(?:_|\\u0{2}5[Ff]){2}"\s*:/,
+    constructor: /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/,
+    protoShort: /"__proto__"\s*:/,
+    constructorShort: /"constructor"\s*:/
+};
+const JSON_SIGNATURE = /^\s*["[{]|^\s*-?\d{1,16}(\.\d{1,17})?([Ee][+-]?\d+)?\s*$/;
+const SPECIAL_VALUES = {
+    true: true,
+    false: false,
+    null: null,
+    undefined: void 0,
+    nan: NaN,
+    infinity: Number.POSITIVE_INFINITY,
+    "-infinity": Number.NEGATIVE_INFINITY
+};
+const ISO_DATE_REGEX = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.(\d{1,7}))?(?:Z|([+-])(\d{2}):(\d{2}))$/;
+function isValidDate(date) {
+    return date instanceof Date && !isNaN(date.getTime());
+}
+function parseISODate(value) {
+    const match = ISO_DATE_REGEX.exec(value);
+    if (!match) return null;
+    const [, year, month, day, hour, minute, second, ms, offsetSign, offsetHour, offsetMinute] = match;
+    const date = new Date(Date.UTC(parseInt(year, 10), parseInt(month, 10) - 1, parseInt(day, 10), parseInt(hour, 10), parseInt(minute, 10), parseInt(second, 10), ms ? parseInt(ms.padEnd(3, "0"), 10) : 0));
+    if (offsetSign) {
+        const offset = (parseInt(offsetHour, 10) * 60 + parseInt(offsetMinute, 10)) * (offsetSign === "+" ? -1 : 1);
+        date.setUTCMinutes(date.getUTCMinutes() + offset);
+    }
+    return isValidDate(date) ? date : null;
+}
+function betterJSONParse(value, options = {}) {
+    const { strict = false, warnings = false, reviver, parseDates = true } = options;
+    if (typeof value !== "string") return value;
+    const trimmed = value.trim();
+    if (trimmed.length > 0 && trimmed[0] === "\"" && trimmed.endsWith("\"") && !trimmed.slice(1, -1).includes("\"")) return trimmed.slice(1, -1);
+    const lowerValue = trimmed.toLowerCase();
+    if (lowerValue.length <= 9 && lowerValue in SPECIAL_VALUES) return SPECIAL_VALUES[lowerValue];
+    if (!JSON_SIGNATURE.test(trimmed)) {
+        if (strict) throw new SyntaxError("[better-json] Invalid JSON");
+        return value;
+    }
+    if (Object.entries(PROTO_POLLUTION_PATTERNS).some(([key, pattern])=>{
+        const matches = pattern.test(trimmed);
+        if (matches && warnings) console.warn(`[better-json] Detected potential prototype pollution attempt using ${key} pattern`);
+        return matches;
+    }) && strict) throw new Error("[better-json] Potential prototype pollution attempt detected");
+    try {
+        const secureReviver = (key, value$1)=>{
+            if (key === "__proto__" || key === "constructor" && value$1 && typeof value$1 === "object" && "prototype" in value$1) {
+                if (warnings) console.warn(`[better-json] Dropping "${key}" key to prevent prototype pollution`);
+                return;
+            }
+            if (parseDates && typeof value$1 === "string") {
+                const date = parseISODate(value$1);
+                if (date) return date;
+            }
+            return reviver ? reviver(key, value$1) : value$1;
+        };
+        return JSON.parse(trimmed, secureReviver);
+    } catch (error) {
+        if (strict) throw error;
+        return value;
+    }
+}
+function parseJSON(value, options = {
+    strict: true
+}) {
+    return betterJSONParse(value, options);
+}
+;
+ //# sourceMappingURL=parser.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/query.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useAuthQuery",
+    ()=>useAuthQuery
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$atom$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/atom/index.js [app-ssr] (ecmascript)");
+;
+//#region src/client/query.ts
+const isServer = ()=>("TURBOPACK compile-time value", "undefined") === "undefined";
+const useAuthQuery = (initializedAtom, path, $fetch, options)=>{
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$atom$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["atom"])({
+        data: null,
+        error: null,
+        isPending: true,
+        isRefetching: false,
+        refetch: (queryParams)=>fn(queryParams)
+    });
+    const fn = async (queryParams)=>{
+        return new Promise((resolve)=>{
+            const opts = typeof options === "function" ? options({
+                data: value.get().data,
+                error: value.get().error,
+                isPending: value.get().isPending
+            }) : options;
+            $fetch(path, {
+                ...opts,
+                query: {
+                    ...opts?.query,
+                    ...queryParams?.query
+                },
+                async onSuccess (context) {
+                    value.set({
+                        data: context.data,
+                        error: null,
+                        isPending: false,
+                        isRefetching: false,
+                        refetch: value.value.refetch
+                    });
+                    await opts?.onSuccess?.(context);
+                },
+                async onError (context) {
+                    const { request } = context;
+                    const retryAttempts = typeof request.retry === "number" ? request.retry : request.retry?.attempts;
+                    const retryAttempt = request.retryAttempt || 0;
+                    if (retryAttempts && retryAttempt < retryAttempts) return;
+                    value.set({
+                        error: context.error,
+                        data: null,
+                        isPending: false,
+                        isRefetching: false,
+                        refetch: value.value.refetch
+                    });
+                    await opts?.onError?.(context);
+                },
+                async onRequest (context) {
+                    const currentValue = value.get();
+                    value.set({
+                        isPending: currentValue.data === null,
+                        data: currentValue.data,
+                        error: null,
+                        isRefetching: true,
+                        refetch: value.value.refetch
+                    });
+                    await opts?.onRequest?.(context);
+                }
+            }).catch((error)=>{
+                value.set({
+                    error,
+                    data: null,
+                    isPending: false,
+                    isRefetching: false,
+                    refetch: value.value.refetch
+                });
+            }).finally(()=>{
+                resolve(void 0);
+            });
+        });
+    };
+    initializedAtom = Array.isArray(initializedAtom) ? initializedAtom : [
+        initializedAtom
+    ];
+    let isMounted = false;
+    for (const initAtom of initializedAtom)initAtom.subscribe(async ()=>{
+        if (isServer()) return;
+        //TURBOPACK unreachable
+        ;
+    });
+    return value;
+};
+;
+ //# sourceMappingURL=query.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/broadcast-channel.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/client/broadcast-channel.ts
+__turbopack_context__.s([
+    "getGlobalBroadcastChannel",
+    ()=>getGlobalBroadcastChannel,
+    "kBroadcastChannel",
+    ()=>kBroadcastChannel
+]);
+const kBroadcastChannel = Symbol.for("better-auth:broadcast-channel");
+const now = ()=>Math.floor(Date.now() / 1e3);
+var WindowBroadcastChannel = class {
+    listeners = /* @__PURE__ */ new Set();
+    name;
+    constructor(name = "better-auth.message"){
+        this.name = name;
+    }
+    subscribe(listener) {
+        this.listeners.add(listener);
+        return ()=>{
+            this.listeners.delete(listener);
+        };
+    }
+    post(message) {
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+    }
+    setup() {
+        if ("TURBOPACK compile-time truthy", 1) return ()=>{};
+        //TURBOPACK unreachable
+        ;
+        const handler = undefined;
+    }
+};
+function getGlobalBroadcastChannel(name = "better-auth.message") {
+    if (!globalThis[kBroadcastChannel]) globalThis[kBroadcastChannel] = new WindowBroadcastChannel(name);
+    return globalThis[kBroadcastChannel];
+}
+;
+ //# sourceMappingURL=broadcast-channel.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/focus-manager.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/client/focus-manager.ts
+__turbopack_context__.s([
+    "getGlobalFocusManager",
+    ()=>getGlobalFocusManager,
+    "kFocusManager",
+    ()=>kFocusManager
+]);
+const kFocusManager = Symbol.for("better-auth:focus-manager");
+var WindowFocusManager = class {
+    listeners = /* @__PURE__ */ new Set();
+    subscribe(listener) {
+        this.listeners.add(listener);
+        return ()=>{
+            this.listeners.delete(listener);
+        };
+    }
+    setFocused(focused) {
+        this.listeners.forEach((listener)=>listener(focused));
+    }
+    setup() {
+        if ("TURBOPACK compile-time truthy", 1) return ()=>{};
+        //TURBOPACK unreachable
+        ;
+        const visibilityHandler = undefined;
+    }
+};
+function getGlobalFocusManager() {
+    if (!globalThis[kFocusManager]) globalThis[kFocusManager] = new WindowFocusManager();
+    return globalThis[kFocusManager];
+}
+;
+ //# sourceMappingURL=focus-manager.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/online-manager.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/client/online-manager.ts
+__turbopack_context__.s([
+    "getGlobalOnlineManager",
+    ()=>getGlobalOnlineManager,
+    "kOnlineManager",
+    ()=>kOnlineManager
+]);
+const kOnlineManager = Symbol.for("better-auth:online-manager");
+var WindowOnlineManager = class {
+    listeners = /* @__PURE__ */ new Set();
+    isOnline = typeof navigator !== "undefined" ? navigator.onLine : true;
+    subscribe(listener) {
+        this.listeners.add(listener);
+        return ()=>{
+            this.listeners.delete(listener);
+        };
+    }
+    setOnline(online) {
+        this.isOnline = online;
+        this.listeners.forEach((listener)=>listener(online));
+    }
+    setup() {
+        if ("TURBOPACK compile-time truthy", 1) return ()=>{};
+        //TURBOPACK unreachable
+        ;
+        const onOnline = undefined;
+        const onOffline = undefined;
+    }
+};
+function getGlobalOnlineManager() {
+    if (!globalThis[kOnlineManager]) globalThis[kOnlineManager] = new WindowOnlineManager();
+    return globalThis[kOnlineManager];
+}
+;
+ //# sourceMappingURL=online-manager.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/session-refresh.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createSessionRefreshManager",
+    ()=>createSessionRefreshManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$broadcast$2d$channel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/broadcast-channel.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$focus$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/focus-manager.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$online$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/online-manager.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+//#region src/client/session-refresh.ts
+const now = ()=>Math.floor(Date.now() / 1e3);
+/**
+* Rate limit: don't refetch on focus if a session request was made within this many seconds
+*/ const FOCUS_REFETCH_RATE_LIMIT_SECONDS = 5;
+function createSessionRefreshManager(opts) {
+    const { sessionAtom, sessionSignal, $fetch, options = {} } = opts;
+    const refetchInterval = options.sessionOptions?.refetchInterval ?? 0;
+    const refetchOnWindowFocus = options.sessionOptions?.refetchOnWindowFocus ?? true;
+    const refetchWhenOffline = options.sessionOptions?.refetchWhenOffline ?? false;
+    const state = {
+        lastSync: 0,
+        lastSessionRequest: 0,
+        cachedSession: void 0
+    };
+    const shouldRefetch = ()=>{
+        return refetchWhenOffline || (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$online$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalOnlineManager"])().isOnline;
+    };
+    const triggerRefetch = (event)=>{
+        if (!shouldRefetch()) return;
+        if (event?.event === "storage") {
+            state.lastSync = now();
+            sessionSignal.set(!sessionSignal.get());
+            return;
+        }
+        const currentSession = sessionAtom.get();
+        if (event?.event === "poll") {
+            state.lastSessionRequest = now();
+            $fetch("/get-session").then((res)=>{
+                if (res.error) sessionAtom.set({
+                    ...currentSession,
+                    data: null,
+                    error: res.error
+                });
+                else sessionAtom.set({
+                    ...currentSession,
+                    data: res.data,
+                    error: null
+                });
+                state.lastSync = now();
+                sessionSignal.set(!sessionSignal.get());
+            }).catch(()=>{});
+            return;
+        }
+        if (event?.event === "visibilitychange") {
+            if (now() - state.lastSessionRequest < FOCUS_REFETCH_RATE_LIMIT_SECONDS) return;
+            state.lastSessionRequest = now();
+        }
+        if (currentSession?.data === null || currentSession?.data === void 0 || event?.event === "visibilitychange") {
+            state.lastSync = now();
+            sessionSignal.set(!sessionSignal.get());
+        }
+    };
+    const broadcastSessionUpdate = (trigger)=>{
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$broadcast$2d$channel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalBroadcastChannel"])().post({
+            event: "session",
+            data: {
+                trigger
+            },
+            clientId: Math.random().toString(36).substring(7)
+        });
+    };
+    const setupPolling = ()=>{
+        if (refetchInterval && refetchInterval > 0) state.pollInterval = setInterval(()=>{
+            if (sessionAtom.get()?.data) triggerRefetch({
+                event: "poll"
+            });
+        }, refetchInterval * 1e3);
+    };
+    const setupBroadcast = ()=>{
+        state.unsubscribeBroadcast = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$broadcast$2d$channel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalBroadcastChannel"])().subscribe(()=>{
+            triggerRefetch({
+                event: "storage"
+            });
+        });
+    };
+    const setupFocusRefetch = ()=>{
+        if (!refetchOnWindowFocus) return;
+        state.unsubscribeFocus = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$focus$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalFocusManager"])().subscribe(()=>{
+            triggerRefetch({
+                event: "visibilitychange"
+            });
+        });
+    };
+    const setupOnlineRefetch = ()=>{
+        state.unsubscribeOnline = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$online$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalOnlineManager"])().subscribe((online)=>{
+            if (online) triggerRefetch({
+                event: "visibilitychange"
+            });
+        });
+    };
+    const init = ()=>{
+        setupPolling();
+        setupBroadcast();
+        setupFocusRefetch();
+        setupOnlineRefetch();
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$broadcast$2d$channel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalBroadcastChannel"])().setup();
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$focus$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalFocusManager"])().setup();
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$online$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGlobalOnlineManager"])().setup();
+    };
+    const cleanup = ()=>{
+        if (state.pollInterval) {
+            clearInterval(state.pollInterval);
+            state.pollInterval = void 0;
+        }
+        if (state.unsubscribeBroadcast) {
+            state.unsubscribeBroadcast();
+            state.unsubscribeBroadcast = void 0;
+        }
+        if (state.unsubscribeFocus) {
+            state.unsubscribeFocus();
+            state.unsubscribeFocus = void 0;
+        }
+        if (state.unsubscribeOnline) {
+            state.unsubscribeOnline();
+            state.unsubscribeOnline = void 0;
+        }
+        state.lastSync = 0;
+        state.lastSessionRequest = 0;
+        state.cachedSession = void 0;
+    };
+    return {
+        init,
+        cleanup,
+        triggerRefetch,
+        broadcastSessionUpdate
+    };
+}
+;
+ //# sourceMappingURL=session-refresh.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/session-atom.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getSessionAtom",
+    ()=>getSessionAtom
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$query$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/query.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$session$2d$refresh$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/session-refresh.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$atom$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/atom/index.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$lifecycle$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/lifecycle/index.js [app-ssr] (ecmascript)");
+;
+;
+;
+//#region src/client/session-atom.ts
+function getSessionAtom($fetch, options) {
+    const $signal = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$atom$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["atom"])(false);
+    const session = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$query$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuthQuery"])($signal, "/get-session", $fetch, {
+        method: "GET"
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$lifecycle$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onMount"])(session, ()=>{
+        const refreshManager = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$session$2d$refresh$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSessionRefreshManager"])({
+            sessionAtom: session,
+            sessionSignal: $signal,
+            $fetch,
+            options
+        });
+        refreshManager.init();
+        return ()=>{
+            refreshManager.cleanup();
+        };
+    });
+    return {
+        session,
+        $sessionSignal: $signal
+    };
+}
+;
+ //# sourceMappingURL=session-atom.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/config.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getClientConfig",
+    ()=>getClientConfig
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$utils$2f$url$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/utils/url.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$fetch$2d$plugins$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/fetch-plugins.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$parser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/parser.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$session$2d$atom$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/session-atom.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$defu$2f$dist$2f$defu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/defu/dist/defu.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$fetch$2f$fetch$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-fetch/fetch/dist/index.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+//#region src/client/config.ts
+const getClientConfig = (options, loadEnv)=>{
+    const isCredentialsSupported = "credentials" in Request.prototype;
+    const baseURL = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$utils$2f$url$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getBaseURL"])(options?.baseURL, options?.basePath, void 0, loadEnv) ?? "/api/auth";
+    const pluginsFetchPlugins = options?.plugins?.flatMap((plugin)=>plugin.fetchPlugins).filter((pl)=>pl !== void 0) || [];
+    const lifeCyclePlugin = {
+        id: "lifecycle-hooks",
+        name: "lifecycle-hooks",
+        hooks: {
+            onSuccess: options?.fetchOptions?.onSuccess,
+            onError: options?.fetchOptions?.onError,
+            onRequest: options?.fetchOptions?.onRequest,
+            onResponse: options?.fetchOptions?.onResponse
+        }
+    };
+    const { onSuccess: _onSuccess, onError: _onError, onRequest: _onRequest, onResponse: _onResponse, ...restOfFetchOptions } = options?.fetchOptions || {};
+    const $fetch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$fetch$2f$fetch$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createFetch"])({
+        baseURL,
+        ...isCredentialsSupported ? {
+            credentials: "include"
+        } : {},
+        method: "GET",
+        jsonParser (text) {
+            if (!text) return null;
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$parser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["parseJSON"])(text, {
+                strict: false
+            });
+        },
+        customFetchImpl: fetch,
+        ...restOfFetchOptions,
+        plugins: [
+            lifeCyclePlugin,
+            ...restOfFetchOptions.plugins || [],
+            ...options?.disableDefaultFetchPlugins ? [] : [
+                __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$fetch$2d$plugins$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["redirectPlugin"]
+            ],
+            ...pluginsFetchPlugins
+        ]
+    });
+    const { $sessionSignal, session } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$session$2d$atom$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getSessionAtom"])($fetch, options);
+    const plugins = options?.plugins || [];
+    let pluginsActions = {};
+    const pluginsAtoms = {
+        $sessionSignal,
+        session
+    };
+    const pluginPathMethods = {
+        "/sign-out": "POST",
+        "/revoke-sessions": "POST",
+        "/revoke-other-sessions": "POST",
+        "/delete-user": "POST"
+    };
+    const atomListeners = [
+        {
+            signal: "$sessionSignal",
+            matcher (path) {
+                return path === "/sign-out" || path === "/update-user" || path === "/sign-up/email" || path === "/sign-in/email" || path === "/delete-user" || path === "/verify-email" || path === "/revoke-sessions" || path === "/revoke-session" || path === "/change-email";
+            }
+        }
+    ];
+    for (const plugin of plugins){
+        if (plugin.getAtoms) Object.assign(pluginsAtoms, plugin.getAtoms?.($fetch));
+        if (plugin.pathMethods) Object.assign(pluginPathMethods, plugin.pathMethods);
+        if (plugin.atomListeners) atomListeners.push(...plugin.atomListeners);
+    }
+    const $store = {
+        notify: (signal)=>{
+            pluginsAtoms[signal].set(!pluginsAtoms[signal].get());
+        },
+        listen: (signal, listener)=>{
+            pluginsAtoms[signal].subscribe(listener);
+        },
+        atoms: pluginsAtoms
+    };
+    for (const plugin of plugins)if (plugin.getActions) pluginsActions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$defu$2f$dist$2f$defu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["defu"])(plugin.getActions?.($fetch, $store, options) ?? {}, pluginsActions);
+    return {
+        get baseURL () {
+            return baseURL;
+        },
+        pluginsActions,
+        pluginsAtoms,
+        pluginPathMethods,
+        atomListeners,
+        $fetch,
+        $store
+    };
+};
+;
+ //# sourceMappingURL=config.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/utils/is-atom.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+//#region src/utils/is-atom.ts
+__turbopack_context__.s([
+    "isAtom",
+    ()=>isAtom
+]);
+function isAtom(value) {
+    return typeof value === "object" && value !== null && "get" in value && typeof value.get === "function" && "lc" in value && typeof value.lc === "number";
+}
+;
+ //# sourceMappingURL=is-atom.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/proxy.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createDynamicPathProxy",
+    ()=>createDynamicPathProxy
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$utils$2f$is$2d$atom$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/utils/is-atom.mjs [app-ssr] (ecmascript)");
+;
+//#region src/client/proxy.ts
+function getMethod(path, knownPathMethods, args) {
+    const method = knownPathMethods[path];
+    const { fetchOptions, query: _query, ...body } = args || {};
+    if (method) return method;
+    if (fetchOptions?.method) return fetchOptions.method;
+    if (body && Object.keys(body).length > 0) return "POST";
+    return "GET";
+}
+function createDynamicPathProxy(routes, client, knownPathMethods, atoms, atomListeners) {
+    function createProxy(path = []) {
+        return new Proxy(function() {}, {
+            get (_, prop) {
+                if (typeof prop !== "string") return;
+                if (prop === "then" || prop === "catch" || prop === "finally") return;
+                const fullPath = [
+                    ...path,
+                    prop
+                ];
+                let current = routes;
+                for (const segment of fullPath)if (current && typeof current === "object" && segment in current) current = current[segment];
+                else {
+                    current = void 0;
+                    break;
+                }
+                if (typeof current === "function") return current;
+                if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$utils$2f$is$2d$atom$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAtom"])(current)) return current;
+                return createProxy(fullPath);
+            },
+            apply: async (_, __, args)=>{
+                const routePath = "/" + path.map((segment)=>segment.replace(/[A-Z]/g, (letter)=>`-${letter.toLowerCase()}`)).join("/");
+                const arg = args[0] || {};
+                const fetchOptions = args[1] || {};
+                const { query, fetchOptions: argFetchOptions, ...body } = arg;
+                const options = {
+                    ...fetchOptions,
+                    ...argFetchOptions
+                };
+                const method = getMethod(routePath, knownPathMethods, arg);
+                return await client(routePath, {
+                    ...options,
+                    body: method === "GET" ? void 0 : {
+                        ...body,
+                        ...options?.body || {}
+                    },
+                    query: query || options?.query,
+                    method,
+                    async onSuccess (context) {
+                        await options?.onSuccess?.(context);
+                        if (!atomListeners || options.disableSignal) return;
+                        /**
+						* We trigger listeners
+						*/ const matches = atomListeners.filter((s)=>s.matcher(routePath));
+                        if (!matches.length) return;
+                        const visited = /* @__PURE__ */ new Set();
+                        for (const match of matches){
+                            const signal = atoms[match.signal];
+                            if (!signal) return;
+                            if (visited.has(match.signal)) continue;
+                            visited.add(match.signal);
+                            /**
+							* To avoid race conditions we set the signal in a setTimeout
+							*/ const val = signal.get();
+                            setTimeout(()=>{
+                                signal.set(!val);
+                            }, 10);
+                        }
+                    }
+                });
+            }
+        });
+    }
+    return createProxy();
+}
+;
+ //# sourceMappingURL=proxy.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/react/react-store.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useStore",
+    ()=>useStore
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$listen$2d$keys$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/listen-keys/index.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+;
+//#region src/client/react/react-store.ts
+/**
+* Subscribe to store changes and get store's value.
+*
+* Can be used with store builder too.
+*
+* ```js
+* import { useStore } from 'nanostores/react'
+*
+* import { router } from '../store/router'
+*
+* export const Layout = () => {
+*   let page = useStore(router)
+*   if (page.route === 'home') {
+*     return <HomePage />
+*   } else {
+*     return <Error404 />
+*   }
+* }
+* ```
+*
+* @param store Store instance.
+* @returns Store value.
+*/ function useStore(store, options = {}) {
+    const snapshotRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(store.get());
+    const { keys, deps = [
+        store,
+        keys
+    ] } = options;
+    const subscribe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((onChange)=>{
+        const emitChange = (value)=>{
+            if (snapshotRef.current === value) return;
+            snapshotRef.current = value;
+            onChange();
+        };
+        emitChange(store.value);
+        if (keys?.length) return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$listen$2d$keys$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["listenKeys"])(store, keys, emitChange);
+        return store.listen(emitChange);
+    }, deps);
+    const get = ()=>snapshotRef.current;
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSyncExternalStore"])(subscribe, get, get);
+}
+;
+ //# sourceMappingURL=react-store.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/react/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createAuthClient",
+    ()=>createAuthClient
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$react$2f$react$2d$store$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/better-auth/dist/client/react/react-store.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-auth/core/dist/utils/string.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+//#region src/client/react/index.ts
+function getAtomKey(str) {
+    return `use${(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f40$better$2d$auth$2f$core$2f$dist$2f$utils$2f$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["capitalizeFirstLetter"])(str)}`;
+}
+function createAuthClient(options) {
+    const { pluginPathMethods, pluginsActions, pluginsAtoms, $fetch, $store, atomListeners } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getClientConfig"])(options);
+    const resolvedHooks = {};
+    for (const [key, value] of Object.entries(pluginsAtoms))resolvedHooks[getAtomKey(key)] = ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$react$2f$react$2d$store$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useStore"])(value);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createDynamicPathProxy"])({
+        ...pluginsActions,
+        ...resolvedHooks,
+        $fetch,
+        $store
+    }, $fetch, pluginPathMethods, pluginsAtoms, atomListeners);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/task/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "allTasks",
+    ()=>allTasks,
+    "cleanTasks",
+    ()=>cleanTasks,
+    "startTask",
+    ()=>startTask,
+    "task",
+    ()=>task
+]);
+let tasks = 0;
+let resolves = [];
+function startTask() {
+    tasks += 1;
+    return ()=>{
+        tasks -= 1;
+        if (tasks === 0) {
+            let prevResolves = resolves;
+            resolves = [];
+            for (let i of prevResolves)i();
+        }
+    };
+}
+function task(cb) {
+    let endTask = startTask();
+    let promise = cb().finally(endTask);
+    promise.t = true;
+    return promise;
+}
+function allTasks() {
+    if (tasks === 0) {
+        return Promise.resolve();
+    } else {
+        return new Promise((resolve)=>{
+            resolves.push(resolve);
+        });
+    }
+}
+function cleanTasks() {
+    tasks = 0;
+}
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/clean-stores/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clean",
+    ()=>clean,
+    "cleanStores",
+    ()=>cleanStores
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$task$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/task/index.js [app-ssr] (ecmascript)");
+;
+let clean = Symbol('clean');
+let cleanStores = (...stores)=>{
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$task$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cleanTasks"])();
+    for (let $store of stores){
+        if ($store) {
+            if ($store.mocked) delete $store.mocked;
+            if ($store[clean]) $store[clean]();
+        }
+    }
+};
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/atom/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "atom",
+    ()=>atom,
+    "epoch",
+    ()=>epoch,
+    "readonlyType",
+    ()=>readonlyType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$clean$2d$stores$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/clean-stores/index.js [app-ssr] (ecmascript)");
+;
+let listenerQueue = [];
+let lqIndex = 0;
+const QUEUE_ITEMS_PER_LISTENER = 4;
+let epoch = 0;
+const atom = (initialValue)=>{
+    let listeners = [];
+    let $atom = {
+        get () {
+            if (!$atom.lc) {
+                $atom.listen(()=>{})();
+            }
+            return $atom.value;
+        },
+        lc: 0,
+        listen (listener) {
+            $atom.lc = listeners.push(listener);
+            return ()=>{
+                for(let i = lqIndex + QUEUE_ITEMS_PER_LISTENER; i < listenerQueue.length;){
+                    if (listenerQueue[i] === listener) {
+                        listenerQueue.splice(i, QUEUE_ITEMS_PER_LISTENER);
+                    } else {
+                        i += QUEUE_ITEMS_PER_LISTENER;
+                    }
+                }
+                let index = listeners.indexOf(listener);
+                if (~index) {
+                    listeners.splice(index, 1);
+                    if (!--$atom.lc) $atom.off();
+                }
+            };
+        },
+        notify (oldValue, changedKey) {
+            epoch++;
+            let runListenerQueue = !listenerQueue.length;
+            for (let listener of listeners){
+                listenerQueue.push(listener, $atom.value, oldValue, changedKey);
+            }
+            if (runListenerQueue) {
+                for(lqIndex = 0; lqIndex < listenerQueue.length; lqIndex += QUEUE_ITEMS_PER_LISTENER){
+                    listenerQueue[lqIndex](listenerQueue[lqIndex + 1], listenerQueue[lqIndex + 2], listenerQueue[lqIndex + 3]);
+                }
+                listenerQueue.length = 0;
+            }
+        },
+        /* It will be called on last listener unsubscribing.
+       We will redefine it in onMount and onStop. */ off () {},
+        set (newValue) {
+            let oldValue = $atom.value;
+            if (oldValue !== newValue) {
+                $atom.value = newValue;
+                $atom.notify(oldValue);
+            }
+        },
+        subscribe (listener) {
+            let unbind = $atom.listen(listener);
+            listener($atom.value);
+            return unbind;
+        },
+        value: initialValue
+    };
+    if ("TURBOPACK compile-time truthy", 1) {
+        $atom[__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$clean$2d$stores$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clean"]] = ()=>{
+            listeners = [];
+            $atom.lc = 0;
+            $atom.off();
+        };
+    }
+    return $atom;
+};
+const readonlyType = (store)=>store;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/lifecycle/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "STORE_UNMOUNT_DELAY",
+    ()=>STORE_UNMOUNT_DELAY,
+    "on",
+    ()=>on,
+    "onMount",
+    ()=>onMount,
+    "onNotify",
+    ()=>onNotify,
+    "onSet",
+    ()=>onSet,
+    "onStart",
+    ()=>onStart,
+    "onStop",
+    ()=>onStop
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$clean$2d$stores$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/clean-stores/index.js [app-ssr] (ecmascript)");
+;
+const START = 0;
+const STOP = 1;
+const SET = 2;
+const NOTIFY = 3;
+const MOUNT = 5;
+const UNMOUNT = 6;
+const REVERT_MUTATION = 10;
+let on = (object, listener, eventKey, mutateStore)=>{
+    object.events = object.events || {};
+    if (!object.events[eventKey + REVERT_MUTATION]) {
+        object.events[eventKey + REVERT_MUTATION] = mutateStore((eventProps)=>{
+            // eslint-disable-next-line no-sequences
+            object.events[eventKey].reduceRight((event, l)=>(l(event), event), {
+                shared: {},
+                ...eventProps
+            });
+        });
+    }
+    object.events[eventKey] = object.events[eventKey] || [];
+    object.events[eventKey].push(listener);
+    return ()=>{
+        let currentListeners = object.events[eventKey];
+        let index = currentListeners.indexOf(listener);
+        currentListeners.splice(index, 1);
+        if (!currentListeners.length) {
+            delete object.events[eventKey];
+            object.events[eventKey + REVERT_MUTATION]();
+            delete object.events[eventKey + REVERT_MUTATION];
+        }
+    };
+};
+let onStart = ($store, listener)=>on($store, listener, START, (runListeners)=>{
+        let originListen = $store.listen;
+        $store.listen = (arg)=>{
+            if (!$store.lc && !$store.starting) {
+                $store.starting = true;
+                runListeners();
+                delete $store.starting;
+            }
+            return originListen(arg);
+        };
+        return ()=>{
+            $store.listen = originListen;
+        };
+    });
+let onStop = ($store, listener)=>on($store, listener, STOP, (runListeners)=>{
+        let originOff = $store.off;
+        $store.off = ()=>{
+            runListeners();
+            originOff();
+        };
+        return ()=>{
+            $store.off = originOff;
+        };
+    });
+let onSet = ($store, listener)=>on($store, listener, SET, (runListeners)=>{
+        let originSet = $store.set;
+        let originSetKey = $store.setKey;
+        if ($store.setKey) {
+            $store.setKey = (changed, changedValue)=>{
+                let isAborted;
+                let abort = ()=>{
+                    isAborted = true;
+                };
+                runListeners({
+                    abort,
+                    changed,
+                    newValue: {
+                        ...$store.value,
+                        [changed]: changedValue
+                    }
+                });
+                if (!isAborted) return originSetKey(changed, changedValue);
+            };
+        }
+        $store.set = (newValue)=>{
+            let isAborted;
+            let abort = ()=>{
+                isAborted = true;
+            };
+            runListeners({
+                abort,
+                newValue
+            });
+            if (!isAborted) return originSet(newValue);
+        };
+        return ()=>{
+            $store.set = originSet;
+            $store.setKey = originSetKey;
+        };
+    });
+let onNotify = ($store, listener)=>on($store, listener, NOTIFY, (runListeners)=>{
+        let originNotify = $store.notify;
+        $store.notify = (oldValue, changed)=>{
+            let isAborted;
+            let abort = ()=>{
+                isAborted = true;
+            };
+            runListeners({
+                abort,
+                changed,
+                oldValue
+            });
+            if (!isAborted) return originNotify(oldValue, changed);
+        };
+        return ()=>{
+            $store.notify = originNotify;
+        };
+    });
+let STORE_UNMOUNT_DELAY = 1000;
+let onMount = ($store, initialize)=>{
+    let listener = (payload)=>{
+        let destroy = initialize(payload);
+        if (destroy) $store.events[UNMOUNT].push(destroy);
+    };
+    return on($store, listener, MOUNT, (runListeners)=>{
+        let originListen = $store.listen;
+        $store.listen = (...args)=>{
+            if (!$store.lc && !$store.active) {
+                $store.active = true;
+                runListeners();
+            }
+            return originListen(...args);
+        };
+        let originOff = $store.off;
+        $store.events[UNMOUNT] = [];
+        $store.off = ()=>{
+            originOff();
+            setTimeout(()=>{
+                if ($store.active && !$store.lc) {
+                    $store.active = false;
+                    for (let destroy of $store.events[UNMOUNT])destroy();
+                    $store.events[UNMOUNT] = [];
+                }
+            }, STORE_UNMOUNT_DELAY);
+        };
+        if ("TURBOPACK compile-time truthy", 1) {
+            let originClean = $store[__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$clean$2d$stores$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clean"]];
+            $store[__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$nanostores$2f$clean$2d$stores$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clean"]] = ()=>{
+                for (let destroy of $store.events[UNMOUNT])destroy();
+                $store.events[UNMOUNT] = [];
+                $store.active = false;
+                originClean();
+            };
+        }
+        return ()=>{
+            $store.listen = originListen;
+            $store.off = originOff;
+        };
+    });
+};
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/nanostores/listen-keys/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "listenKeys",
+    ()=>listenKeys,
+    "subscribeKeys",
+    ()=>subscribeKeys
+]);
+function listenKeys($store, keys, listener) {
+    let keysSet = new Set(keys).add(undefined);
+    return $store.listen((value, oldValue, changed)=>{
+        if (keysSet.has(changed)) {
+            listener(value, oldValue, changed);
+        }
+    });
+}
+function subscribeKeys($store, keys, listener) {
+    let unbind = listenKeys($store, keys, listener);
+    listener($store.value);
+    return unbind;
+}
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/defu/dist/defu.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createDefu",
+    ()=>createDefu,
+    "default",
+    ()=>defu,
+    "defu",
+    ()=>defu,
+    "defuArrayFn",
+    ()=>defuArrayFn,
+    "defuFn",
+    ()=>defuFn
+]);
+function isPlainObject(value) {
+    if (value === null || typeof value !== "object") {
+        return false;
+    }
+    const prototype = Object.getPrototypeOf(value);
+    if (prototype !== null && prototype !== Object.prototype && Object.getPrototypeOf(prototype) !== null) {
+        return false;
+    }
+    if (Symbol.iterator in value) {
+        return false;
+    }
+    if (Symbol.toStringTag in value) {
+        return Object.prototype.toString.call(value) === "[object Module]";
+    }
+    return true;
+}
+function _defu(baseObject, defaults, namespace = ".", merger) {
+    if (!isPlainObject(defaults)) {
+        return _defu(baseObject, {}, namespace, merger);
+    }
+    const object = Object.assign({}, defaults);
+    for(const key in baseObject){
+        if (key === "__proto__" || key === "constructor") {
+            continue;
+        }
+        const value = baseObject[key];
+        if (value === null || value === void 0) {
+            continue;
+        }
+        if (merger && merger(object, key, value, namespace)) {
+            continue;
+        }
+        if (Array.isArray(value) && Array.isArray(object[key])) {
+            object[key] = [
+                ...value,
+                ...object[key]
+            ];
+        } else if (isPlainObject(value) && isPlainObject(object[key])) {
+            object[key] = _defu(value, object[key], (namespace ? `${namespace}.` : "") + key.toString(), merger);
+        } else {
+            object[key] = value;
+        }
+    }
+    return object;
+}
+function createDefu(merger) {
+    return (...arguments_)=>// eslint-disable-next-line unicorn/no-array-reduce
+        arguments_.reduce((p, c)=>_defu(p, c, "", merger), {});
+}
+const defu = createDefu();
+const defuFn = createDefu((object, key, currentValue)=>{
+    if (object[key] !== void 0 && typeof currentValue === "function") {
+        object[key] = currentValue(object[key]);
+        return true;
+    }
+});
+const defuArrayFn = createDefu((object, key, currentValue)=>{
+    if (Array.isArray(object[key]) && typeof currentValue === "function") {
+        object[key] = currentValue(object[key]);
+        return true;
+    }
+});
+;
+}),
+"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/node_modules/@better-fetch/fetch/dist/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "BetterFetchError",
+    ()=>BetterFetchError,
+    "ValidationError",
+    ()=>ValidationError,
+    "applySchemaPlugin",
+    ()=>applySchemaPlugin,
+    "betterFetch",
+    ()=>betterFetch,
+    "bodyParser",
+    ()=>bodyParser,
+    "createFetch",
+    ()=>createFetch,
+    "createRetryStrategy",
+    ()=>createRetryStrategy,
+    "createSchema",
+    ()=>createSchema,
+    "detectContentType",
+    ()=>detectContentType,
+    "detectResponseType",
+    ()=>detectResponseType,
+    "getBody",
+    ()=>getBody,
+    "getFetch",
+    ()=>getFetch,
+    "getHeaders",
+    ()=>getHeaders,
+    "getMethod",
+    ()=>getMethod,
+    "getTimeout",
+    ()=>getTimeout,
+    "getURL",
+    ()=>getURL,
+    "initializePlugins",
+    ()=>initializePlugins,
+    "isFunction",
+    ()=>isFunction,
+    "isJSONParsable",
+    ()=>isJSONParsable,
+    "isJSONSerializable",
+    ()=>isJSONSerializable,
+    "isPayloadMethod",
+    ()=>isPayloadMethod,
+    "isRouteMethod",
+    ()=>isRouteMethod,
+    "jsonParse",
+    ()=>jsonParse,
+    "methods",
+    ()=>methods,
+    "parseStandardSchema",
+    ()=>parseStandardSchema
+]);
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __spreadValues = (a, b)=>{
+    for(var prop in b || (b = {}))if (__hasOwnProp.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols) for (var prop of __getOwnPropSymbols(b)){
+        if (__propIsEnum.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    }
+    return a;
+};
+var __spreadProps = (a, b)=>__defProps(a, __getOwnPropDescs(b));
+// src/error.ts
+var BetterFetchError = class extends Error {
+    constructor(status, statusText, error){
+        super(statusText || status.toString(), {
+            cause: error
+        });
+        this.status = status;
+        this.statusText = statusText;
+        this.error = error;
+        Error.captureStackTrace(this, this.constructor);
+    }
+};
+// src/plugins.ts
+var initializePlugins = async (url, options)=>{
+    var _a, _b, _c, _d, _e, _f;
+    let opts = options || {};
+    const hooks = {
+        onRequest: [
+            options == null ? void 0 : options.onRequest
+        ],
+        onResponse: [
+            options == null ? void 0 : options.onResponse
+        ],
+        onSuccess: [
+            options == null ? void 0 : options.onSuccess
+        ],
+        onError: [
+            options == null ? void 0 : options.onError
+        ],
+        onRetry: [
+            options == null ? void 0 : options.onRetry
+        ]
+    };
+    if (!options || !(options == null ? void 0 : options.plugins)) {
+        return {
+            url,
+            options: opts,
+            hooks
+        };
+    }
+    for (const plugin of (options == null ? void 0 : options.plugins) || []){
+        if (plugin.init) {
+            const pluginRes = await ((_a = plugin.init) == null ? void 0 : _a.call(plugin, url.toString(), options));
+            opts = pluginRes.options || opts;
+            url = pluginRes.url;
+        }
+        hooks.onRequest.push((_b = plugin.hooks) == null ? void 0 : _b.onRequest);
+        hooks.onResponse.push((_c = plugin.hooks) == null ? void 0 : _c.onResponse);
+        hooks.onSuccess.push((_d = plugin.hooks) == null ? void 0 : _d.onSuccess);
+        hooks.onError.push((_e = plugin.hooks) == null ? void 0 : _e.onError);
+        hooks.onRetry.push((_f = plugin.hooks) == null ? void 0 : _f.onRetry);
+    }
+    return {
+        url,
+        options: opts,
+        hooks
+    };
+};
+// src/retry.ts
+var LinearRetryStrategy = class {
+    constructor(options){
+        this.options = options;
+    }
+    shouldAttemptRetry(attempt, response) {
+        if (this.options.shouldRetry) {
+            return Promise.resolve(attempt < this.options.attempts && this.options.shouldRetry(response));
+        }
+        return Promise.resolve(attempt < this.options.attempts);
+    }
+    getDelay() {
+        return this.options.delay;
+    }
+};
+var ExponentialRetryStrategy = class {
+    constructor(options){
+        this.options = options;
+    }
+    shouldAttemptRetry(attempt, response) {
+        if (this.options.shouldRetry) {
+            return Promise.resolve(attempt < this.options.attempts && this.options.shouldRetry(response));
+        }
+        return Promise.resolve(attempt < this.options.attempts);
+    }
+    getDelay(attempt) {
+        const delay = Math.min(this.options.maxDelay, this.options.baseDelay * 2 ** attempt);
+        return delay;
+    }
+};
+function createRetryStrategy(options) {
+    if (typeof options === "number") {
+        return new LinearRetryStrategy({
+            type: "linear",
+            attempts: options,
+            delay: 1e3
+        });
+    }
+    switch(options.type){
+        case "linear":
+            return new LinearRetryStrategy(options);
+        case "exponential":
+            return new ExponentialRetryStrategy(options);
+        default:
+            throw new Error("Invalid retry strategy");
+    }
+}
+// src/auth.ts
+var getAuthHeader = async (options)=>{
+    const headers = {};
+    const getValue = async (value)=>typeof value === "function" ? await value() : value;
+    if (options == null ? void 0 : options.auth) {
+        if (options.auth.type === "Bearer") {
+            const token = await getValue(options.auth.token);
+            if (!token) {
+                return headers;
+            }
+            headers["authorization"] = `Bearer ${token}`;
+        } else if (options.auth.type === "Basic") {
+            const [username, password] = await Promise.all([
+                getValue(options.auth.username),
+                getValue(options.auth.password)
+            ]);
+            if (!username || !password) {
+                return headers;
+            }
+            headers["authorization"] = `Basic ${btoa(`${username}:${password}`)}`;
+        } else if (options.auth.type === "Custom") {
+            const [prefix, value] = await Promise.all([
+                getValue(options.auth.prefix),
+                getValue(options.auth.value)
+            ]);
+            if (!value) {
+                return headers;
+            }
+            headers["authorization"] = `${prefix != null ? prefix : ""} ${value}`;
+        }
+    }
+    return headers;
+};
+// src/utils.ts
+var JSON_RE = /^application\/(?:[\w!#$%&*.^`~-]*\+)?json(;.+)?$/i;
+function detectResponseType(request) {
+    const _contentType = request.headers.get("content-type");
+    const textTypes = /* @__PURE__ */ new Set([
+        "image/svg",
+        "application/xml",
+        "application/xhtml",
+        "application/html"
+    ]);
+    if (!_contentType) {
+        return "json";
+    }
+    const contentType = _contentType.split(";").shift() || "";
+    if (JSON_RE.test(contentType)) {
+        return "json";
+    }
+    if (textTypes.has(contentType) || contentType.startsWith("text/")) {
+        return "text";
+    }
+    return "blob";
+}
+function isJSONParsable(value) {
+    try {
+        JSON.parse(value);
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
+function isJSONSerializable(value) {
+    if (value === void 0) {
+        return false;
+    }
+    const t = typeof value;
+    if (t === "string" || t === "number" || t === "boolean" || t === null) {
+        return true;
+    }
+    if (t !== "object") {
+        return false;
+    }
+    if (Array.isArray(value)) {
+        return true;
+    }
+    if (value.buffer) {
+        return false;
+    }
+    return value.constructor && value.constructor.name === "Object" || typeof value.toJSON === "function";
+}
+function jsonParse(text) {
+    try {
+        return JSON.parse(text);
+    } catch (error) {
+        return text;
+    }
+}
+function isFunction(value) {
+    return typeof value === "function";
+}
+function getFetch(options) {
+    if (options == null ? void 0 : options.customFetchImpl) {
+        return options.customFetchImpl;
+    }
+    if (typeof globalThis !== "undefined" && isFunction(globalThis.fetch)) {
+        return globalThis.fetch;
+    }
+    if (("TURBOPACK compile-time value", "undefined") !== "undefined" && isFunction(window.fetch)) //TURBOPACK unreachable
+    ;
+    throw new Error("No fetch implementation found");
+}
+function isPayloadMethod(method) {
+    if (!method) {
+        return false;
+    }
+    const payloadMethod = [
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+    ];
+    return payloadMethod.includes(method.toUpperCase());
+}
+function isRouteMethod(method) {
+    const routeMethod = [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+    ];
+    if (!method) {
+        return false;
+    }
+    return routeMethod.includes(method.toUpperCase());
+}
+async function getHeaders(opts) {
+    const headers = new Headers(opts == null ? void 0 : opts.headers);
+    const authHeader = await getAuthHeader(opts);
+    for (const [key, value] of Object.entries(authHeader || {})){
+        headers.set(key, value);
+    }
+    if (!headers.has("content-type")) {
+        const t = detectContentType(opts == null ? void 0 : opts.body);
+        if (t) {
+            headers.set("content-type", t);
+        }
+    }
+    return headers;
+}
+function getURL(url, options) {
+    if (url.startsWith("@")) {
+        const m = url.toString().split("@")[1].split("/")[0];
+        if (methods.includes(m)) {
+            url = url.replace(`@${m}/`, "/");
+        }
+    }
+    let _url;
+    try {
+        if (url.startsWith("http")) {
+            _url = url;
+        } else {
+            let baseURL = options == null ? void 0 : options.baseURL;
+            if (baseURL && !(baseURL == null ? void 0 : baseURL.endsWith("/"))) {
+                baseURL = baseURL + "/";
+            }
+            if (url.startsWith("/")) {
+                _url = new URL(url.substring(1), baseURL);
+            } else {
+                _url = new URL(url, options == null ? void 0 : options.baseURL);
+            }
+        }
+    } catch (e) {
+        if (e instanceof TypeError) {
+            if (!(options == null ? void 0 : options.baseURL)) {
+                throw TypeError(`Invalid URL ${url}. Are you passing in a relative url but not setting the baseURL?`);
+            }
+            throw TypeError(`Invalid URL ${url}. Please validate that you are passing the correct input.`);
+        }
+        throw e;
+    }
+    if (options == null ? void 0 : options.params) {
+        if (Array.isArray(options == null ? void 0 : options.params)) {
+            const params = (options == null ? void 0 : options.params) ? Array.isArray(options.params) ? `/${options.params.join("/")}` : `/${Object.values(options.params).join("/")}` : "";
+            _url = _url.toString().split("/:")[0];
+            _url = `${_url.toString()}${params}`;
+        } else {
+            for (const [key, value] of Object.entries(options == null ? void 0 : options.params)){
+                _url = _url.toString().replace(`:${key}`, String(value));
+            }
+        }
+    }
+    const __url = new URL(_url);
+    const queryParams = options == null ? void 0 : options.query;
+    if (queryParams) {
+        for (const [key, value] of Object.entries(queryParams)){
+            __url.searchParams.append(key, String(value));
+        }
+    }
+    return __url;
+}
+function detectContentType(body) {
+    if (isJSONSerializable(body)) {
+        return "application/json";
+    }
+    return null;
+}
+function getBody(options) {
+    if (!(options == null ? void 0 : options.body)) {
+        return null;
+    }
+    const headers = new Headers(options == null ? void 0 : options.headers);
+    if (isJSONSerializable(options.body) && !headers.has("content-type")) {
+        for (const [key, value] of Object.entries(options == null ? void 0 : options.body)){
+            if (value instanceof Date) {
+                options.body[key] = value.toISOString();
+            }
+        }
+        return JSON.stringify(options.body);
+    }
+    if (headers.has("content-type") && headers.get("content-type") === "application/x-www-form-urlencoded") {
+        if (isJSONSerializable(options.body)) {
+            return new URLSearchParams(options.body).toString();
+        }
+        return options.body;
+    }
+    return options.body;
+}
+function getMethod(url, options) {
+    var _a;
+    if (options == null ? void 0 : options.method) {
+        return options.method.toUpperCase();
+    }
+    if (url.startsWith("@")) {
+        const pMethod = (_a = url.split("@")[1]) == null ? void 0 : _a.split("/")[0];
+        if (!methods.includes(pMethod)) {
+            return (options == null ? void 0 : options.body) ? "POST" : "GET";
+        }
+        return pMethod.toUpperCase();
+    }
+    return (options == null ? void 0 : options.body) ? "POST" : "GET";
+}
+function getTimeout(options, controller) {
+    let abortTimeout;
+    if (!(options == null ? void 0 : options.signal) && (options == null ? void 0 : options.timeout)) {
+        abortTimeout = setTimeout(()=>controller == null ? void 0 : controller.abort(), options == null ? void 0 : options.timeout);
+    }
+    return {
+        abortTimeout,
+        clearTimeout: ()=>{
+            if (abortTimeout) {
+                clearTimeout(abortTimeout);
+            }
+        }
+    };
+}
+function bodyParser(data, responseType) {
+    if (responseType === "json") {
+        return JSON.parse(data);
+    }
+    return data;
+}
+var ValidationError = class _ValidationError extends Error {
+    constructor(issues, message){
+        super(message || JSON.stringify(issues, null, 2));
+        this.issues = issues;
+        Object.setPrototypeOf(this, _ValidationError.prototype);
+    }
+};
+async function parseStandardSchema(schema, input) {
+    const result = await schema["~standard"].validate(input);
+    if (result.issues) {
+        throw new ValidationError(result.issues);
+    }
+    return result.value;
+}
+// src/create-fetch/schema.ts
+var methods = [
+    "get",
+    "post",
+    "put",
+    "patch",
+    "delete"
+];
+var createSchema = (schema, config)=>{
+    return {
+        schema,
+        config
+    };
+};
+// src/create-fetch/index.ts
+var applySchemaPlugin = (config)=>({
+        id: "apply-schema",
+        name: "Apply Schema",
+        version: "1.0.0",
+        async init (url, options) {
+            var _a, _b, _c, _d;
+            const schema = ((_b = (_a = config.plugins) == null ? void 0 : _a.find((plugin)=>{
+                var _a2;
+                return ((_a2 = plugin.schema) == null ? void 0 : _a2.config) ? url.startsWith(plugin.schema.config.baseURL || "") || url.startsWith(plugin.schema.config.prefix || "") : false;
+            })) == null ? void 0 : _b.schema) || config.schema;
+            if (schema) {
+                let urlKey = url;
+                if ((_c = schema.config) == null ? void 0 : _c.prefix) {
+                    if (urlKey.startsWith(schema.config.prefix)) {
+                        urlKey = urlKey.replace(schema.config.prefix, "");
+                        if (schema.config.baseURL) {
+                            url = url.replace(schema.config.prefix, schema.config.baseURL);
+                        }
+                    }
+                }
+                if ((_d = schema.config) == null ? void 0 : _d.baseURL) {
+                    if (urlKey.startsWith(schema.config.baseURL)) {
+                        urlKey = urlKey.replace(schema.config.baseURL, "");
+                    }
+                }
+                const keySchema = schema.schema[urlKey];
+                if (keySchema) {
+                    let opts = __spreadProps(__spreadValues({}, options), {
+                        method: keySchema.method,
+                        output: keySchema.output
+                    });
+                    if (!(options == null ? void 0 : options.disableValidation)) {
+                        opts = __spreadProps(__spreadValues({}, opts), {
+                            body: keySchema.input ? await parseStandardSchema(keySchema.input, options == null ? void 0 : options.body) : options == null ? void 0 : options.body,
+                            params: keySchema.params ? await parseStandardSchema(keySchema.params, options == null ? void 0 : options.params) : options == null ? void 0 : options.params,
+                            query: keySchema.query ? await parseStandardSchema(keySchema.query, options == null ? void 0 : options.query) : options == null ? void 0 : options.query
+                        });
+                    }
+                    return {
+                        url,
+                        options: opts
+                    };
+                }
+            }
+            return {
+                url,
+                options
+            };
+        }
+    });
+var createFetch = (config)=>{
+    async function $fetch(url, options) {
+        const opts = __spreadProps(__spreadValues(__spreadValues({}, config), options), {
+            plugins: [
+                ...(config == null ? void 0 : config.plugins) || [],
+                applySchemaPlugin(config || {}),
+                ...(options == null ? void 0 : options.plugins) || []
+            ]
+        });
+        if (config == null ? void 0 : config.catchAllError) {
+            try {
+                return await betterFetch(url, opts);
+            } catch (error) {
+                return {
+                    data: null,
+                    error: {
+                        status: 500,
+                        statusText: "Fetch Error",
+                        message: "Fetch related error. Captured by catchAllError option. See error property for more details.",
+                        error
+                    }
+                };
+            }
+        }
+        return await betterFetch(url, opts);
+    }
+    return $fetch;
+};
+// src/url.ts
+function getURL2(url, option) {
+    const { baseURL, params, query } = option || {
+        query: {},
+        params: {},
+        baseURL: ""
+    };
+    let basePath = url.startsWith("http") ? url.split("/").slice(0, 3).join("/") : baseURL || "";
+    if (url.startsWith("@")) {
+        const m = url.toString().split("@")[1].split("/")[0];
+        if (methods.includes(m)) {
+            url = url.replace(`@${m}/`, "/");
+        }
+    }
+    if (!basePath.endsWith("/")) basePath += "/";
+    let [path, urlQuery] = url.replace(basePath, "").split("?");
+    const queryParams = new URLSearchParams(urlQuery);
+    for (const [key, value] of Object.entries(query || {})){
+        if (value == null) continue;
+        let serializedValue;
+        if (typeof value === "string") {
+            serializedValue = value;
+        } else if (Array.isArray(value)) {
+            for (const val of value){
+                queryParams.append(key, val);
+            }
+            continue;
+        } else {
+            serializedValue = JSON.stringify(value);
+        }
+        queryParams.set(key, serializedValue);
+    }
+    if (params) {
+        if (Array.isArray(params)) {
+            const paramPaths = path.split("/").filter((p)=>p.startsWith(":"));
+            for (const [index, key] of paramPaths.entries()){
+                const value = params[index];
+                path = path.replace(key, value);
+            }
+        } else {
+            for (const [key, value] of Object.entries(params)){
+                path = path.replace(`:${key}`, String(value));
+            }
+        }
+    }
+    path = path.split("/").map(encodeURIComponent).join("/");
+    if (path.startsWith("/")) path = path.slice(1);
+    let queryParamString = queryParams.toString();
+    queryParamString = queryParamString.length > 0 ? `?${queryParamString}`.replace(/\+/g, "%20") : "";
+    if (!basePath.startsWith("http")) {
+        return `${basePath}${path}${queryParamString}`;
+    }
+    const _url = new URL(`${path}${queryParamString}`, basePath);
+    return _url;
+}
+// src/fetch.ts
+var betterFetch = async (url, options)=>{
+    var _a, _b, _c, _d, _e, _f, _g, _h;
+    const { hooks, url: __url, options: opts } = await initializePlugins(url, options);
+    const fetch = getFetch(opts);
+    const controller = new AbortController();
+    const signal = (_a = opts.signal) != null ? _a : controller.signal;
+    const _url = getURL2(__url, opts);
+    const body = getBody(opts);
+    const headers = await getHeaders(opts);
+    const method = getMethod(__url, opts);
+    let context = __spreadProps(__spreadValues({}, opts), {
+        url: _url,
+        headers,
+        body,
+        method,
+        signal
+    });
+    for (const onRequest of hooks.onRequest){
+        if (onRequest) {
+            const res = await onRequest(context);
+            if (typeof res === "object" && res !== null) {
+                context = res;
+            }
+        }
+    }
+    if ("pipeTo" in context && typeof context.pipeTo === "function" || typeof ((_b = options == null ? void 0 : options.body) == null ? void 0 : _b.pipe) === "function") {
+        if (!("duplex" in context)) {
+            context.duplex = "half";
+        }
+    }
+    const { clearTimeout: clearTimeout2 } = getTimeout(opts, controller);
+    let response = await fetch(context.url, context);
+    clearTimeout2();
+    const responseContext = {
+        response,
+        request: context
+    };
+    for (const onResponse of hooks.onResponse){
+        if (onResponse) {
+            const r = await onResponse(__spreadProps(__spreadValues({}, responseContext), {
+                response: ((_c = options == null ? void 0 : options.hookOptions) == null ? void 0 : _c.cloneResponse) ? response.clone() : response
+            }));
+            if (r instanceof Response) {
+                response = r;
+            } else if (typeof r === "object" && r !== null) {
+                response = r.response;
+            }
+        }
+    }
+    if (response.ok) {
+        const hasBody = context.method !== "HEAD";
+        if (!hasBody) {
+            return {
+                data: "",
+                error: null
+            };
+        }
+        const responseType = detectResponseType(response);
+        const successContext = {
+            data: null,
+            response,
+            request: context
+        };
+        if (responseType === "json" || responseType === "text") {
+            const text = await response.text();
+            const parser2 = (_d = context.jsonParser) != null ? _d : jsonParse;
+            successContext.data = await parser2(text);
+        } else {
+            successContext.data = await response[responseType]();
+        }
+        if (context == null ? void 0 : context.output) {
+            if (context.output && !context.disableValidation) {
+                successContext.data = await parseStandardSchema(context.output, successContext.data);
+            }
+        }
+        for (const onSuccess of hooks.onSuccess){
+            if (onSuccess) {
+                await onSuccess(__spreadProps(__spreadValues({}, successContext), {
+                    response: ((_e = options == null ? void 0 : options.hookOptions) == null ? void 0 : _e.cloneResponse) ? response.clone() : response
+                }));
+            }
+        }
+        if (options == null ? void 0 : options.throw) {
+            return successContext.data;
+        }
+        return {
+            data: successContext.data,
+            error: null
+        };
+    }
+    const parser = (_f = options == null ? void 0 : options.jsonParser) != null ? _f : jsonParse;
+    const responseText = await response.text();
+    const isJSONResponse = isJSONParsable(responseText);
+    const errorObject = isJSONResponse ? await parser(responseText) : null;
+    const errorContext = {
+        response,
+        responseText,
+        request: context,
+        error: __spreadProps(__spreadValues({}, errorObject), {
+            status: response.status,
+            statusText: response.statusText
+        })
+    };
+    for (const onError of hooks.onError){
+        if (onError) {
+            await onError(__spreadProps(__spreadValues({}, errorContext), {
+                response: ((_g = options == null ? void 0 : options.hookOptions) == null ? void 0 : _g.cloneResponse) ? response.clone() : response
+            }));
+        }
+    }
+    if (options == null ? void 0 : options.retry) {
+        const retryStrategy = createRetryStrategy(options.retry);
+        const _retryAttempt = (_h = options.retryAttempt) != null ? _h : 0;
+        if (await retryStrategy.shouldAttemptRetry(_retryAttempt, response)) {
+            for (const onRetry of hooks.onRetry){
+                if (onRetry) {
+                    await onRetry(responseContext);
+                }
+            }
+            const delay = retryStrategy.getDelay(_retryAttempt);
+            await new Promise((resolve)=>setTimeout(resolve, delay));
+            return await betterFetch(url, __spreadProps(__spreadValues({}, options), {
+                retryAttempt: _retryAttempt + 1
+            }));
+        }
+    }
+    if (options == null ? void 0 : options.throw) {
+        throw new BetterFetchError(response.status, response.statusText, isJSONResponse ? errorObject : responseText);
+    }
+    return {
+        data: null,
+        error: __spreadProps(__spreadValues({}, errorObject), {
+            status: response.status,
+            statusText: response.statusText
+        })
+    };
+};
+;
+ //# sourceMappingURL=index.js.map
+}),
+];
+
+//# sourceMappingURL=7a848_f931e2f6._.js.map

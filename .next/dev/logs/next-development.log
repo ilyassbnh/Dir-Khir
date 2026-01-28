@@ -4,3 +4,39 @@
 [00:00:13.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:15:00.431] Server  LOG      ✓ Compiled in 332ms
 [00:32:56.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:20.870] Server  LOG      ✓ Compiled in 187ms
+[00:49:00.905] Server  LOG      ✓ Compiled in 200ms
+[00:49:02.852] Server  LOG      ✓ Compiled in 104ms
+[00:49:13.528] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
+[00:49:13.641] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
+[00:49:13.690] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
+[00:49:14.475] Browser ERROR   uncaughtError: ReferenceError: Navbar is not defined
+[00:49:14.483] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:14.543] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:15.246] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:15.297] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:19.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:38.772] Server  LOG      ✓ Compiled in 1437ms
+[00:49:42.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:44.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:51.492] Server  LOG      ✓ Compiled in 194ms
+[00:58:12.037] Server  LOG      ✓ Compiled in 128ms
+[00:58:47.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx:59:11
+Ecmascript file had an error
+  57 |
+  58 |     // Map counts
+> 59 |     const participationCounts: Record<string, number> = {};
+     |           ^^^^^^^^^^^^^^^^^^^
+  60 |     allParticipants.forEach(p => {
+  61 |         participationCounts[p.needId] = (participationCounts[p.needId] || 0) + 1;
+  62 |     });
+
+the name `participationCounts` is defined multiple times
+[01:01:18.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:38.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:07.986] Server  LOG      ✓ Compiled in 126ms
+[01:03:10.212] Server  LOG      ✓ Compiled in 743ms
+[01:10:05.807] Browser ERROR   uncaughtError: ReferenceError: Select is not defined
+[01:10:07.644] Server  LOG      ✓ Compiled in 465ms
+[01:10:07.836] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:10:12.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

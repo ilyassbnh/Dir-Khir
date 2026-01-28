@@ -38,8 +38,8 @@ export default async function DashboardPage() {
             need: needs,
             joinedAt: participants.joinedAt,
         })
-        .from(participants)
-        .innerJoin(needs, eq(participants.needId, needs.id))
+        .from(needs)
+        .innerJoin(participants, eq(needs.id, participants.needId))
         .where(eq(participants.userId, session.user.id))
         .orderBy(desc(participants.joinedAt));
 

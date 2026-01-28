@@ -105,5 +105,6 @@ export async function joinNeed(needId: string) {
     }
 
     revalidatePath("/");
+    revalidatePath("/mon-espace");
     return { success: true };
 }

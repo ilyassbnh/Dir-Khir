@@ -1,6 +1,22 @@
 {
   "app": {
+    "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/login/page": [
+      "static/media/GeistVF-s.p.4c3c0b96.woff",
+      "static/media/GeistMonoVF-s.p.2cee7d16.woff"
+    ],
+    "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/mon-espace/page": [
+      "static/media/GeistVF-s.p.4c3c0b96.woff",
+      "static/media/GeistMonoVF-s.p.2cee7d16.woff"
+    ],
     "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page": [
+      "static/media/GeistVF-s.p.4c3c0b96.woff",
+      "static/media/GeistMonoVF-s.p.2cee7d16.woff"
+    ],
+    "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/proposer-un-besoin/page": [
+      "static/media/GeistVF-s.p.4c3c0b96.woff",
+      "static/media/GeistMonoVF-s.p.2cee7d16.woff"
+    ],
+    "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/register/page": [
       "static/media/GeistVF-s.p.4c3c0b96.woff",
       "static/media/GeistMonoVF-s.p.2cee7d16.woff"
     ]

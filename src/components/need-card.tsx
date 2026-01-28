@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge"
 import { type InferSelectModel } from "drizzle-orm"
 import { needs } from "@/db/schema"
 import { useState } from "react"
+import { joinNeed } from "@/app/actions/needs"
+import { toast } from "sonner"
 
 export type Need = InferSelectModel<typeof needs>
 
@@ -29,13 +31,21 @@ export function NeedCard({
   const handleParticipate = async () => {
     if (!currentUserId) return
     setIsLoading(true)
-    // TODO: Implement actual participation logic here (Server Action or API endpoint)
-    // For now, optimistic update
-    setTimeout(() => {
-      setIsParticipating(!isParticipating)
-      setCount(prev => isParticipating ? prev - 1 : prev + 1)
+
+    try {
+      const result = await joinNeed(need.id)
+      if (result.success) {
+        toast.success("Vous participez à ce besoin !")
+        setIsParticipating(true)
+        // No need to manually setCount, server revalidation will update props
+      } else if (result.error) {
+        toast.error(result.error)
+      }
+    } catch (error) {
+      toast.error("Une erreur est survenue")
+    } finally {
       setIsLoading(false)
-    }, 500)
+    }
   }
 
   const categoryLabel = need.category === "donation" ? "Don" : "Bénévolat"
@@ -78,8 +88,8 @@ export function NeedCard({
           onClick={handleParticipate}
           disabled={isLoading || !currentUserId}
           className={`flex-1 transition-all ${isParticipating
-              ? "bg-primary text-primary-foreground hover:bg-primary/90"
-              : "border-primary text-primary hover:bg-primary/10 bg-transparent"
+            ? "bg-primary text-primary-foreground hover:bg-primary/90"
+            : "border-primary text-primary hover:bg-primary/10 bg-transparent"
             }`}
         >
           {isLoading ? "..." : (isParticipating ? "Je participe déjà" : "Je participe")}

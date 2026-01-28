@@ -27,19 +27,19 @@ export function Footer() {
               <Link href="/mon-espace" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Mon Espace
               </Link>
-              <Link href="/besoins" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Tous les besoins
               </Link>
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="font-semibold text-foreground">Légal</h4>
-              <Link href="/confidentialite" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Confidentialité
               </Link>
-              <Link href="/conditions" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Conditions d{"'"}utilisation
               </Link>
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </Link>
             </div>
