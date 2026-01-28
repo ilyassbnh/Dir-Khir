@@ -3,9 +3,22 @@ globalThis.__BUILD_MANIFEST = {
     "/_app": []
   },
   "devFiles": [],
-  "polyfillFiles": [],
+  "polyfillFiles": [
+    "static/chunks/7a848_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
   "lowPriorityFiles": [],
-  "rootMainFiles": []
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_80d1dfab._.js",
+    "static/chunks/7a848_next_dist_compiled_react-dom_545149c8._.js",
+    "static/chunks/7a848_next_dist_compiled_react-server-dom-turbopack_68a0f5e8._.js",
+    "static/chunks/7a848_next_dist_compiled_next-devtools_index_5ceba54a.js",
+    "static/chunks/7a848_next_dist_compiled_3b54e038._.js",
+    "static/chunks/7a848_next_dist_client_f801ff61._.js",
+    "static/chunks/7a848_next_dist_3f30f2b3._.js",
+    "static/chunks/7a848_@swc_helpers_cjs_d9da1f0c._.js",
+    "static/chunks/OneDrive_Bureau_Simplon_nextjs-better-auth_a0ff3932._.js",
+    "static/chunks/turbopack-OneDrive_Bureau_Simplon_nextjs-better-auth_9c41f0de._.js"
+  ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
 "/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",

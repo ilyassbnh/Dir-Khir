@@ -1,133 +1,107 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { MessageCircle, HandHeart } from "lucide-react";
-import { joinNeed } from "@/app/actions/needs";
-import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+import { MapPin, Users } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { type InferSelectModel } from "drizzle-orm"
+import { needs } from "@/db/schema"
+import { useState } from "react"
+
+export type Need = InferSelectModel<typeof needs>
 
 interface NeedCardProps {
-    need: {
-        id: string;
-        title: string;
-        description: string;
-        category: string;
-        city: string;
-        createdAt: Date;
-        whatsapp_number: string | null;
-        status: string;
-    };
-    initialParticipantsCount: number;
-    initialIsParticipating: boolean;
-    currentUserId?: string;
+  need: Need
+  initialParticipantsCount?: number
+  initialIsParticipating?: boolean
+  currentUserId?: string
 }
 
 export function NeedCard({
-    need,
-    initialParticipantsCount,
-    initialIsParticipating,
-    currentUserId,
+  need,
+  initialParticipantsCount = 0,
+  initialIsParticipating = false,
+  currentUserId
 }: NeedCardProps) {
-    const router = useRouter();
-    const [isParticipating, setIsParticipating] = useState(initialIsParticipating);
-    const [participantsCount, setParticipantsCount] = useState(initialParticipantsCount);
-    const [loading, setLoading] = useState(false);
+  const [isParticipating, setIsParticipating] = useState(initialIsParticipating)
+  const [count, setCount] = useState(initialParticipantsCount)
+  const [isLoading, setIsLoading] = useState(false)
 
-    const handleJoin = async () => {
-        if (!currentUserId) {
-            toast.error("Veuillez vous connecter pour participer.");
-            router.push("/login"); // Optional: redirect to login
-            return;
-        }
+  const handleParticipate = async () => {
+    if (!currentUserId) return
+    setIsLoading(true)
+    // TODO: Implement actual participation logic here (Server Action or API endpoint)
+    // For now, optimistic update
+    setTimeout(() => {
+      setIsParticipating(!isParticipating)
+      setCount(prev => isParticipating ? prev - 1 : prev + 1)
+      setIsLoading(false)
+    }, 500)
+  }
 
-        if (isParticipating) return;
+  const categoryLabel = need.category === "donation" ? "Don" : "Bénévolat"
+  const categoryColor = need.category === "donation"
+    ? "bg-secondary/10 text-secondary hover:bg-secondary/20"
+    : "bg-primary/10 text-primary hover:bg-primary/20"
 
-        setLoading(true);
-        try {
-            const result = await joinNeed(need.id);
-            if (result?.error) {
-                toast.error(result.error);
-            } else {
-                setIsParticipating(true);
-                setParticipantsCount((prev) => prev + 1);
-                toast.success("Merci pour votre aide ! Vous participez maintenant.");
-            }
-        } catch (error) {
-            toast.error("Une erreur s'est produite.");
-        } finally {
-            setLoading(false);
-        }
-    };
+  return (
+    <div className="group bg-card rounded-xl border border-border p-6 hover:shadow-lg transition-all hover:border-primary/30 flex flex-col h-full">
+      <div className="flex items-start justify-between gap-4">
+        <Badge
+          variant="secondary"
+          className={`${categoryColor} font-medium`}
+        >
+          {categoryLabel}
+        </Badge>
+        {/* Participation Count Badge */}
+        <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
+          <Users className="h-3 w-3" />
+          <span>{count}</span>
+        </Badge>
+      </div>
 
-    return (
-        <Card className="hover:shadow-lg transition-shadow border-none shadow-md bg-white overflow-hidden flex flex-col h-full">
-            <CardHeader className="bg-stone-100 pb-3 border-b border-stone-200">
-                <div className="flex justify-between items-start mb-2">
-                    <Badge variant="outline" className="bg-white text-[#264653] border-stone-300">
-                        {need.category}
-                    </Badge>
-                    <span className="text-xs font-semibold text-[#E76F51] bg-[#E76F51]/10 px-2 py-1 rounded-full">
-                        {need.city}
-                    </span>
-                </div>
-                <CardTitle className="text-xl text-[#264653] line-clamp-1">
-                    {need.title}
-                </CardTitle>
-            </CardHeader>
-            <CardContent className="pt-4 flex flex-col flex-grow">
-                <p className="text-stone-600 line-clamp-3 mb-4 min-h-[4.5rem]">
-                    {need.description}
-                </p>
+      <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+        {need.title}
+      </h3>
 
-                <div className="mt-auto space-y-4">
-                    {/* Volunteer Counter */}
-                    <div className="flex items-center text-sm font-medium text-[#2A9D8F]">
-                        <HandHeart className="h-4 w-4 mr-2" />
-                        {participantsCount > 0
-                            ? `🔥 ${participantsCount} citoyen${participantsCount > 1 ? 's' : ''} aide${participantsCount > 1 ? 'nt' : ''} déjà`
-                            : "Soyez le premier à aider !"}
-                    </div>
+      <p className="mt-2 text-sm text-muted-foreground line-clamp-2 flex-1">
+        {need.description}
+      </p>
 
-                    <div className="flex gap-2">
-                        {/* Join Button */}
-                        <Button
-                            onClick={handleJoin}
-                            disabled={isParticipating || loading}
-                            className={`flex-1 ${isParticipating
-                                    ? "bg-stone-200 text-stone-500 hover:bg-stone-200 cursor-default"
-                                    : "bg-[#2A9D8F] hover:bg-[#21867a] text-white"
-                                }`}
-                        >
-                            {loading ? "..." : isParticipating ? "Vous participez ✅" : "Je participe"}
-                        </Button>
+      <div className="mt-4 flex items-center gap-2 text-muted-foreground">
+        <MapPin className="h-4 w-4" />
+        <span className="text-sm">{need.city}</span>
+      </div>
 
-                        {/* WhatsApp Button */}
-                        {need.whatsapp_number && (
-                            <Button
-                                asChild
-                                variant="outline"
-                                className="border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white"
-                            >
-                                <a
-                                    href={`https://wa.me/${need.whatsapp_number.replace('+', '')}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Contacter sur WhatsApp"
-                                >
-                                    <MessageCircle className="h-5 w-5" />
-                                </a>
-                            </Button>
-                        )}
-                    </div>
-
-                    <div className="flex justify-between items-center text-xs text-stone-400 pt-2 border-t border-stone-100">
-                        <span>{new Date(need.createdAt).toLocaleDateString("fr-MA", { day: 'numeric', month: 'long' })}</span>
-                    </div>
-                </div>
-            </CardContent>
-        </Card>
-    );
+      <div className="mt-6 flex items-center gap-3">
+        <Button
+          variant={isParticipating ? "default" : "outline"}
+          onClick={handleParticipate}
+          disabled={isLoading || !currentUserId}
+          className={`flex-1 transition-all ${isParticipating
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
+              : "border-primary text-primary hover:bg-primary/10 bg-transparent"
+            }`}
+        >
+          {isLoading ? "..." : (isParticipating ? "Je participe déjà" : "Je participe")}
+        </Button>
+        <Button
+          size="icon"
+          className="bg-[#25D366] hover:bg-[#20BD5A] text-white shrink-0"
+          aria-label="Contact via WhatsApp"
+          asChild
+        >
+          <a href={`https://wa.me/${need.whatsapp_number}`} target="_blank" rel="noopener noreferrer">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </a>
+        </Button>
+      </div>
+    </div>
+  )
 }
+
