@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { createNeed } from "@/app/actions/needs";
+import { createNeed } from "@/services/actions/needs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,12 +17,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Loader2 } from "lucide-react";
 
 const initialState = {
-    message: "",
-    error: {},
+    message: undefined,
+    error: undefined,
 };
 
 export function CreateNeedForm() {
-    const [state, formAction, isPending] = useActionState(createNeed, initialState);
+    const [state, formAction, isPending] = useActionState(createNeed, initialState as any);
 
     return (
         <Card className="border-none shadow-lg">

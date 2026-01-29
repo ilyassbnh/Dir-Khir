@@ -1,4 +1,20 @@
 {
-  "node": {},
+  "node": {
+    "7f6914ca70d8572b43f61a085b447ed8036a4b9780": {
+      "workers": {
+        "app/mon-espace/page": {
+          "moduleId": "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/.next-internal/server/app/mon-espace/page/actions.js { ACTIONS_MODULE0 => \"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "auth",
+          "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts"
+        }
+      },
+      "layer": {
+        "app/mon-espace/page": "rsc"
+      },
+      "exportedName": "auth",
+      "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts"
+    }
+  },
   "edge": {}
 }

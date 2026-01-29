@@ -40,3 +40,122 @@ the name `participationCounts` is defined multiple times
 [01:10:07.644] Server  LOG      ✓ Compiled in 465ms
 [01:10:07.836] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
 [01:10:12.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[24:54:57.410] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:54:57.744] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:54:57.753] Server  LOG      ✓ Compiled in 689ms
+[24:54:58.451] Server  LOG      ✓ Compiled in 667ms
+[24:54:59.518] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:54:59.834] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:00.162] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:00.444] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:00.746] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:01.018] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:01.305] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:01.556] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:01.892] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:02.433] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:02.955] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:03.599] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:03.720] Server  LOG      ✓ Compiled in 195ms
+[24:55:04.146] Browser ERROR   uncaughtError: Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:05.148] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:18.278] Server  LOG      ✓ Compiled in 79ms
+[24:55:18.603] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:18.888] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:19.167] Browser ERROR   uncaughtError: Error: A "use server" file can only export async functions, found object.
+Read more: https://nextjs.org/docs/messages/invalid-use-server-value
+[24:55:21.100] Server  LOG      ✓ Compiled in 272ms
+[24:55:34.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[24:56:15.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts:12:20
+Parsing ecmascript source code failed
+  10 |     }),
+  11 |     emailAndPassword: {
+> 12 |         enabled: t rue,
+     |                    ^^^
+  13 |     },
+  14 | });
+  15 |
+
+Expected ',', got 'rue'
+
+Import traces:
+  #1 [Server Component]:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts
+
+  #2 [Server Component]:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[24:56:22.094] Server  LOG      ✓ Compiled in 73ms
+[25:02:47.981] Server  LOG        Reload env: .env
+[25:10:36.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[25:14:43.092] Server  LOG      ✓ Compiled in 506ms
+[25:14:43.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:14:47.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:47.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:14:47.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:14:47.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:11.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:11.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:11.811] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:11.811] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:50.809] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:50.809] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:15:50.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
+[25:15:50.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
+Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
+[25:16:56.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[25:16:56.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[25:18:13.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { type InferSelectModel } from "drizzle-orm"
 import { needs } from "@/db/schema"
 import { useState } from "react"
-import { joinNeed } from "@/app/actions/needs"
+import { joinNeed } from "@/services/actions/needs"
 import { toast } from "sonner"
 
 export type Need = InferSelectModel<typeof needs>

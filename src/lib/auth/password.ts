@@ -17,3 +17,6 @@ export const passwordSchema = z
   .regex(/[^A-Za-z0-9]/, {
     message: "Password must contain at least one symbol.",
   });
+
+
+export type PasswordSchemaType = z.infer<typeof passwordSchema>;

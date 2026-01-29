@@ -1,0 +1,26 @@
+/* [project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/geistsans_20f76d8d.module.css [app-client] (css) */
+@font-face {
+  font-family: geistSans;
+  src: url("../media/GeistVF-s.p.4c3c0b96.woff") format("woff");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: geistSans Fallback;
+  src: local(Arial);
+  ascent-override: 85.83%;
+  descent-override: 20.52%;
+  line-gap-override: 9.33%;
+  size-adjust: 107.19%;
+}
+
+.geistsans_20f76d8d-module__KIACXW__className {
+  font-family: geistSans, geistSans Fallback;
+}
+
+.geistsans_20f76d8d-module__KIACXW__variable {
+  --font-geist-sans: "geistSans", "geistSans Fallback";
+}
+
+/*# sourceMappingURL=1ddb1_Simplon_nextjs-better-auth_src_app_geistsans_20f76d8d_module_css_bad6b30c._.single.css.map*/
