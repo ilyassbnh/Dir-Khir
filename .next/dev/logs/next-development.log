@@ -159,3 +159,5 @@ Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
 [25:16:56.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [25:16:56.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [25:18:13.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[26:48:21.424] Server  LOG      ✓ Compiled in 725ms
+[26:49:50.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

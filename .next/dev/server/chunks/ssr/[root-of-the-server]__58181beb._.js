@@ -42,6 +42,8 @@ const Toaster = ({ ...props })=>{
 "use strict";
 
 __turbopack_context__.s([
+    "catchError",
+    ()=>catchError,
     "cn",
     ()=>cn
 ]);
@@ -51,6 +53,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplo
 ;
 function cn(...inputs) {
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Bureau$2f$Simplon$2f$nextjs$2d$better$2d$auth$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+function catchError(err) {
+    // Check for Next.js Redirect error
+    if (err instanceof Error && err.digest?.startsWith("NEXT_REDIRECT")) {
+        throw err;
+    }
+    console.error("Server Error:", err);
+    if (err instanceof Error) {
+        return {
+            message: err.message
+        };
+    }
+    return {
+        message: "Une erreur inattendue est survenue."
+    };
 }
 }),
 "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/ui/button.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
