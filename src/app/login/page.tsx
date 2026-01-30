@@ -9,21 +9,33 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import Link from "next/link";
-import { Loader2 } from "lucide-react";
+import { Loader2, AlertCircle } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { loginSchema, type LoginSchema } from "@/lib/schemas";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function LoginPage() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [error, setError] = useState<string | null>(null);
 
-    const handleLogin = async (e: React.FormEvent) => {
-        e.preventDefault();
+    const form = useForm<LoginSchema>({
+        resolver: zodResolver(loginSchema),
+        defaultValues: {
+            email: "",
+            password: "",
+        },
+    });
+
+    const onSubmit = async (data: LoginSchema) => {
         setLoading(true);
+        setError(null);
         try {
             await signIn.email({
-                email,
-                password,
+                email: data.email,
+                password: data.password,
             }, {
                 onSuccess: () => {
                     toast.success("Bon retour parmi nous !");
@@ -31,12 +43,12 @@ export default function LoginPage() {
                     router.refresh();
                 },
                 onError: (ctx) => {
-                    toast.error(ctx.error.message || "Erreur de connexion");
+                    setError(ctx.error.message || "Erreur de connexion");
                     setLoading(false);
                 },
             });
         } catch (err) {
-            toast.error("Une erreur inattendue est survenue.");
+            setError("Une erreur inattendue est survenue.");
             setLoading(false);
         }
     };
@@ -48,7 +60,7 @@ export default function LoginPage() {
                 style={{ backgroundImage: 'url("/patterns/moroccan-pattern.png")', backgroundSize: '100px' }}>
             </div>
 
-            <Card className="w-full max-w-md z-10 shadow-xl border-none">
+            <Card className="w-full max-w-md z-10 shadow-xl border-none rounded-xl bg-white">
                 <CardHeader className="text-center space-y-2">
                     <CardTitle className="text-2xl font-bold text-[#2A9D8F]">Se connecter</CardTitle>
                     <CardDescription className="text-stone-600">
@@ -56,49 +68,73 @@ export default function LoginPage() {
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form onSubmit={handleLogin} className="space-y-4">
-                        <div className="space-y-2">
-                            <Label htmlFor="email">Email</Label>
-                            <Input
-                                id="email"
-                                type="email"
-                                placeholder="exemple@email.com"
-                                required
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                    {error && (
+                        <Alert variant="destructive" className="mb-4">
+                            <AlertCircle className="h-4 w-4" />
+                            <AlertTitle>Erreur</AlertTitle>
+                            <AlertDescription>
+                                {error}
+                            </AlertDescription>
+                        </Alert>
+                    )}
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                            <FormField
+                                control={form.control}
+                                name="email"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Email</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                placeholder="exemple@email.com"
+                                                {...field}
+                                                className="border-input rounded-md px-3 py-2 focus:ring-primary"
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
                             />
-                        </div>
-                        <div className="space-y-2">
-                            <Label htmlFor="password">Mot de passe</Label>
-                            <Input
-                                id="password"
-                                type="password"
-                                required
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
+                            <FormField
+                                control={form.control}
+                                name="password"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Mot de passe</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                type="password"
+                                                {...field}
+                                                className="border-input rounded-md px-3 py-2 focus:ring-primary"
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
                             />
-                        </div>
-                        <Button
-                            type="submit"
-                            className="w-full bg-[#2A9D8F] hover:bg-[#21867a] text-white"
-                            disabled={loading}
-                        >
-                            {loading ? (
-                                <>
-                                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                    Connexion...
-                                </>
-                            ) : (
-                                "Se connecter"
-                            )}
-                        </Button>
-                        <div className="text-center text-sm text-muted-foreground mt-4">
-                            Pas encore de compte ?{" "}
-                            <Link href="/register" className="text-[#E76F51] hover:underline font-medium">
-                                S'inscrire
-                            </Link>
-                        </div>
-                    </form>
+                            <Button
+                                type="submit"
+                                className="w-full bg-[#2A9D8F] hover:bg-[#21867a] text-white"
+                                disabled={loading}
+                            >
+                                {loading ? (
+                                    <>
+                                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                        Connexion...
+                                    </>
+                                ) : (
+                                    "Se connecter"
+                                )}
+                            </Button>
+                            <div className="text-center text-sm text-muted-foreground mt-4">
+                                Pas encore de compte ?{" "}
+                                <Link href="/register" className="text-[#E76F51] hover:underline font-medium">
+                                    S'inscrire
+                                </Link>
+                            </div>
+                        </form>
+                    </Form>
                 </CardContent>
             </Card>
         </div>
