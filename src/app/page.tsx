@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { needs, participants, type user } from "@/db/schema";
-import { desc, eq, count, getTableColumns } from "drizzle-orm";
+import { desc, eq, count, getTableColumns, sql } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { HeroSection } from "@/components/hero-section";
@@ -20,14 +20,17 @@ export default async function HomePage() {
 
     // Fetch all needs
     // Fetch all needs with participant counts
+
     const needsWithCounts = await db
         .select({
             ...getTableColumns(needs),
-            participantsCount: count(participants.id),
+            participantsCount: sql<number>`(
+                SELECT count(*)::int 
+                FROM ${participants} 
+                WHERE ${participants}.need_id = ${needs}.id
+            )`.mapWith(Number),
         })
         .from(needs)
-        .leftJoin(participants, eq(needs.id, participants.needId))
-        .groupBy(needs.id)
         .orderBy(desc(needs.createdAt));
 
     const allNeeds = needsWithCounts.map(({ participantsCount, ...need }) => need);

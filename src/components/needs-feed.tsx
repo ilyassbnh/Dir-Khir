@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { needs, volunteers } from "@/db/schema";
+import { needs } from "@/db/schema";
 import { NeedCard } from "./need-card";
 import { desc, eq, sql } from "drizzle-orm";
 
@@ -20,7 +20,7 @@ export async function NeedsFeed() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
             {allNeeds.map((need) => (
-                <NeedCard key={need.id} need={need} volunteerCount={0} />
+                <NeedCard key={need.id} need={need} initialParticipantsCount={0} />
             ))}
             {allNeeds.length === 0 && (
                 <div className="col-span-full text-center py-12 text-muted-foreground zellige-pattern rounded-lg border border-dashed">

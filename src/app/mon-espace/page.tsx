@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PlusCircle, Users } from "lucide-react";
+import { NeedStatusBadge } from "@/components/need-status-badge";
 
 export default async function DashboardPage() {
     const session = await auth.api.getSession({
@@ -37,6 +38,7 @@ export default async function DashboardPage() {
         .select({
             need: needs,
             joinedAt: participants.joinedAt,
+            participationId: participants.id,
         })
         .from(needs)
         .innerJoin(participants, eq(needs.id, participants.needId))
@@ -83,9 +85,7 @@ export default async function DashboardPage() {
                                     <CardHeader className="pb-2">
                                         <div className="flex justify-between items-start">
                                             <Badge variant="outline" className="bg-stone-100">{need.category}</Badge>
-                                            <Badge className={need.status === 'Fulfilled' ? "bg-green-600" : "bg-[#F4A261]"}>
-                                                {need.status === 'Fulfilled' ? "Complet" : "Ouvert"}
-                                            </Badge>
+                                            <NeedStatusBadge needId={need.id} status={need.status} />
                                         </div>
                                         <CardTitle className="text-lg mt-2 text-[#264653] font-bold">{need.title}</CardTitle>
                                     </CardHeader>
@@ -114,8 +114,8 @@ export default async function DashboardPage() {
                         </div>
                     ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {myParticipations.map(({ need, joinedAt }) => (
-                                <Card key={need.id} className="border-l-4 border-l-[#E9C46A] shadow-sm hover:shadow-md transition-shadow">
+                            {myParticipations.map(({ need, joinedAt, participationId }) => (
+                                <Card key={participationId} className="border-l-4 border-l-[#E9C46A] shadow-sm hover:shadow-md transition-shadow">
                                     <CardHeader className="pb-2">
                                         <div className="flex justify-between items-start">
                                             <Badge variant="outline" className="bg-stone-100">{need.category}</Badge>

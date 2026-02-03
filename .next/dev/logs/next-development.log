@@ -1,164 +1,185 @@
-[00:00:02.840] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:03.239] Server  LOG      ✓ Ready in 2.6s
-[00:00:06.451] Server  LOG      ○ Compiling / ...
-[00:00:13.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:00.431] Server  LOG      ✓ Compiled in 332ms
-[00:32:56.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:45:20.870] Server  LOG      ✓ Compiled in 187ms
-[00:49:00.905] Server  LOG      ✓ Compiled in 200ms
-[00:49:02.852] Server  LOG      ✓ Compiled in 104ms
-[00:49:13.528] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
-[00:49:13.641] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
-[00:49:13.690] Server  ERROR    ⨯ ReferenceError: Navbar is not defined
-[00:49:14.475] Browser ERROR   uncaughtError: ReferenceError: Navbar is not defined
-[00:49:14.483] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:49:14.543] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:49:15.246] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:49:15.297] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:49:19.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:49:38.772] Server  LOG      ✓ Compiled in 1437ms
-[00:49:42.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:51:44.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:57:51.492] Server  LOG      ✓ Compiled in 194ms
-[00:58:12.037] Server  LOG      ✓ Compiled in 128ms
-[00:58:47.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx:59:11
-Ecmascript file had an error
-  57 |
-  58 |     // Map counts
-> 59 |     const participationCounts: Record<string, number> = {};
-     |           ^^^^^^^^^^^^^^^^^^^
-  60 |     allParticipants.forEach(p => {
-  61 |         participationCounts[p.needId] = (participationCounts[p.needId] || 0) + 1;
-  62 |     });
-
-the name `participationCounts` is defined multiple times
-[01:01:18.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:38.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:07.986] Server  LOG      ✓ Compiled in 126ms
-[01:03:10.212] Server  LOG      ✓ Compiled in 743ms
-[01:10:05.807] Browser ERROR   uncaughtError: ReferenceError: Select is not defined
-[01:10:07.644] Server  LOG      ✓ Compiled in 465ms
-[01:10:07.836] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:10:12.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:54:57.410] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:54:57.744] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:54:57.753] Server  LOG      ✓ Compiled in 689ms
-[24:54:58.451] Server  LOG      ✓ Compiled in 667ms
-[24:54:59.518] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:54:59.834] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:00.162] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:00.444] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:00.746] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:01.018] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:01.305] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:01.556] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:01.892] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:02.433] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:02.955] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:03.599] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:03.720] Server  LOG      ✓ Compiled in 195ms
-[24:55:04.146] Browser ERROR   uncaughtError: Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:05.148] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:18.278] Server  LOG      ✓ Compiled in 79ms
-[24:55:18.603] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:18.888] Server  ERROR    ⨯ Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:19.167] Browser ERROR   uncaughtError: Error: A "use server" file can only export async functions, found object.
-Read more: https://nextjs.org/docs/messages/invalid-use-server-value
-[24:55:21.100] Server  LOG      ✓ Compiled in 272ms
-[24:55:34.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:56:15.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts:12:20
+[00:00:02.513] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:02.777] Server  LOG      ✓ Ready in 2.2s
+[00:00:06.080] Server  LOG      ○ Compiling /mon-espace ...
+[00:00:15.431] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:44.794] Server  LOG      ✓ Compiled in 335ms
+[00:07:28.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:56.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:02.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:56.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:45.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:42.639] Server  LOG      ✓ Compiled in 195ms
+[00:34:20.967] Server  LOG      ✓ Compiled in 170ms
+[00:34:21.415] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:95:11
 Parsing ecmascript source code failed
-  10 |     }),
-  11 |     emailAndPassword: {
-> 12 |         enabled: t rue,
-     |                    ^^^
-  13 |     },
-  14 | });
-  15 |
+  93 |       </div>
+  94 |
+> 95 |       <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+     |           ^^^^^^^^^
+  96 |         {need.title}
+  97 |       </h3>
+  98 |
 
-Expected ',', got 'rue'
+Expected ',', got 'className'
 
-Import traces:
-  #1 [Server Component]:
-    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts
-    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/actions/needs.ts
-
-  #2 [Server Component]:
-    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/lib/auth.ts
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
     ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
-[24:56:22.094] Server  LOG      ✓ Compiled in 73ms
-[25:02:47.981] Server  LOG        Reload env: .env
-[25:10:36.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[25:14:43.092] Server  LOG      ✓ Compiled in 506ms
-[25:14:43.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:43.820] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:45.808] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:14:47.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:47.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:14:47.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:14:47.819] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:11.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:11.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:11.811] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:11.811] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:29.818] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:50.809] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:50.809] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:15:50.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistMonoVF.woff'
-[25:15:50.810] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app
-Font file not found: Can't resolve '../assets/fonts/GeistVF.woff'
-[25:16:56.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[25:16:56.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[25:18:13.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[26:48:21.424] Server  LOG      ✓ Compiled in 725ms
-[26:49:50.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[29:08:28.131] Server  LOG      ✓ Compiled in 774ms
+[00:34:31.695] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:95:11
+Parsing ecmascript source code failed
+  93 |       </div>
+  94 |
+> 95 |       <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+     |           ^^^^^^^^^
+  96 |         {need.title}
+  97 |       </h3>
+  98 |
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:34:32.349] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:95:11
+Parsing ecmascript source code failed
+  93 |       </div>
+  94 |
+> 95 |       <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+     |           ^^^^^^^^^
+  96 |         {need.title}
+  97 |       </h3>
+  98 |
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:34:32.474] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:95:11
+Parsing ecmascript source code failed
+  93 |       </div>
+  94 |
+> 95 |       <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+     |           ^^^^^^^^^
+  96 |         {need.title}
+  97 |       </h3>
+  98 |
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:34:33.424] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:95:11
+Parsing ecmascript source code failed
+  93 |       </div>
+  94 |
+> 95 |       <h3 className="mt-4 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+     |           ^^^^^^^^^
+  96 |         {need.title}
+  97 |       </h3>
+  98 |
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:35:13.307] Server  LOG      ✓ Compiled in 107ms
+[00:35:14.425] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:89:9
+Parsing ecmascript source code failed
+  87 |     </div>
+  88 |
+> 89 |         {/* Participation Count Badge */ }
+     |         ^
+  90 |   <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
+  91 |     <Users className="h-3 w-3" />
+  92 |     <span>{count}</span>
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:35:15.421] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:89:9
+Parsing ecmascript source code failed
+  87 |     </div>
+  88 |
+> 89 |         {/* Participation Count Badge */ }
+     |         ^
+  90 |   <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
+  91 |     <Users className="h-3 w-3" />
+  92 |     <span>{count}</span>
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:35:16.429] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:89:9
+Parsing ecmascript source code failed
+  87 |     </div>
+  88 |
+> 89 |         {/* Participation Count Badge */ }
+     |         ^
+  90 |   <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
+  91 |     <Users className="h-3 w-3" />
+  92 |     <span>{count}</span>
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:35:38.490] Browser ERROR   ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx:89:9
+Parsing ecmascript source code failed
+  87 |     </div>
+  88 |
+> 89 |         {/* Participation Count Badge */ }
+     |         ^
+  90 |   <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
+  91 |     <Users className="h-3 w-3" />
+  92 |     <span>{count}</span>
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/need-card.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/components/needs-grid.tsx
+    ./OneDrive/Bureau/Simplon/nextjs-better-auth/src/app/page.tsx
+[00:36:31.013] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:31.013] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:31.013] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:34.590] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:34.590] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:34.590] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:36.753] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:36.753] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:36.753] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:38.406] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:38.406] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:38.406] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:44.488] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 8a9d382d-4157-4ac1-b5f7-66fb087006dc
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84
+[00:36:45.624] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 3f7a682d-100e-474a-a11c-5869a11fff84

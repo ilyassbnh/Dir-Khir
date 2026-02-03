@@ -14,6 +14,21 @@
       },
       "exportedName": "joinNeed",
       "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/services/actions/needs.ts"
+    },
+    "40e27dbfc25b997b2f17d9c138de696e903e380b07": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/OneDrive/Bureau/Simplon/nextjs-better-auth/src/services/actions/needs.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "leaveNeed",
+          "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/services/actions/needs.ts"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "leaveNeed",
+      "filename": "OneDrive/Bureau/Simplon/nextjs-better-auth/src/services/actions/needs.ts"
     }
   },
   "edge": {}

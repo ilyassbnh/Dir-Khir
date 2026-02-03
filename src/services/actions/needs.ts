@@ -7,6 +7,7 @@ import { needs, participants } from "@/db/schema";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createNeedSchema } from "@/services/schemata/needs";
+import { eq, and } from "drizzle-orm";
 
 import { catchError } from "@/lib/utils";
 
@@ -80,6 +81,36 @@ export async function joinNeed(needId: string) {
     } catch (e) {
         // This function returns { success: boolean, error?: string }
         // We need to map { message: string } to this shape if needed, or just return { error: message }
+        const err = catchError(e);
+        return { error: err.message };
+    }
+}
+
+export async function leaveNeed(needId: string) {
+    try {
+        const session = await auth.api.getSession({
+            headers: await headers(),
+        });
+
+        if (!session) {
+            return {
+                error: "Vous devez être connecté pour quitter ce besoin.",
+            };
+        }
+
+        await db.delete(participants)
+            .where(
+                and(
+                    eq(participants.needId, needId),
+                    eq(participants.userId, session.user.id)
+                )
+            );
+
+        revalidatePath("/");
+        revalidatePath("/mon-espace");
+        return { success: true };
+
+    } catch (e) {
         const err = catchError(e);
         return { error: err.message };
     }

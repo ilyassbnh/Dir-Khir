@@ -2,7 +2,7 @@
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
   "static/chunks/7a848_9bc46090._.js",
-  "static/chunks/OneDrive_Bureau_Simplon_nextjs-better-auth_src_a6a5b973._.js"
+  "static/chunks/OneDrive_Bureau_Simplon_nextjs-better-auth_src_d301da93._.js"
 ],
     source: "dynamic"
 });

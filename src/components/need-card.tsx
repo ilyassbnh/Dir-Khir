@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { type InferSelectModel } from "drizzle-orm"
 import { needs } from "@/db/schema"
 import { useState } from "react"
-import { joinNeed } from "@/services/actions/needs"
+import { joinNeed, leaveNeed } from "@/services/actions/needs"
 import { toast } from "sonner"
 
 export type Need = InferSelectModel<typeof needs>
@@ -17,6 +17,8 @@ interface NeedCardProps {
   initialIsParticipating?: boolean
   currentUserId?: string
 }
+
+
 
 export function NeedCard({
   need,
@@ -33,15 +35,29 @@ export function NeedCard({
     setIsLoading(true)
 
     try {
-      const result = await joinNeed(need.id)
-      if (result.success) {
-        toast.success("Vous participez à ce besoin !")
-        setIsParticipating(true)
-        // No need to manually setCount, server revalidation will update props
-      } else if (result.error) {
-        toast.error(result.error)
+      if (isParticipating) {
+        // Leave
+        const result = await leaveNeed(need.id)
+        if (result.success) {
+          toast.success("Vous ne participez plus à ce besoin.")
+          setIsParticipating(false)
+          setCount((prev) => Math.max(0, prev - 1))
+        } else if (result.error) {
+          toast.error(result.error)
+        }
+      } else {
+        // Join
+        const result = await joinNeed(need.id)
+        if (result.success) {
+          toast.success("Vous participez à ce besoin !")
+          setIsParticipating(true)
+          setCount((prev) => prev + 1)
+        } else if (result.error) {
+          toast.error(result.error)
+        }
       }
     } catch (error) {
+      console.error(error)
       toast.error("Une erreur est survenue")
     } finally {
       setIsLoading(false)
@@ -53,15 +69,23 @@ export function NeedCard({
     ? "bg-secondary/10 text-secondary hover:bg-secondary/20"
     : "bg-primary/10 text-primary hover:bg-primary/20"
 
+
+
   return (
     <div className="group bg-card rounded-xl border border-border p-6 hover:shadow-lg transition-all hover:border-primary/30 flex flex-col h-full">
       <div className="flex items-start justify-between gap-4">
-        <Badge
-          variant="secondary"
-          className={`${categoryColor} font-medium`}
-        >
-          {categoryLabel}
-        </Badge>
+        <div className="flex gap-2">
+          <Badge
+            variant="secondary"
+            className={`${categoryColor} font-medium`}
+          >
+            {categoryLabel}
+          </Badge>
+          <Badge className={need.status === 'Fulfilled' ? "bg-green-600" : "bg-[#F4A261]"}>
+            {need.status === 'Fulfilled' ? "Complet" : "Ouvert"}
+          </Badge>
+        </div>
+
         {/* Participation Count Badge */}
         <Badge variant="outline" className="flex gap-1 items-center border-border/50 bg-background/50">
           <Users className="h-3 w-3" />
@@ -111,7 +135,7 @@ export function NeedCard({
           </a>
         </Button>
       </div>
-    </div>
+    </div >
   )
 }
 

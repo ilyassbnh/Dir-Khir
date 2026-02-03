@@ -27,9 +27,9 @@ export async function middleware(request: NextRequest) {
     if (isAuthRoute) {
         if (session) {
             // If logged in, redirect to dashboard
-            return NextResponse.redirect(
-                new URL(DEFAULT_LOGIN_REDIRECT, request.url),
-            );
+            // return NextResponse.redirect(
+            //     new URL(DEFAULT_LOGIN_REDIRECT, request.url),
+            // );
         }
         // If not logged in, allow access to valid auth pages
         return NextResponse.next();
@@ -39,7 +39,7 @@ export async function middleware(request: NextRequest) {
     // ALSO check if it's NOT a static file (image/icon) just in case matcher misses something,
     // though matcher config below usually handles this.
     if (!session && !isPublicRoute) {
-        return NextResponse.redirect(new URL("/login", request.url));
+        // return NextResponse.redirect(new URL("/login", request.url));
     }
 
     return NextResponse.next();
